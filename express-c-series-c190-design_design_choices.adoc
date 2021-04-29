@@ -61,7 +61,7 @@ NetApp AFF C190 systems use the new ONTAP 9.6 data management software. ONTAP 9.
 
 ONTAP 9.6 has several features that are well suited for the FlexPod Express solution. Foremost is NetApp’s commitment to storage efficiencies, which can be one of the most important features for small deployments. The hallmark NetApp storage efficiency features such as deduplication, compression, compaction, and thin provisioning are available in ONTAP 9.6. The NetApp WAFL system always writes 4KB blocks; therefore, compaction combines multiple blocks into a 4KB block when the blocks are not using their allocated space of 4KB. The following figure illustrates this process.
 
-image:express-c-series-c190-design_image6.emf[Error: Missing Graphic Image]
+image:express-c-series-c190-design_image6.png[Error: Missing Graphic Image]
 
 ONTAP 9.6 now supports an optional 512- byte block size for NVMe volumes. This capability works well with the VMware Virtual Machine File System (VMFS), which natively uses a 512-byte block. You can stay with the default 4K size or optionally set the 512-byte block size.
 

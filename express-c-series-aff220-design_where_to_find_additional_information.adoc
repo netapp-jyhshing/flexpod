@@ -1,0 +1,29 @@
+---
+sidebar: sidebar
+permalink: express-c-series-aff220-design_where_to_find_additional_information.html
+keywords:
+summary:
+---
+
+= Where to find additional information
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2021-04-22 14:35:14.977521
+//
+
+To learn more about the information that is described in this document, see the following documents and websites:
+
+* NetApp documentation
++
+https://docs.netapp.com[https://docs.netapp.com^]
+
+* FlexPod Express with VMware vSphere 6.7 and NetApp AFF A220 Deployment Guide
++
+https://www.netapp.com/us/media/nva-1123-deploy.pdf[https://www.netapp.com/us/media/nva-1123-deploy.pdf^]
