@@ -13,6 +13,7 @@ entries:
         url: /express-c-series-c190-design_conclusion.html
       - title: Where to find additional information
         url: /express-c-series-c190-design_where_to_find_additional_information.html
+
   - title: FlexPod Express with VMware vSphere 6.7U1 and NetApp AFF A220 with Direct-Attached IP-Based Storage
     url: /express-direct-attach-design_overview.html
     type: solution
@@ -31,3 +32,22 @@ entries:
         url: /express-direct-attach-design_conclusion.html
       - title: Where to find additional information
         url: /express-direct-attach-design_where_to_find_additional_information.html
+
+  - title: FlexPod Express with Cisco UCS C-Series and AFF A220 Series
+    url: /express-c-series-aff220-design_executive_summary.html
+    type: solution
+    entries:
+      - title: Program summary
+        url: /express-c-series-aff220-design_program_summary.html
+      - title: Solution overview
+        url: /express-c-series-aff220-design_solution_overview.html
+      - title: Technology requirements
+        url: /express-c-series-aff220-design_technology_requirements.html
+      - title: Design choices
+        url: /express-c-series-aff220-design_design_choices.html
+      - title: Solution verification
+        url: /express-c-series-aff220-design_solution_verification.html
+      - title: Conclusion
+        url: /express-c-series-aff220-design_conclusion.html
+      - title: Where to find additional information
+        url: /express-c-series-aff220-design_where_to_find_additional_information.html
