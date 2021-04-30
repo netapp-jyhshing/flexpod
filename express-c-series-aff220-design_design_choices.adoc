@@ -6,6 +6,7 @@ summary: The technologies listed on this page were chosen during the process of 
 ---
 
 = Design choices
+
 :hardbreaks:
 :nofooter:
 :icons: font

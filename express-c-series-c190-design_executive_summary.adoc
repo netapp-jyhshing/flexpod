@@ -2,10 +2,11 @@
 sidebar: sidebar
 permalink: express-c-series-c190-design_executive_summary.html
 keywords: NVA-1125, Design, infrastructure, cloud computing,
-summary: FlexPod Express is a predesigned, best practice data center architecture that is built on the Cisco Unified Computing System (Cisco UCS), the Cisco Nexus family of switches, and NetApp AFF systems.
+summary: FlexPod Express is a predesigned, best practice data center architecture that is built on the Cisco Unified Computing System, the Cisco Nexus family of switches, and NetApp AFF systems.
 ---
 
 = NVA-1125-DESIGN: FlexPod Express with Cisco UCS C-Series and AFF A220 Series
+
 :hardbreaks:
 :nofooter:
 :icons: font
