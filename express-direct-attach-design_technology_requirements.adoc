@@ -6,6 +6,7 @@ summary: A FlexPod Express system requires a combination of hardware and softwar
 ---
 
 = Technology requirements
+
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -26,6 +27,7 @@ Regardless of the hypervisor chosen, all FlexPod Express configurations use the 
 
 The following table lists the hardware components that are required for all FlexPod Express configurations.
 
+[cols=2*,options="header",cols="50,50"]
 |===
 |Hardware |Quantity
 
@@ -45,6 +47,7 @@ The following table lists the hardware components that are required for all Flex
 
 The following table lists the software components that are required to implement the architectures of the FlexPod Express solutions.
 
+[cols=3*,options="header",cols="33,33,33"]
 |===
 |Software  |Version  |Details
 
@@ -67,6 +70,7 @@ The following table lists the software components that are required to implement
 
 The following table lists the software that is required for all VMware vSphere implementations on FlexPod Express.
 
+[cols=2*,options="header",cols="50,50"]
 |===
 |Software  |Version
 

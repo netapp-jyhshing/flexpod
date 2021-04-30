@@ -6,6 +6,7 @@ summary:
 ---
 
 = Where to find additional information
+
 :hardbreaks:
 :nofooter:
 :icons: font

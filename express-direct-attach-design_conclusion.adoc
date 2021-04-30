@@ -6,6 +6,7 @@ summary:
 ---
 
 = Conclusion
+
 :hardbreaks:
 :nofooter:
 :icons: font

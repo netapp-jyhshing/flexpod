@@ -2,10 +2,11 @@
 sidebar: sidebar
 permalink: express-direct-attach-design_solution_overview.html
 keywords: virtualization, FAS27xx, AFF220, express, VMware vSphere,
-summary: FlexPod Express is designed to run mixed virtualization workloads. It is targeted for remote and branch offices and for small to midsize businesses. It is also optimal for larger businesses that want to implement a dedicated solution for a purpose. The primary driver of the new FlexPod Express solution is to add new technologies such as ONTAP 9.5, FAS27xx/AFF220, VMware vSphere 6.7U1 to FlexPod Express.
+summary: FlexPod Express is designed to run mixed virtualization workloads. It is targeted for remote and branch offices and for small to midsize businesses. It is also optimal for larger businesses that want to implement a dedicated solution for a purpose. The primary driver of the new FlexPod Express solution is to add new technologies such as ONTAP 9.5, FAS27xx and AFF220, VMware vSphere 6.7U1 to FlexPod Express.
 ---
 
 = Solution overview
+
 :hardbreaks:
 :nofooter:
 :icons: font

@@ -2,10 +2,11 @@
 sidebar: sidebar
 permalink: express-direct-attach-design_overview.html
 keywords: NVA-1130, design, Cisco UCS, Express, ROBOs
-summary: FlexPod Express is a predesigned, best practice architecture that is built on the Cisco Unified Computing System (Cisco UCS), the Cisco Nexus family of switches, and NetApp AFF. The components in FlexPod Express are like their FlexPod Datacenter counterparts, enabling management synergies across the complete IT infrastructure environment on a smaller scale.
+summary: FlexPod Express is a predesigned, best practice architecture that is built on the Cisco Unified Computing System, the Cisco Nexus family of switches, and NetApp AFF. The components in FlexPod Express are like their FlexPod Datacenter counterparts, enabling management synergies across the complete IT infrastructure environment on a smaller scale.
 ---
 
 = NVA-1130-DESIGN: FlexPod Express with VMware vSphere 6.7U1 and NetApp AFF A220 with Direct-Attached IP-Based Storage
+
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -17,9 +18,10 @@ summary: FlexPod Express is a predesigned, best practice architecture that is bu
 //
 // 2021-04-22 15:25:30.117127
 //
+
 Sree Lakshmi Lanka, NetApp
 
-Industry trends indicate a vast data center transformation toward shared infrastructure and cloud computing. In addition, organizations seek a simple and effective solution for remote and branch offices, leveraging the technology that they are familiar with in their data center. 
+Industry trends indicate a vast data center transformation toward shared infrastructure and cloud computing. In addition, organizations seek a simple and effective solution for remote and branch offices, leveraging the technology that they are familiar with in their data center.
 
 FlexPod Express is a predesigned, best practice architecture that is built on the Cisco Unified Computing System (Cisco UCS), the Cisco Nexus family of switches, and NetApp AFF. The components in FlexPod Express are like their FlexPod Datacenter counterparts, enabling management synergies across the complete IT infrastructure environment on a smaller scale. FlexPod Datacenter and FlexPod Express are optimal platforms for virtualization and for bare-metal operating systems and enterprise workloads.
 
