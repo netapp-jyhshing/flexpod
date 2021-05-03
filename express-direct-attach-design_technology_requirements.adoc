@@ -80,4 +80,4 @@ The following table lists the software that is required for all VMware vSphere i
 |6.7U1
 |===
 
-link:express-direct-attach-design_technology_requirements.html[Next: Design choices.]
+link:express-direct-attach-design_design_choices.html[Next: Design choices.]
