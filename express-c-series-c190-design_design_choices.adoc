@@ -40,6 +40,10 @@ The target group is customers who want to modernize their IT infrastructure with
 * NetApp Snapshot technology
 * FabricPool
 
+The following figures show the two options for host connectivity.
+
+The following figure illustrates UTA 2 ports where SFP+ module can be inserted.
+
 image:express-c-series-c190-design_image4.png[Error: Missing Graphic Image]
 
 The following figure illustrates 10GBASE-T ports for connection through conventional RJ-45 Ethernet cables.
@@ -55,6 +59,8 @@ The AFF C190 system is offered exclusively with 960GB SSDs. There are four stage
 * 12x 960GB
 * 18x 960GB
 * 24x 960GB
+
+For full information about the AFF C190 hardware system, see the https://www.netapp.com/us/products/entry-level-aff.aspx[NetApp AFF C190 All-Flash Array page^].
 
 === ONTAP 9.6 software
 
@@ -85,6 +91,8 @@ The Cisco Nexus 31108PC-V specification includes the following components:
 The following figure illustrates the Cisco Nexus 31108PC-V switch.
 
 image:express-c-series-c190-design_image7.png[Error: Missing Graphic Image]
+
+For more information about Cisco Nexus 31108PC-V switches, see https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html[Cisco Nexus 3172PQ, 3172TQ, 3172TQ-32T, 3172PQ-XL, and 3172TQ-XL Switches Data Sheet^].
 
 == Cisco UCS C-Series
 
@@ -129,7 +137,9 @@ Starting with the next major vSphere release, external PSC will not be an availa
 * New protocol support for backing up and restoring a vCenter server appliance. Introducing NFS and SMB as supported protocol choices, up to 7 total (HTTP, HTTPS, FTP, FTPS, SCP, NFS, and SMB) when configuring a vCenter Server for file-based backup or restore operations.
 * New functionally when using the content library. Syncing a native VM template between content libraries is now available when the vCenter Server is configured for enhanced linked mode.
 * Update to the https://blogs.vmware.com/vsphere/2019/04/vcenter-server-6-7-update-2-whats-new.html[Client Plug-Ins page^].
-* VMware vSphere Update Manager also adds enhancements to the vSphere client. You can perform attach-check compliance and remediate actions all from one screen. For more information about VMware vSphere 6.7 U2, see the https://blogs.vmware.com/vsphere/2019/04/vcenter-server-6-7-update-2-whats-new.html[VMware vSphere Blog page^].
+* VMware vSphere Update Manager also adds enhancements to the vSphere client. You can perform attach-check compliance and remediate actions all from one screen.
+
+For more information about VMware vSphere 6.7 U2, see the https://blogs.vmware.com/vsphere/2019/04/vcenter-server-6-7-update-2-whats-new.html[VMware vSphere Blog page^].
 
 For more information about the VMware vCenter Server 6.7 U2 updates, see the https://docs.vmware.com/en/VMware-vSphere/6.7/rn/vsphere-vcenter-server-67u2-release-notes.html[Release Notes^].
 

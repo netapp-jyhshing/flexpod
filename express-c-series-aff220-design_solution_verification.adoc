@@ -23,4 +23,4 @@ Cisco and NetApp designed and built FlexPod Express to serve as a premier infras
 
 VMware vSphere 6.7 was verified on the FlexPod Express infrastructure components. This validation included 10GbE uplink connectivity options for the hypervisor.
 
-link:express-direct-attach-design_conclusion.html[Next: Conclusion.]
+link:express-c-series-aff220-design_conclusion.html[Next: Conclusion.]

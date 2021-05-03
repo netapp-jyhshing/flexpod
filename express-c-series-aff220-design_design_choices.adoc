@@ -123,4 +123,4 @@ Following are the supported options for the FlexPod Express boot architecture:
 
 Because FlexPod Datacenter is booted from iSCSI LUNs, solution manageability is enhanced by also using iSCSI boot for FlexPod Express.
 
-link:express-direct-attach-design_solution_verification.html[Next: Solution verification.]
+link:express-c-series-aff220-design_solution_verification.html[Next: Solution verification.]

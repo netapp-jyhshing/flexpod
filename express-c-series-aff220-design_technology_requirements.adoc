@@ -77,4 +77,4 @@ The following table lists the software that is required for all VMware vSphere i
 |1.1.2
 |===
 
-link:express-direct-attach-design_design_choices.html[Next: Design choices.]
+link:express-c-series-aff220-design_design_choices.html[Next: Design choices.]
