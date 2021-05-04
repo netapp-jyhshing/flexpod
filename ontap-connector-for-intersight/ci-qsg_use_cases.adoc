@@ -1,0 +1,90 @@
+---
+sidebar: sidebar
+permalink: ontap-connector-for-intersight/ci-qsg_use_cases.html
+keywords:
+summary:
+---
+
+= Use cases
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./../media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2021-05-04 14:37:09.015866
+//
+
+== Use case 1: Monitoring NetApp storage inventory and widgets
+
+When the NetApp storage environment is available in Cisco Intersight, you can monitor NetApp storage objects in detail from storage inventory and get an overview from storage widgets.
+
+. Deploy Intersight Assist OVA (OnPrem task in customer vCenter Environment).
+. Add NetApp AIQ UM devices in Intersight Assist.
+. Go to *Storage* and navigate through NetApp storage inventory.
+. Add *Widgets* for NetApp storage to your *Monitor Dashboard*.
++
+Here is a https://tv.netapp.com/detail/video/6228096841001[link^] to the video showing NetApp ONTAP Storage Monitoring Features from Cisco Intersight.
+
+== Use case 2: NetApp storage orchestration using Reference Workflows
+
+When NetApp storage and vCenter environments are available in Cisco Intersight, you can execute end-to-end Reference Workflows available out of box that include storage and virtualization tasks.
+
+. Deploy Intersight Assist OVA (OnPrem task in customer vCenter Environment).
+. Add NetApp AIQ UM devices in Intersight Assist.
+. Add the vCenter target to Intersight via Intersight Assist.
+. Execute Reference Workflows available out of box.
+
+** New Storage Interface
+** New VMFS Datastore
+** Update VMFS Datastore
+** Remove VMFS Datastore
+** New NAS Datastore
+** Update NAS Datastore
+** Remove NAS Datastore
+** New Storage Host
+** Update Storage Host
+** Remove Storage Host
+** New Storage Export Policy
+** Remove Storage Export Policy
+** New Storage Virtual Machine
+** New Virtual Machine
+
+== Use case 3: Custom workflows using designer-free form
+
+When the NetApp Storage and vCenter environments are available in Cisco Intersight, you can build custom workflows using the NetApp storage and virtualization tasks.
+
+. Deploy Intersight Assist OVA (OnPrem task in customer vCenter Environment)
+. Add NetApp AIQ UM devices in Intersight Assist.
+. Add vCenter target to Intersight via Intersight Assist.
+. Navigate to the Orchestration tab in Intersight.
+. Select *Create New Workflow*.
+. Add storage and virtualization tasks to your workflows.
++
+The storage tasks that are available from Cisco Intersight include the following:
+
+** Task 1: Add Storage Export Policy to Volume
+** Task 2: Connect Initiators to Storage Host (igroup)
+** Task 3: Expand Storage LUN
+** Task 4: Expand Storage Volume
+** Task 5: Find NetApp igroup LUN Map
+** Task 6: Find Storage LUN by ID
+** Task 7: Find Storage Volume by ID
+** Task 8: New Storage Export Policy
+** Task 9: New Storage Fibre Channel Interface
+** Task 10: New Storage Host
+** Task 11: New storage IP interface
+** Task 12: New storage LUN
+** Task 13: New storage LUN ID
+** Task 14: New Storage Virtual Machine
+** Task 15: New storage volume
+** Task 16: Remove storage export policy
+** Task 17: Remove storage host
+** Task 18: Remove storage LUN
+** Task 19: Remove storage LUN ID
+** Task 20: Remove storage volume
+
+To learn more about customizing workflows with NetApp storage and virtualization tasks, watch the video https://tv.netapp.com/detail/video/6228095945001[NetApp ONTAP Storage Orchestration in Cisco Intersight^].

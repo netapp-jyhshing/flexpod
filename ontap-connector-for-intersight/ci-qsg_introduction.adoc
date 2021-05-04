@@ -1,0 +1,23 @@
+---
+sidebar: sidebar
+permalink: ontap-connector-for-intersight/ci-qsg_introduction.html
+keywords:
+summary:
+---
+
+= Introduction
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./../media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2021-05-04 14:37:08.842206
+//
+
+NetApp and Cisco have partnered to provide Cisco Intersight, a single-pane view of the FlexPod ecosystem. This simplified integration creates a unified management platform for all components in the FlexPod infrastructure and FlexPod solution. Cisco Intersight allows you to monitor NetApp storage, Cisco compute, and VMware inventory. It also allows you to orchestrate or automate workflows to accomplish storage and virtualization tasks in tandem.
+
+For more information, see https://www.netapp.com/pdf.html?item=/media/25001-tr-4883.pdf[TR 4883: FlexPod Datacenter with ONTAP 9.8, ONTAP Storage Connector for Cisco Intersight, and Cisco Intersight Managed Mode^].
