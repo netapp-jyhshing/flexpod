@@ -1,0 +1,17 @@
+section: ontap-connector-for-intersight
+title: Cisco Intersight with NetApp ONTAP storage quick start guide
+entries:
+  - title: Introduction
+    url: /ontap-connector-for-intersight/ci-qsg_introduction.html
+  - title: Requirements
+    url: /ontap-connector-for-intersight/ci-qsg_requirements.html
+  - title: Before you begin
+    url: /ontap-connector-for-intersight/ci-qsg_before_you_begin.html
+  - title: Claim targets
+    url: /ontap-connector-for-intersight/ci-qsg_claim_targets.html
+  - title: Monitor NetApp storage from Cisco Intersight
+    url: /ontap-connector-for-intersight/ci-qsg_monitor_netapp_storage_from_cisco_intersight.html
+  - title: Use cases
+    url: /ontap-connector-for-intersight/ci-qsg_use_cases.html
+  - title: References
+    url: /ontap-connector-for-intersight/ci-qsg_references.html

@@ -1,0 +1,8 @@
+sidebar:
+  entries:
+    - title: FlexPod Solutions Documetation
+      url: /index.html
+    - section: ontap-connector-for-intersight
+    - section: express-c-series-c190-design
+    - section: express-c-series-aff220-design
+    - section: express-direct-attach-design
