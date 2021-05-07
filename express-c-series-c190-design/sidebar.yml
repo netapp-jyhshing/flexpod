@@ -1,0 +1,15 @@
+section: express-c-series-c190-design
+title: FlexPod Express with Cisco UCS C-Series and NetApp AFF C190 Series
+entries:
+  - title: Executive summary
+    url: /express-c-series-c190-design/express-c-series-c190-design_executive_summary.html
+  - title: Program summary
+    url: /express-c-series-c190-design/express-c-series-c190-design_program_summary.html
+  - title: Technology requirements
+    url: /express-c-series-c190-design/express-c-series-c190-design_technology_requirements.html
+  - title: Design choices
+    url: /express-c-series-c190-design/express-c-series-c190-design_design_choices.html
+  - title: Conclusion
+    url: /express-c-series-c190-design/express-c-series-c190-design_conclusion.html
+  - title: Where to find additional information
+    url: /express-c-series-c190-design/express-c-series-c190-design_where_to_find_additional_information.html

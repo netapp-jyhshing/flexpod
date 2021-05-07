@@ -1,0 +1,80 @@
+---
+sidebar: sidebar
+permalink: express-c-series-aff220-design/express-c-series-aff220-design_technology_requirements.html
+keywords: express, requirements, technology, AFF A220, UCS C220 M5, Nexus 3172P switch, Virtual Interface Card, VIC 1387, C220 M5 Rack Server, CVR-QSFP-SFP10G adapter
+summary: FlexPod Express requires a combination of hardware and software components that depends on the selected hypervisor and network speed. In addition, FlexPod Express lays out the hardware components that are required to add hypervisor nodes to the system in units of two.
+---
+
+= Technology requirements
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./../media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2021-04-22 14:35:14.900954
+//
+
+FlexPod Express requires a combination of hardware and software components that depends on the selected hypervisor and network speed. In addition, FlexPod Express lays out the hardware components that are required to add hypervisor nodes to the system in units of two.
+
+== Hardware requirements
+
+Regardless of the hypervisor chosen, all FlexPod Express configurations use the same hardware. Therefore, even if business requirements change, either hypervisor can run on the same FlexPod Express hardware.
+
+The following table lists the hardware components that are required for all FlexPod Express configurations and to implement the solution. The hardware components that are used in any particular implementation of the solution might vary based on customer requirements.
+
+[cols=2*,options="header",cols="50,50"]
+|===
+|Hardware |Quantity
+
+|AFF A220 two-node cluster
+|1
+|Cisco UCS C220 M5 server
+|2
+|Cisco Nexus 3172P switch
+|2
+|Cisco UCS Virtual Interface Card (VIC) 1387 for Cisco UCS C220 M5 Rack Server
+|2
+|Cisco CVR-QSFP-SFP10G adapter
+|4
+|===
+
+== Software requirements
+
+The following tables list the software components that are required to implement the architectures of the FlexPod Express solution.
+
+The following table lists software requirements for the base FlexPod Express implementation.
+
+[cols=3*,options="header",cols="33,33,33"]
+|===
+|Software |Version |Details
+
+|Cisco Integrated Management Controller (CIMC)
+|3.1.3
+|For C220 M5 Rack Servers
+|Cisco NX-OS
+|nxos.7.0.3.I7.5.bin
+|For Cisco Nexus 3172P switches
+|NetApp ONTAP
+|9.4
+|For AFF A220 controllers
+|===
+
+The following table lists the software that is required for all VMware vSphere implementations on FlexPod Express.
+
+[cols=2*,options="header",cols="50,50"]
+|===
+|Software  |Version
+
+|VMware vCenter Server Appliance
+|6.7
+|VMware vSphere ESXi
+|6.7
+|NetApp VAAI Plug-In for ESXi
+|1.1.2
+|===
+
+link:express-c-series-aff220-design_design_choices.html[Next: Design choices.]
