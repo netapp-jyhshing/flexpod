@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: ontap-connector-for-intersight/ci-qsg_monitor_netapp_storage_from_cisco_intersight.html
-keywords:
-summary:
+keywords: netapp, storage, cisco intersight, monitor, orchestrate, orchestration, storage inventory, storage widgets
+summary: After targets are claimed, NetApp storage widgets, storage inventory, and virtualization tabs become available if you have an Advantage tier license. Orchestration tabs are available if you have a Premier tier license.
 ---
 
 = Monitor NetApp storage from Cisco Intersight
@@ -12,23 +12,18 @@ summary:
 :linkattrs:
 :imagesdir: ./../media/
 
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2021-05-04 14:37:08.970037
-//
-
+[.lead]
 After targets are claimed, NetApp storage widgets, storage inventory, and virtualization tabs become available if you have an Advantage tier license. Orchestration tabs are available if you have a Premier tier license.
 
 == Storage inventory overview
 
 The following screenshot displays the *Operate > Storage* screen.
 
-image:ci-qsg_image9.png[Error: Missing Graphic Image]
+image:ci-qsg_image9.png[screenshot displays the Operate > Storage screen]
 
 The following screenshot shows the storage cluster overview.
 
-image:ci-qsg_image10.png[Error: Missing Graphic Image]
+image:ci-qsg_image10.png[screenshot shows the storage cluster overview]
 
 == Storage widgets
 
@@ -36,12 +31,12 @@ To view storage widgets, navigate to *Monitoring > Dashboards > View NetApp stor
 
 * The following screenshot shows the Storage Version Summary widget.
 
-image:ci-qsg_image11.jpg[Error: Missing Graphic Image]
+image:ci-qsg_image11.jpg[screenshot shows the Storage Version Summary widget]
 
 * This screenshot shows the Top 5 Storage Arrays by Capacity Utilization widget.
 
-image:ci-qsg_image12.png[Error: Missing Graphic Image]
+image:ci-qsg_image12.png[screenshot shows the Top 5 Storage Arrays by Capacity Utilization widget]
 
 * This screenshot shows the Top 5 Storage Volumes by Capacity Utilization widget.
 
-image:ci-qsg_image13.png[Error: Missing Graphic Image]
+image:ci-qsg_image13.png[screenshot shows the Top 5 Storage Volumes by Capacity Utilization widget]
