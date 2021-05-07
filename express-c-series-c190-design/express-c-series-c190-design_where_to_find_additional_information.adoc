@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: express-c-series-c190-design_where_to_find_additional_information.html
+permalink: express-c-series-c190-design/express-c-series-c190-design_where_to_find_additional_information.html
 keywords: references
 summary: To learn more about the information described in this document, see the documents and websites listed on this page.
 ---

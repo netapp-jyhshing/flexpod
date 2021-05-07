@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: express-direct-attach-design_conclusion.html
+permalink: express-direct-attach-design/express-direct-attach-design_conclusion.html
 keywords:
 summary:
 ---

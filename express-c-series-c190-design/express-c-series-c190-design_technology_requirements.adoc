@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: express-c-series-c190-design_technology_requirements.html
+permalink: express-c-series-c190-design/express-c-series-c190-design_technology_requirements.html
 keywords: software, hardware, hypervisor, network, AFF C190, Cisco UCS C220 M5, Cisco VIC 1457, VMware vSphere ESXi, VAAI
 summary: FlexPod Express requires a combination of hardware and software components that depends on the selected hypervisor and network speed. In addition, FlexPod Express lays out the hardware components that are required to add hypervisor nodes to the system in units of two.
 ---

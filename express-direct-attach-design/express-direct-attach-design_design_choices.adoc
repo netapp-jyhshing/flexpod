@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: express-direct-attach-design_design_choices.html
+permalink: express-direct-attach-design/express-direct-attach-design_design_choices.html
 keywords: FAS2750, FAS2720, AFF A220, Nexus 3000, UCS B-Series, Virtual Interface Card 1440, VIC 1480, UCS 5108, blade server, VAAI
 summary: The technologies listed on this page were chosen during the process of architecting this design. Each technology serves a specific purpose in the FlexPod Express infrastructure solution.
 ---

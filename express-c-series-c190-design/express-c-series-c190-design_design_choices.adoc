@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: express-c-series-c190-design_design_choices.html
+permalink: express-c-series-c190-design/express-c-series-c190-design_design_choices.html
 keywords: AFF C190, CIFS, NFS, iSCSI, FCP, SnapMirror, SnapVault, SnapRestore, SnapManager, SnapCenter, FabricPool
 summary: The technologies listed in this section were chosen during the architectural design phase. Each technology serves a specific purpose in the FlexPod Express infrastructure solution.
 ---

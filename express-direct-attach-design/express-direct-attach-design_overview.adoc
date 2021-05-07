@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: express-direct-attach-design_overview.html
+permalink: express-direct-attach-design/express-direct-attach-design_overview.html
 keywords: NVA-1130, design, Cisco UCS, Express, ROBOs
 summary: FlexPod Express is a predesigned, best practice architecture that is built on the Cisco Unified Computing System, the Cisco Nexus family of switches, and NetApp AFF. The components in FlexPod Express are like their FlexPod Datacenter counterparts, enabling management synergies across the complete IT infrastructure environment on a smaller scale.
 ---
