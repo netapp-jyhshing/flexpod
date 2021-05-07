@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: express-direct-attach-design_technology_requirements.html
+permalink: express-direct-attach-design/express-direct-attach-design_technology_requirements.html
 keywords: requirements, hardware, software, A220, HA, VIC, B200 m5, fabric interconnect, VMware, vCenter, Server, Appliance, ESXi, hypervisor
 summary: A FlexPod Express system requires a combination of hardware and software components. FlexPod Express also describes the hardware components that are required to add hypervisor nodes to the system in units of two.
 ---

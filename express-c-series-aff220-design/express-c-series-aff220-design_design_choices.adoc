@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: express-c-series-aff220-design_design_choices.html
+permalink: express-c-series-aff220-design/express-c-series-aff220-design_design_choices.html
 keywords: AFF A220, ontap 9, Nexus 3172P, UCS C-Series, VMware vSphere
 summary: The technologies listed on this page were chosen during the process of architecting this design. Each technology serves a specific purpose in the FlexPod Express infrastructure solution.
 ---
