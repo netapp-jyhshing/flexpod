@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: ontap-connector-for-intersight/ci-qsg_claim_targets.html
-keywords:
-summary:
+keywords: cisco, intersight, netapp, ontap, connector, claim, targets, active iq unified manager, AIQ UM
+summary: After Cisco Intersight Assist is installed, you can claim your NetApp storage and virtualization devices.
 ---
 
 = Claim targets
@@ -12,12 +12,7 @@ summary:
 :linkattrs:
 :imagesdir: ./../media/
 
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2021-05-04 14:37:08.954875
-//
-
+[.lead]
 After Cisco Intersight Assist is installed, you can claim your NetApp storage and virtualization devices. Return to the *Intersight Targets* page and add your vCenter and NetApp Active IQ Unified Manager targets. For more information about the claim process, watch the video https://tv.netapp.com/detail/video/6228080442001[Claim a Target via Cisco Intersight Assist. ^]
 
 [NOTE]
@@ -25,8 +20,8 @@ Make sure that the NetApp Active IQ Unified Manager (AIQ UM) API Gateway is enab
 
 Navigate to *Settings > General > Feature Settings*.
 
-image:ci-qsg_image7.png[Error: Missing Graphic Image]
+image:ci-qsg_image7.png[screenshot of enabled NetApp AIQ UM API Gateway]
 
 The following example shows the NetApp AIQ UM target being claimed from Cisco Intersight.
 
-image:ci-qsg_image8.png[Error: Missing Graphic Image]
+image:ci-qsg_image8.png[screenshot of NetApp AIQ UM target being claimed from Cisco Intersight]

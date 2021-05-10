@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: ontap-connector-for-intersight/ci-qsg_before_you_begin.html
-keywords:
-summary:
+keywords: cisco, intersight, intersight assist, netapp, ontap, connector, flexpod, begin, install, installation, upgrade, active iq unified manager, create, deploy, deployment, download, OVA, appliance
+summary: Before you begin, install or upgrade AIQ UM, create a Cisco Intersight Account, and install Intersight Assist.
 ---
 
 = Before you begin
@@ -12,34 +12,33 @@ summary:
 :linkattrs:
 :imagesdir: ./../media/
 
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2021-05-04 14:37:08.903796
-//
+[.lead]
+To monitor and orchestrate NetApp storage from Cisco Intersight, you need NetApp Active IQ Unified Manager and Cisco Intersight Assist Virtual Appliance installed in the vCenter environment.
 
-== Create a Cisco Intersight Account
+== Install or Upgrade NetApp Active IQ Unified Manager
 
-Visit https://intersight.com/[https://intersight.com/^] to create your Intersight account. You must have a valid Cisco ID to create a Cisco Intersight account. If you do not have a Cisco ID, create one https://identity.cisco.com/ui/tenants/global/v1.0/enrollment-ui[here^].
+Install or upgrade to Active IQ Unified Manager 9.8p1 or later if you have not done so. For instructions, go to the link:http://docs.netapp.com/ocum-98/index.jsp[Unified Manager 9.8 Documentation Center].
 
-== Install Intersight Assist
+== Install Cisco Intersight Assist Virtual Appliance
 
 Ensure that you meet the https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/b_Cisco_Intersight_Appliance_Getting_Started_Guide/b_Cisco_Intersight_Appliance_Getting_Started_Guide_chapter_0111.html?referring_site=RE&pos=1&page=https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/b_Cisco_Intersight_Appliance_Getting_Started_Guide.html[Cisco Intersight Virtual Appliance Licensing, System, and Network requirements^].
 
 *Steps*
 
+. Create a Cisco Intersight Account.
+Visit https://intersight.com/[https://intersight.com/^] to create your Intersight account. You must have a valid Cisco ID to create a Cisco Intersight account.
 . Download the Intersight Virtual Appliance at https://software.cisco.com/download/home/286319499/type/286323047/release/1.0.9-148[software.cisco.com^]. For more information, go to the https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/b_Cisco_Intersight_Appliance_Getting_Started_Guide/b_Cisco_Intersight_Appliance_Install_and_Upgrade_Guide_chapter_00.html[Intersight Appliance Install and Upgrade Guide^].
 . Deploy the OVA. DNS and NTP are required to deploy the OVA.
 .. Configure DNS with A/PTR and CNAME Alias records prior to deploying the OVA. See the example below.
 +
 
-image:ci-qsg_image1.png[Error: Missing Graphic Image]
+image:ci-qsg_image1.png[example hostname used for A/PTR records]
 
 .. Choose the appropriate configuration size (Tiny, Small,  or Medium) based on your OVA deployment requirements for Intersight Virtual Appliance.
 +
-*TIP:* For a two-node ONTAP cluster with many storage objects, NetApp recommends that you use the Small (16 vCPU, 32 Gi RAM) option.
+*TIP:* For a two-node ONTAP cluster with a large number of storage objects, NetApp recommends that you use the Small (16 vCPU, 32 Gi RAM) option.
 +
-image:ci-qsg_image2.png[Error: Missing Graphic Image]
+image:ci-qsg_image2.png[screenshot of Deploy OVF Template step 5 configuration]
 
 .. On the *Customize Template* page, customize the deployment properties of the OVF template. The administrator password is used for the local users: admin(`webUI/cli/ssh`).
 +
@@ -49,12 +48,11 @@ image:ci-qsg_image3.png[Error: Missing Graphic Image]
 
 image:ci-qsg_image4.png[Error: Missing Graphic Image]
 
-
 .. Click *Next*.
 
 . Post-deploy the Intersight Assist Appliance.
 
-.. Navigate to http://fqdn-of-your-appliance[http://fqdn-of-your-appliance^] to complete the post-install set-up of your appliance.
+.. Navigate to https://FQDN-of-your-appliance to complete the post-install set-up of your appliance.
 +
 The installation process automatically begins. Installation can take up to one hour depending on bandwidth to Intersight.com. It can also take several seconds for the secure site to be operational after the VM powers on.
 
@@ -67,7 +65,7 @@ The installation process automatically begins. Installation can take up to one h
 [NOTE]
 If you select Intersight Assist, take note of the device ID and claim code before you continue.
 +
-image:ci-qsg_image5.png[Error: Missing Graphic Image]
+image:ci-qsg_image5.png[screenshot of Intersight deployment options]
 
 .. Click *Proceed*.
 .. If you selected *Intersight Assist*, complete the following steps:
@@ -77,7 +75,7 @@ image:ci-qsg_image5.png[Error: Missing Graphic Image]
 ... Claim the *Cisco Intersight Assist* appliance by copying and pasting the device ID and claim code from your newly deployed Intersight Assist virtual appliance.
 +
 
-image:ci-qsg_image6.png[Error: Missing Graphic Image]
+image:ci-qsg_image6.png[screenshot of Select Target Type highlighting Cisco Intersight Assist]
 
 ... Return to the *Cisco Intersight Assist* appliance and click *Continue.* You might need to refresh the browser.
 +
