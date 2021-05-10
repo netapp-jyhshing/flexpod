@@ -45,6 +45,8 @@ image:ci-qsg_image2.png[screenshot of Deploy OVF Template step 5 configuration]
 
 image:ci-qsg_image3.png[screenshot of Deploy OVF Template step 8 customize template]
 
+image:ci-qsg_image4.png[Error: Missing Graphic Image]
+
 .. Click *Next*.
 
 . Post-deploy the Intersight Assist Appliance.
