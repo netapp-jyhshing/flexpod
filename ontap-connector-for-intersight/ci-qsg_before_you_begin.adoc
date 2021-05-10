@@ -45,8 +45,10 @@ image:ci-qsg_image2.png[Error: Missing Graphic Image]
 +
 
 image:ci-qsg_image3.png[Error: Missing Graphic Image]
++
 
 image:ci-qsg_image4.png[Error: Missing Graphic Image]
+
 
 .. Click *Next*.
 
