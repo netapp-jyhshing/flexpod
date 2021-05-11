@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: ontap-connector-for-intersight/ci-qsg_before_you_begin.html
-keywords: cisco, intersight, intersight assist, netapp, ontap, connector, flexpod, begin, install, installation, upgrade, active iq unified manager, create, deploy, deployment, download, OVA, appliance
+keywords: cisco, intersight, intersight assist, netapp, ontap, connector, begin, install, installation, upgrade, active iq unified manager, create, deploy, deployment, download, OVA, appliance
 summary: Before you begin, install or upgrade AIQ UM, create a Cisco Intersight Account, and install Intersight Assist.
 ---
 
