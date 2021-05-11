@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: ontap-connector-for-intersight/introduction.html
+permalink: ontap-connector-for-intersight/index.html
 keywords: netapp, cisco, ontap, intersight, flexpod, infrastructure, solution, storage, compute, VMware, virtualization, monitor, orchestrate, automate
 summary: NetApp and Cisco have partnered to provide Cisco Intersight, a single-pane view of the FlexPod ecosystem.
 ---
