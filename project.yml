@@ -1,6 +1,6 @@
 sidebar:
   entries:
-    - title: FlexPod Solutions Documetation
+    - title: FlexPod Solutions Documentation
       url: /index.html
     - section: ontap-connector-for-intersight
     - section: express-c-series-c190-design
