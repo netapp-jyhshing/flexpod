@@ -5,12 +5,16 @@ keywords: netapp, cisco, ontap, intersight, flexpod, infrastructure, solution, s
 summary: NetApp and Cisco have partnered to provide Cisco Intersight, a single-pane view of the FlexPod ecosystem.
 ---
 
-= Introduction
+= Cisco Intersight with NetApp ONTAP storage: quick start guide
 :hardbreaks:
 :nofooter:
 :icons: font
 :linkattrs:
 :imagesdir: ./../media/
+
+Rachel Lithman, NetApp
+
+== Introduction
 
 NetApp and Cisco have partnered to provide Cisco Intersight, a single-pane view of the FlexPod ecosystem. This simplified integration creates a unified management platform for all components in the FlexPod infrastructure and FlexPod solution. Cisco Intersight allows you to monitor NetApp storage, Cisco compute, and VMware inventory. It also allows you to orchestrate or automate workflows to accomplish storage and virtualization tasks in tandem.
 
