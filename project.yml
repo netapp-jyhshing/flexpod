@@ -5,4 +5,5 @@ sidebar:
     - section: ontap-connector-for-intersight
     - section: express-c-series-c190-design
     - section: express-c-series-aff220-design
+    - section: express-c-series-aff220-deploy
     - section: express-direct-attach-design
