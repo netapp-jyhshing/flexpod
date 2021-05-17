@@ -1,0 +1,19 @@
+---
+sidebar: sidebar
+permalink: ndac4693/ehr-epic-deploy_deployment_and_configuration.html
+keywords:
+summary:
+---
+
+= Deployment and configuration
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./../media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2021-05-07 11:34:58.108824
+//
