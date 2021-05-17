@@ -4,7 +4,20 @@ sidebar:
       url: /index.html
     - section: ontap-connector-for-intersight
     - section: express-c-series-c190-design
+    - section: express-c-series-c190-deploy
     - section: express-c-series-aff220-design
     - section: express-c-series-aff220-deploy
     - section: express-direct-attach-design
     - section: ndac4693
+    - section: express-direct-attach-aff220-deploy
+    - section: ehr-epic-deploy
+    - section: ehr-epic-sizing
+    - section: ehr-epic-performance
+    - section: ehr-meditech-deploy
+    - section: ehr-meditech-sizing
+    - section: cloud-fabricpool
+    - section: cloud-insights
+    - section: security-ransomware
+    - section: medical-imaging
+    - section: fp-express-tech-spec
+    - section: dc-tech-spec
