@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: ndac4693/ehr-epic-deploy_infrastructure_hardware_and_software_components.html
+permalink: ehr-epic-deploy/ehr-epic-deploy_infrastructure_hardware_and_software_components.html
 keywords: infrastructure, hardware, software, components, firmware, imt
 summary: Always use the Interoperability Matrix Tool (IMT) to validate that all versions of software and firmware are supported.
 ---
