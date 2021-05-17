@@ -3,6 +3,7 @@ title: FlexPod Datacenter for Epic EHR Deployment Guide
 entries:
   - title: Overview
     url: /ehr-epic-deploy/ehr-epic-deploy_overview.html
+    type: solutions
   - title: Design
     url: /ehr-epic-deploy/ehr-epic-deploy_design.html
   - title: Deployment and configuration

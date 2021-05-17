@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: ehr-epic-deploy/ehr-epic-deploy_base_infrastructure_configuration.html
 keywords: base, configuration, infrastructure, network, connectivity, storage, host, software
-summary: Below are the network connections, storage connections, and software that must be in place to configure the infrastructure.
+summary: This section discribes the network connections, storage connections, and software that must be in place to configure the infrastructure.
 ---
 
 = Base infrastructure configuration

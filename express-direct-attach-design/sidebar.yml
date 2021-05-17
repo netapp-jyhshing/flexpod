@@ -3,6 +3,7 @@ title: FlexPod Express with VMware vSphere 6.7U1 and NetApp AFF A220 with Direct
 entries:
   - title: Design overview
     url: /express-direct-attach-design/express-direct-attach-design_overview.html
+    type: solutions
   - title: Program summary
     url: /express-direct-attach-design/express-direct-attach-design_program_summary.html
   - title: Solution overview
