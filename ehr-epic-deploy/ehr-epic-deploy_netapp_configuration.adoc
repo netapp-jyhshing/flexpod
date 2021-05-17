@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
-permalink: ndac4693/ehr-epic-deploy_netapp_configuration.html
-keywords: configuraiton, ha, pair, configuration, storage, fc, protocol, flexpod, epic
+permalink: ehr-epic-deploy/ehr-epic-deploy_netapp_configuration.html
+keywords: configuration, ha, pair, configuration, storage, fc, protocol, flexpod, epic
 summary: NetApp storage deployed for Epic software environments uses storage controllers in a high-availability (HA) pair configuration. Storage is required to be presented from both controllers to Epic database servers over the FC Protocol (FCP).
 ---
 

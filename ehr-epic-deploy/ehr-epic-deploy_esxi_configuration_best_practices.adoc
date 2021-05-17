@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: ndac4693/ehr-epic-deploy_esxi_configuration_best_practices.html
+permalink: ehr-epic-deploy/ehr-epic-deploy_esxi_configuration_best_practices.html
 keywords: esxi, configuration, best, practices, host, side, vmware, vsc, vaai
 summary: This document outlines best practices for ESXi configuration, which can be found in the InterSystems Best practices for VMware.
 ---

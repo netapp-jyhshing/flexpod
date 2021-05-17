@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: ndac4693/ehr-epic-deploy_design.html
+permalink: ehr-epic-deploy/ehr-epic-deploy_design.html
 keywords: design, flexpod, epic, cisco, architecture, storage, layout, volume, lun, configuration
 summary: The architecture of FlexPod for Epic is based both on guidance from Epic, Cisco, and NetApp and from partner experience in working with Epic customers of all sizes. The architecture is adaptable and applies best practices for Epic, depending on the customer’s data center strategy, whether small or large and whether centralized, distributed, or multitenant.
 ---

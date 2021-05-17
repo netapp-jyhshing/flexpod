@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: ndac4693/ehr-epic-deploy_cisco_mds_9148s_configuration.html
+permalink: ehr-epic-deploy/ehr-epic-deploy_cisco_mds_9148s_configuration.html
 keywords: cisco, ucs, configuration, mds, fc, switches, compute, fabric, aff, a700, controllers
 summary: The Cisco MDS 9100 Series FC switches provide redundant 16Gb FC connectivity between the NetApp AFF A700 controllers and the Cisco UCS compute fabric.
 ---

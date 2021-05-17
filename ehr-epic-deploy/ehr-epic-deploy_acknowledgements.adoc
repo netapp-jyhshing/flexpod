@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: ndac4693/ehr-epic-deploy_acknowledgements.html
+permalink: ehr-epic-deploy/ehr-epic-deploy_acknowledgements.html
 keywords: ndac, acknowledgements, authors, flexpod, ehr
 summary: The following people contributed to the writing of this guide.
 ---
