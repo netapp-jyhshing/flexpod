@@ -1,0 +1,273 @@
+---
+sidebar: sidebar
+permalink: express-c-series-aff220-deploy/express-c-series-aff220-deploy_cisco_ucs_c-series_rack_server_deployment_procedure.html
+keywords: deployment, cisco, ucs, rack, server, iscsi, vnic
+summary: The following section provides a detailed procedure for configuring a Cisco UCS C-Series standalone rack server for use in the FlexPod Express configuration.
+---
+
+= Cisco UCS C-Series rack server deployment procedure
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./../media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2021-04-19 12:01:34.149015
+//
+
+The following section provides a detailed procedure for configuring a Cisco UCS C-Series standalone rack server for use in the FlexPod Express configuration.
+
+== Perform initial Cisco UCS C-Series standalone server setup for Cisco Integrated Management Server
+
+Complete these steps for the initial setup of the CIMC interface for Cisco UCS C-Series standalone servers.
+
+The following table lists the information needed to configure CIMC for each Cisco UCS C-Series standalone server.
+
+|===
+|Detail |Detail value
+
+|CIMC IP address
+|\<<cimc_ip>>
+|CIMC subnet mask
+|\<<cimc_netmask>>
+|CIMC default gateway
+|\<<cimc_gateway>>
+|===
+
+[NOTE]
+The CIMC version used in this validation is CIMC 3.1.3(g).
+
+=== All servers
+
+. Attach the Cisco keyboard, video, and mouse (KVM) dongle (provided with the server) to the KVM port on the front of the server. Plug a VGA monitor and USB keyboard into the appropriate KVM dongle ports.
+. Power on the server and press F8 when prompted to enter the CIMC configuration.
++
+image:express-c-series-aff220-deploy_image8.png[Error: Missing Graphic Image]
+
+. In the CIMC configuration utility, set the following options:
+
+** Network interface card (NIC) mode:
+*** Dedicated [X]
+** IP (Basic):
+*** IPV4: [X]
+*** DHCP enabled: [ ]
+*** CIMC IP: \<<cimc_ip>>
+*** Prefix/Subnet: \<<cimc_netmask>>
+*** Gateway: \<<cimc_gateway>>
+** VLAN (Advanced): Leave cleared to disable VLAN tagging.
+*** NIC redundancy
+*** None: [X]
++
+image:express-c-series-aff220-deploy_image9.png[Error: Missing Graphic Image]
+
+. Press F1 to see additional settings.
+
+** Common properties:
+*** Host name: \<<esxi_host_name>>
+*** Dynamic DNS: [ ]
+*** Factory defaults: Leave cleared.
+** Default user (basic):
+*** Default password: \<<admin_password>>
+*** Reenter password: \<<admin_password>>
+*** Port properties: Use default values.
+*** Port profiles: Leave cleared.
++
+image:express-c-series-aff220-deploy_image10.png[Error: Missing Graphic Image]
+
+. Press F10 to save the CIMC interface configuration.
+. After the configuration is saved, press Esc to exit.
+
+== Configure Cisco UCS C-Series servers iSCSI boot
+
+In this FlexPod Express configuration, the VIC1387 is used for iSCSI boot.
+
+The following table lists the information needed to configure iSCSI boot.
+
+[NOTE]
+Italicized font indicates variables that are unique for each ESXi host.
+
+|===
+|Detail |Detail value
+
+|ESXi host initiator A name
+|\<<var_ucs_initiator_name_A>>
+|ESXi host iSCSI-A IP
+|\<<var_esxi_host_iscsiA_ip>>
+|ESXi host iSCSI-A network mask
+|\<<var_esxi_host_iscsiA_mask>>
+|ESXi host iSCSI A default gateway
+|\<<var_esxi_host_iscsiA_gateway>>
+|ESXi host initiator B name
+|\<<var_ucs_initiator_name_B>>
+|ESXi host iSCSI-B IP
+|\<<var_esxi_host_iscsiB_ip>>
+|ESXi host iSCSI-B network mask
+|\<<var_esxi_host_iscsiB_mask>>
+|ESXi host iSCSI-B gateway
+|\<<var_esxi_host_iscsiB_gateway>>
+|IP address iscsi_lif01a
+|
+|IP address iscsi_lif02a
+|
+|IP address iscsi_lif01b
+|
+|IP address iscsi_lif02b
+|
+|Infra_SVM IQN
+|
+|===
+
+=== Boot order configuration
+
+To set the boot order configuration, complete the following steps:
+
+. From the CIMC interface browser window, click the Server tab and select BIOS.
+. Click Configure Boot Order and then click OK.
++
+image:express-c-series-aff220-deploy_image11.png[Error: Missing Graphic Image]
+
+. Configure the following devices by clicking the device under Add Boot Device, and going to the Advanced tab.
+
+* Add Virtual Media
+** Name: KVM-CD-DVD
+** Subtype: KVM MAPPED DVD
+** State: Enabled
+** Order: 1
+* Add iSCSI Boot.
+** Name: iSCSI-A
+** State: Enabled
+** Order: 2
+** Slot: MLOM
+** Port: 0
+* Click Add iSCSI Boot.
+** Name: iSCSI-B
+** State: Enabled
+** Order: 3
+** Slot: MLOM
+** Port: 1
+
+. Click Add Device.
+. Click Save Changes and then click Close.
++
+image:express-c-series-aff220-deploy_image12.png[Error: Missing Graphic Image]
+
+. Reboot the server to boot with your new boot order.
+
+=== Disable RAID controller (if present)
+
+Complete the following steps if your C-Series server contains a RAID controller. A RAID controller is not needed in the boot from SAN configuration. Optionally, you can also physically remove the RAID controller from the server.
+
+. Click BIOS on the left navigation pane in CIMC.
+. Select Configure BIOS.
+. Scroll down to PCIe Slot:HBA Option ROM.
+. If the value is not already disabled, set it to disabled.
++
+image:express-c-series-aff220-deploy_image13.png[Error: Missing Graphic Image]
+
+== Configure Cisco VIC1387 for iSCSI boot
+
+The following configuration steps are for the Cisco VIC 1387 for iSCSI boot.
+
+=== Create iSCSI vNICs
+
+. Click Add to create a vNIC.
+. In the Add vNIC section, enter the following settings:
+
+** Name: iSCSI-vNIC-A
+** MTU: 9000
+** Default VLAN: `\<<var_iscsi_vlan_a>>`
+** VLAN Mode: TRUNK
+** Enable PXE boot: Check
++
+image:express-c-series-aff220-deploy_image14.png[Error: Missing Graphic Image]
+
+. Click Add vNIC and then click OK.
+. Repeat the process to add a second vNIC.
+.. Name the vNIC `iSCSI-vNIC-B`.
+.. Enter `\<<var_iscsi_vlan_b>>` as the VLAN.
+.. Set the uplink port to `1`.
+. Select the vNIC `iSCSI-vNIC-A` on the left.
++
+image:express-c-series-aff220-deploy_image15.png[Error: Missing Graphic Image]
+
+. Under iSCSI Boot Properties, enter the initiator details:
+
+** Name: \<<var_ucsa_initiator_name_a>>
+** IP address: \<<var_esxi_hostA_iscsiA_ip>>
+** Subnet mask: \<<var_esxi_hostA_iscsiA_mask>>
+** Gateway: \<<var_esxi_hostA_iscsiA_gateway>>
++
+image:express-c-series-aff220-deploy_image16.png[Error: Missing Graphic Image]
+
+. Enter the primary target details.
+
+** Name: IQN number of infra-SVM
+** IP address: IP address of `iscsi_lif01a`
+** Boot LUN: 0
+
+. Enter the secondary target details.
+
+** Name: IQN number of infra-SVM
+** IP address: IP address of `iscsi_lif02a`
+** Boot LUN: 0
++
+You can obtain the storage IQN number by running the `vserver iscsi show` command.
++
+[NOTE]
+Be sure to record the IQN names for each vNIC. You need them for a later step.
++
+image:express-c-series-aff220-deploy_image17.png[Error: Missing Graphic Image]
+
+. Click Configure iSCSI.
+. Select the vNIC `iSCSI-vNIC- B` and click the iSCSI Boot button located on the top of the Host Ethernet Interfaces section.
+. Repeat the process to configure `iSCSI-vNIC-B`.
+. Enter the initiator details.
+
+** Name: `\<<var_ucsa_initiator_name_b>>`
+** IP address: `\<<var_esxi_hostb_iscsib_ip>>`
+** Subnet mask: `\<<var_esxi_hostb_iscsib_mask>>`
+** Gateway: `\<<var_esxi_hostb_iscsib_gateway>>`
+
+. Enter the primary target details.
+
+** Name: IQN number of infra-SVM
+** IP address: IP address of `iscsi_lif01b`
+** Boot LUN: 0
+
+. Enter the secondary target details.
+
+** Name: IQN number of infra-SVM
+** IP address: IP address of `iscsi_lif02b`
+** Boot LUN: 0
++
+You can obtain the storage IQN number by using the `vserver iscsi show` command.
++
+[NOTE]
+Be sure to record the IQN names for each vNIC. You need them for a later step.
+
+. Click Configure ISCSI.
+. Repeat this process to configure iSCSI boot for Cisco UCS server B.
+
+=== Configure vNICs for ESXi
+
+. From the CIMC interface browser window, click Inventory and then click Cisco VIC adapters on the right pane.
+. Under Adapter Cards, select Cisco UCS VIC 1387 and then select the vNICs underneath.
++
+image:express-c-series-aff220-deploy_image18.png[Error: Missing Graphic Image]
+
+. Select eth0 and click Properties.
+. Set the MTU to 9000. Click Save Changes.
++
+image:express-c-series-aff220-deploy_image19.png[Error: Missing Graphic Image]
+
+. Repeat steps 3 and 4 for eth1, verifying that the uplink port is set to `1` for eth1.
++
+image:express-c-series-aff220-deploy_image20.png[Error: Missing Graphic Image]
++
+[NOTE]
+This procedure must be repeated for each initial Cisco UCS Server node and each additional Cisco UCS Server node added to the environment.
+
+link:express-c-series-aff220-deploy_netapp_aff_storage_deployment_procedure_@part_2@.html[Next: NetApp AFF Storage Deployment Procedure (Part 2)]

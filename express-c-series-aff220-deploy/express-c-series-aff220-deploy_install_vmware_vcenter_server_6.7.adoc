@@ -1,0 +1,104 @@
+---
+sidebar: sidebar
+permalink: express-c-series-aff220-deploy/express-c-series-aff220-deploy_install_vmware_vcenter_server_6.7.html
+keywords: install, vmware, vcenter, server, appliance
+summary: This section provides detailed procedures for installing VMware vCenter Server 6.7 in a FlexPod Express configuration.
+---
+
+= Install VMware vCenter Server 6.7
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./../media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2021-04-19 12:01:34.356158
+//
+
+This section provides detailed procedures for installing VMware vCenter Server 6.7 in a FlexPod Express configuration.
+
+[NOTE]
+FlexPod Express uses the VMware vCenter Server Appliance (VCSA).
+
+== Download the VMware vCenter server appliance
+
+. Download the VCSA. Access the download link by clicking the Get vCenter Server icon when managing the ESXi host.
++
+image:express-c-series-aff220-deploy_image41.png[Error: Missing Graphic Image]
+
+. Download the VCSA from the VMware site.
++
+[NOTE]
+Although the Microsoft Windows vCenter Server installable is supported, VMware recommends the VCSA for new deployments.
+
+. Mount the ISO image.
+. Navigate to the vcsa-ui-installer> win32 directory. Double- click installer.exe.
+. Click Install.
+. Click Next on the Introduction page.
+. Accept the end- user license agreement.
+. Select Embedded Platform Services Controller as the deployment type.
++
+image:express-c-series-aff220-deploy_image42.png[Error: Missing Graphic Image]
++
+[NOTE]
+If required, the External Platform Services Controller deployment is also supported as part of the FlexPod Express solution.
+
+. In the Appliance Deployment Target, enter the IP address of an ESXi host you have deployed, and the root user name and root password.
++
+image:express-c-series-aff220-deploy_image43.png[Error: Missing Graphic Image]
+
+. Set the appliance VM by entering `VCSA` as the VM name and the root password you would like to use for the VCSA.
++
+image:express-c-series-aff220-deploy_image44.png[Error: Missing Graphic Image]
+
+. Select the deployment size that best fits your environment. Click Next.
++
+image:express-c-series-aff220-deploy_image45.png[Error: Missing Graphic Image]
+
+. Select the infra_datastore_1 datastore. Click Next.
++
+image:express-c-series-aff220-deploy_image46.png[Error: Missing Graphic Image]
+
+. Enter the following information in the Configure network settings page and click Next.
+
+.. Select MGMT-Network for Network.
+.. Enter the FQDN or IP to be used for the VCSA.
+.. Enter the IP address to be used.
+.. Enter the subnet mask to be used.
+.. Enter the default gateway.
+.. Enter the DNS server.
+
+. On the Ready to Complete Stage 1 page, verify that the settings you have entered are correct. Click Finish.
++
+image:express-c-series-aff220-deploy_image47.png[Error: Missing Graphic Image]
++
+The VCSA installs now. This process takes several minutes.
+
+. After stage 1 completes, a message appears stating that it has completed. Click Continue to begin stage 2 configuration.
+. On the Stage 2 Introduction page, click Next.
++
+image:express-c-series-aff220-deploy_image48.png[Error: Missing Graphic Image]
+
+. Enter `\<<var_ntp_id>>` for the NTP server address. You can enter multiple NTP IP addresses.
++
+If you plan to use vCenter Server high availability (HA), make sure that SSH access is enabled.
+
+. Configure the SSO domain name, password, and site name. Click Next.
++
+Record these values for your reference, especially if you deviate from the vsphere.local domain name.
+
+. Join the VMware Customer Experience Program if desired. Click Next.
+. View the summary of your settings. Click Finish or use the back button to edit settings.
+. A message appears stating that you will not be able to pause or stop the installation from completing after it has started. Click OK to continue.
++
+The appliance setup continues. This takes several minutes.
++
+A message appears indicating that the setup was successful.
++
+The links that the installer provides to access vCenter Server are clickable.
+
+
+link:express-c-series-aff220-deploy_configure_vmware_vcenter_server_6.7_and_vsphere_clustering.html[Next: Configure VMware vCenter Server 6.7 and vSphere clustering]
