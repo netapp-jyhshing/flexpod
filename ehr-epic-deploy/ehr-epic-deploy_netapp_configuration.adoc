@@ -18,10 +18,9 @@ summary: NetApp storage deployed for Epic software environments uses storage con
 // 2021-05-07 11:34:58.273074
 //
 
-[.lead]
 NetApp storage deployed for Epic software environments uses storage controllers in a high-availability (HA) pair configuration. Storage is required to be presented from both controllers to Epic database servers over the FC Protocol (FCP). The configuration presents storage from both controllers to evenly balance the application load during normal operation.
 
-Epic requirements for separating production workloads into fault domains call pools is detailed in the “Epic All-Flash Reference Architecture Strategy Handbook. ” Read this document in detail before continuing. Note that an ONTAP node can be considered a separate pool of storage.
+Epic requirements for separating production workloads into fault domains call pools is detailed in the “Epic All-Flash Reference Architecture Strategy Handbook.” Read this document in detail before continuing. Note that an ONTAP node can be considered a separate pool of storage.
 
 == ONTAP configuration
 
@@ -213,4 +212,4 @@ After the LUNs and igroups are created, map the LUNs to the relevant igroups tha
 +
 The LUNs are now ready to be discovered and mapped to the ESXi servers. Refresh the storage on the ESXi hosts and add the newly discovered LUNs.
 
-link:ehr-epic-deploy_genio_tool.html[GenIO Tool]
+link:ehr-epic-deploy_genio_tool.html[Next: GenIO Tool]

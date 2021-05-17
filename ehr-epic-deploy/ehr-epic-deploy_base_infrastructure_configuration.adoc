@@ -26,7 +26,7 @@ The following network connections must be in place before configuring the infras
 ** Virtual port channel is used between the Cisco FI and Cisco Nexus switches.
 ** Each server has vNICs with redundant connectivity to the unified fabric. NIC failover is used between FI for redundancy.
 ** Each server has vHBAs with redundant connectivity to the unified fabric.
-* The Cisco UCS FI are configured in end- host mode as recommended, providing dynamic pinning of vNICs to uplink switches.
+* The Cisco UCS FI are configured in end-host mode as recommended, providing dynamic pinning of vNICs to uplink switches.
 
 == Storage connectivity
 
@@ -51,4 +51,4 @@ The following software must be installed:
 * VSC is installed and registered in vCenter.
 * A NetApp cluster is configured.
 
-link:ehr-epic-deploy_cisco_ucs_blade_server_and_switch_configuration.html[Cisco UCS Blade Server and Switch Configuration]
+link:ehr-epic-deploy_cisco_ucs_blade_server_and_switch_configuration.html[Next: Cisco UCS Blade Server and Switch Configuration]
