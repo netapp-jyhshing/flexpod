@@ -1,0 +1,31 @@
+---
+sidebar: sidebar
+permalink: ndac4693/ehr-epic-deploy_flexpod_design_zone.html
+keywords: flexpod, design, zone, cisco, best, practices, fc, storage, ucs
+summary: The following links provide directory to the FlexPod design zone and other guides relevant to FlexPod Epic deployment.
+---
+
+= FlexPod design zone
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./../media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2021-05-07 11:34:58.342223
+//
+
+* NetApp FlexPod Design Zone
++
+https://www.cisco.com/c/en/us/solutions/design-zone/data-center-design-guides/flexpod-design-guides.html[https://www.cisco.com/c/en/us/solutions/design-zone/data-center-design-guides/flexpod-design-guides.html^]
+
+* FlexPod DC with FC Storage (MDS Switches) Using NetApp AFF, vSphere 6.5U1, and Cisco UCS Manager
++
+https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_esxi65u1_n9fc.html[https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_esxi65u1_n9fc.html^]
+
+* Cisco Best Practices with Epic on Cisco UCS
++
+https://www.cisco.com/c/dam/en_us/solutions/industries/healthcare/Epic_on_UCS_tech_brief_FNL.pdf[https://www.cisco.com/c/dam/en_us/solutions/industries/healthcare/Epic_on_UCS_tech_brief_FNL.pdf^]

@@ -1,0 +1,39 @@
+---
+sidebar: sidebar
+permalink: ndac4693/ehr-epic-deploy_netapp_technical_reports.html
+keywords: technical, reports, flexpod, epic
+summary: These technical reports are relevant to this guide and FlexPod deployment.
+---
+
+= NetApp technical reports
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./../media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2021-05-07 11:34:58.356577
+//
+
+* TR-3929: Reallocate Best Practices Guide
++
+https://fieldportal.netapp.com/content/192896[https://fieldportal.netapp.com/content/192896^]
+
+* TR-3987: Snap Creator Framework Plug-In for InterSystems Caché
++
+https://fieldportal.netapp.com/content/248308[https://fieldportal.netapp.com/content/248308^]
+
+* TR-3928: NetApp Best Practices for Epic
++
+https://fieldportal.netapp.com/?oparams=68646[https://fieldportal.netapp.com/?oparams=68646^]
+
+* TR-4017: FC SAN Best Practices
++
+http://media.netapp.com/documents/tr-4017.pdf[http://media.netapp.com/documents/tr-4017.pdf^]
+
+* TR-3446: SnapMirror Async Overview and Best Practices Guide
++
+http://media.netapp.com/documents/tr-3446.pdf[http://media.netapp.com/documents/tr-3446.pdf^]
