@@ -18,7 +18,6 @@ summary: The architecture of FlexPod for Epic is based both on guidance from Epi
 // 2021-05-07 11:34:58.075714
 //
 
-[.lead]
 The architecture of FlexPod for Epic is based both on guidance from Epic, Cisco, and NetApp and from partner experience in working with Epic customers of all sizes. The architecture is adaptable and applies best practices for Epic, depending on the customer’s data center strategy, whether small or large and whether centralized, distributed, or multitenant.
 
 The correct storage architecture can be determined by the overall size with the total IOPS. Performance alone is not the only factor, and you might decide to go with a larger node count based on additional customer requirements. The advantage of using NetApp is that the cluster can easily be scaled up nondisruptively as requirements change. You can also nondisruptively remove nodes from the cluster to repurpose or during equipment refreshes.
@@ -41,14 +40,14 @@ The figure below depicts a 6-node architecture, which is a commonly deployed arc
 [NOTE]
 Work with the NetApp Epic team to validate all designs. Epic requires the use of NetApp sizing methods to properly size a NetApp storage system for use in Epic environments. For more information, see https://fieldportal.netapp.com/content/192412[TR-3930i: NetApp Sizing Guidelines for Epic^]. NetApp Field Portal access is required to view this document.
 
-The six-node architecture contains four nodes for production and two nodes for DR. With this architecture, with four- node production, the Epic All-Flash Reference Architecture Strategy Handbook states that you can separate Epic report workloads from Clarity.
+The six-node architecture contains four nodes for production and two nodes for DR. With this architecture, with four-node production, the Epic All-Flash Reference Architecture Strategy Handbook states that you can separate Epic report workloads from Clarity.
 
 Going with six nodes has the following key advantages:
 
 * You can offload backup archive process from production
 * You can offload all test environments from production
 
-Production runs on node prod-01. Report runs on node prod-02, which is an up-to-the-minute Epic mirror copy of production. Test environments such as support, release, and release validation (SUP, REL, and RELVAL) can be cloned instantaneously from either Epic production, report, or DR. The figure below shows clones made from production for full-copy test environments.
+Production runs on node prod-01. Report runs on node prod-02, which is an up-to-the-minute Epic mirror copy of production. Test environments such as support, release, and release validation (SUP, REL, and RELVAL) can be cloned instantaneously from either Epic production, report, or DR. The following figure shows clones made from production for full-copy test environments.
 
 The second HA pair is used for production services storage requirements. These workloads include storage for Clarity database servers (SQL or Oracle), VMware, Hyperspace, and CIFS. Customers might have non-Epic workloads that could be added to nodes 3 and 4 in this architecture or preferably added to a separate HA pair in the same cluster.
 
@@ -66,7 +65,7 @@ Placing each disk pool on a separate node creates the fault domains required for
 
 Because Epic allows storage resources to be shared for nonproduction needs, a storage system can often service both the Clarity server and production services storage needs, such as VDI, CIFS, and other enterprise functions.
 
-The figure below shows the storage layout for the 6- node architecture. Each storage system is a single node in a fully redundant HA pair. This layout ensures maximum utilization on each controller and storage efficiency.
+The figure below shows the storage layout for the 6-node architecture. Each storage system is a single node in a fully redundant HA pair. This layout ensures maximum utilization on each controller and storage efficiency.
 
 image:ehr-epic-deploy_image8.png[Error: Missing Graphic Image]
 
@@ -84,7 +83,7 @@ Hardware-assisted failover minimizes storage node failover time by enabling the 
 
 NetApp offers a complete set of support tools and services. The NetApp AutoSupport tool should be enabled and configured on NetApp storage systems to call home if a hardware failure or system misconfiguration occurs. For mission-critical environments, NetApp also recommends the SupportEdge Premium package, which provides access to operational expertise, extended support hours, and fast response times on parts replacement.
 
-*All- flash optimized personality on AFF A300 and AFF A700 controllers*
+*All-flash optimized personality on AFF A300 and AFF A700 controllers*
 
 For the AFF solution to function properly, the environment variable `bootarg.init.flash_optimized` must be set to `true` on both nodes in an HA pair of all-flash-optimized FAS80x0 systems. Platforms with the all-flash-optimized personality support only SSDs.
 

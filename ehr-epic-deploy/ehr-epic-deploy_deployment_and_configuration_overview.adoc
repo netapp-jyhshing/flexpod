@@ -18,7 +18,6 @@ summary: The NetApp storage FlexPod deployment guidance provided in this documen
 // 2021-05-07 11:34:58.119538
 //
 
-[.lead]
 The NetApp storage FlexPod deployment guidance provided in this document covers:
 
 * Environments that use ONTAP
@@ -38,7 +37,7 @@ This section describes the lab environment setup with infrastructure deployment 
 
 == Cabling diagram
 
-The figure below illustrates the 16Gb FC/40GbE topology diagram for an Epic deployment.
+The following figure illustrates the 16Gb FC/40GbE topology diagram for an Epic deployment.
 
 image:ehr-epic-deploy_image9.png[Error: Missing Graphic Image]
 

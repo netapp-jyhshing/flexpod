@@ -18,7 +18,6 @@ summary: Always use the Interoperability Matrix Tool (IMT) to validate that all 
 // 2021-05-07 11:34:58.137237
 //
 
-[.lead]
 Always use the http://mysupport.netapp.com/matrix/[Interoperability Matrix Tool (IMT)^] to validate that all versions of software and firmware are supported. The table below lists the infrastructure hardware and software components that were used in the testing.
 
 |===

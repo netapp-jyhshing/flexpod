@@ -5,7 +5,7 @@ keywords: flexpod, datacenter, ehr, deployment, epic, architecture, solution, be
 summary: This technical report is for customers who plan to deploy Epic on FlexPod systems. It provides a brief overview of the FlexPod architecture for Epic and covers the setup and installation of FlexPod to deploy Epic for healthcare.
 ---
 
-= FlexPod Datacenter for Epic EHR Deployment Guide
+= TR-4693: FlexPod Datacenter for Epic EHR Deployment Guide
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -18,9 +18,9 @@ summary: This technical report is for customers who plan to deploy Epic on FlexP
 // 2021-05-07 11:34:57.975723
 //
 
-Brian O’Mahony
-Ganesh Kamath
-Mike Brennan
+Brian O’Mahony, NetApp
+Ganesh Kamath, NetApp
+Mike Brennan, Cisco
 
 This technical report is for customers who plan to deploy Epic on FlexPod systems. It provides a brief overview of the FlexPod architecture for Epic and covers the setup and installation of FlexPod to deploy Epic for healthcare.
 
@@ -138,7 +138,7 @@ NetApp deduplication provides block-level deduplication in a FlexVol volume or d
 
 Deduplication works with a high degree of granularity and operates on the active file system of the FlexVol volume or data constituent. It is application transparent, and therefore it can be used to deduplicate data originating from any application that uses the NetApp system. Volume deduplication can be run as an inline process (starting in Data ONTAP 8.3.2) and/or as a background process that can be configured to run automatically, be scheduled, or run manually through the CLI, NetApp System Manager, or NetApp OnCommand Unified Manager.
 
-The figure below illustrates how NetApp deduplication works at the highest level.
+The following figure illustrates how NetApp deduplication works at the highest level.
 
 image:ehr-epic-deploy_image4.png[Error: Missing Graphic Image]
 
@@ -212,7 +212,7 @@ Your certified FlexPod reseller, with specific certifications in VMware Horizon 
 
 === Disaster recovery and shadow copies
 
-*Evolving to active- active dual data centers*
+*Evolving to active-active dual data centers*
 
 In Epic software environments, a single patient-centric database is deployed. Epic’s hardware requirements refer to the physical server hosting the primary Caché data server as the production database server. This server requires dedicated, high-performance storage for files belonging to the primary database instance. For HA, Epic supports the use of a failover database server that has access to the same files.
 
@@ -277,13 +277,13 @@ Epic cautions against expanding storage without considering storage hotspots. Fo
 
 Cisco focuses on three key elements to deliver the best data center infrastructure: simplification, security, and scalability. The Cisco UCS Manager software combined with platform modularity provides a simplified, secure, and scalable desktop virtualization platform.
 
-* *Simplified. *Cisco UCS provides a radical new approach to industry-standard computing and provides the core of the data center infrastructure for all workloads. Among the many features and benefits of Cisco UCS are the reduction in the number of servers needed, the reduction in the number of cables used per server, and the capability to rapidly deploy or re- provision servers through Cisco UCS service profiles. With fewer servers and cables to manage and with streamlined server and application workload provisioning, operations are significantly simplified. Scores of blade and rack servers can be provisioned in minutes with Cisco UCS Manager service profiles. Cisco UCS service profiles eliminate server integration run books and eliminate configuration drift. This approach accelerates the time to productivity for end users, improves business agility, and allows IT resources to be allocated to other tasks.
+* *Simplified.* Cisco UCS provides a radical new approach to industry-standard computing and provides the core of the data center infrastructure for all workloads. Among the many features and benefits of Cisco UCS are the reduction in the number of servers needed, the reduction in the number of cables used per server, and the capability to rapidly deploy or re- provision servers through Cisco UCS service profiles. With fewer servers and cables to manage and with streamlined server and application workload provisioning, operations are significantly simplified. Scores of blade and rack servers can be provisioned in minutes with Cisco UCS Manager service profiles. Cisco UCS service profiles eliminate server integration run books and eliminate configuration drift. This approach accelerates the time to productivity for end users, improves business agility, and allows IT resources to be allocated to other tasks.
 +
 Cisco UCS Manager (UCSM) automates many mundane, error-prone data center operations such as configuration and provisioning of server, network, and storage access infrastructure. In addition, Cisco UCS B-Series blade servers and C-Series rack servers with large memory footprints enable high application user density, which helps reduce server infrastructure requirements.
 +
 Simplification leads to faster, more successful Epic infrastructure deployment. Cisco and its technology partners such as VMware and Citrix and storage partners IBM, NetApp, and Pure Storage have developed integrated, validated architectures, including predefined converged architecture infrastructure packages such as FlexPod. Cisco virtualization solutions have been tested with VMware vSphere, Linux, Citrix XenDesktop, and XenApp.
 
-* *Secure. *Although VMs are inherently more secure than their physical predecessors, they introduce new security challenges. Mission-critical web and application servers using a common infrastructure such as virtual desktops are now at a higher risk for security threats. Inter–virtual machine traffic now poses an important security consideration that IT managers need to address, especially in dynamic environments in which VMs, using VMware vMotion, move across the server infrastructure.
+* *Secure.* Although VMs are inherently more secure than their physical predecessors, they introduce new security challenges. Mission-critical web and application servers using a common infrastructure such as virtual desktops are now at a higher risk for security threats. Inter–virtual machine traffic now poses an important security consideration that IT managers need to address, especially in dynamic environments in which VMs, using VMware vMotion, move across the server infrastructure.
 +
 Virtualization, therefore, significantly increases the need for virtual machine–level awareness of policy and security, especially given the dynamic and fluid nature of virtual machine mobility across an extended computing infrastructure. The ease with which new virtual desktops can proliferate magnifies the importance of a virtualization-aware network and security infrastructure. Cisco data center infrastructure (Cisco UCS, Cisco MDS, and Cisco Nexus family solutions) for desktop virtualization provides strong data center, network, and desktop security, with comprehensive security from the desktop to the hypervisor. Security is enhanced with segmentation of virtual desktops, virtual machine–aware policies and administration, and network security across the LAN and WAN infrastructure.
 

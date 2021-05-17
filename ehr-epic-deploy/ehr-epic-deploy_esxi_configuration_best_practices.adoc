@@ -18,11 +18,11 @@ summary: This document outlines best practices for ESXi configuration, which can
 // 2021-05-07 11:34:58.257223
 //
 
-[.lead]
-For the ESXi host- side configuration, see the https://community.intersystems.com/post/intersystems-data-platforms-and-performance-%E2%80%93-part-9-intersystems-iris-vmware-best-practice[InterSystems Best practices for VMware^]. Configure the VMware hosts as you would to run any enterprise database workload:
+
+For the ESXi host-side configuration, see the https://community.intersystems.com/post/intersystems-data-platforms-and-performance-%E2%80%93-part-9-intersystems-iris-vmware-best-practice[InterSystems Best practices for VMware^]. Configure the VMware hosts as you would to run any enterprise database workload:
 
 * Virtual Storage Console (VSC) for VMware vSphere checks and sets the ESXi host multipathing settings and HBA timeout settings that work best with NetApp storage systems. The values that VSC sets are based on rigorous internal testing by NetApp.
-* For the best storage performance, customers should consider using VMware vStorage APIs for Array Integration (VAAI)–capable storage hardware. The NetApp Plug- In for VAAI is a software library that integrates the VMware Virtual Disk Libraries that are installed on the ESXi host. The VMware VAAI package enables the offloading of certain tasks from the physical hosts to the storage array.
+* For the best storage performance, customers should consider using VMware vStorage APIs for Array Integration (VAAI)–capable storage hardware. The NetApp Plug-In for VAAI is a software library that integrates the VMware Virtual Disk Libraries that are installed on the ESXi host. The VMware VAAI package enables the offloading of certain tasks from the physical hosts to the storage array.
 +
 You can perform tasks such as thin provisioning and hardware acceleration at the array level to reduce the workload on the ESXi hosts. The copy offload feature and space reservation feature improve the performance of VSC operations. You can download the plug-in installation package and obtain the instructions for installing the plug-in from the NetApp Support site.
 

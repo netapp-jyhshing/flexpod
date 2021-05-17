@@ -5,7 +5,7 @@ keywords: summary, infrastructure, cisco, ucs, flexpod, datacenter
 summary: Industry trends indicate a vast data center transformation toward shared infrastructure and cloud computing. In addition, organizations seek a simple and effective solution for remote and branch offices, leveraging the technology with which they are familiar in their data center.
 ---
 
-= FlexPod Express with VMware vSphere 6.7 and NetApp AFF A220
+= NVA-1123-DEPLOY: FlexPod Express with VMware vSphere 6.7 and NetApp AFF A220 deployment guide
 
 :hardbreaks:
 :nofooter:
