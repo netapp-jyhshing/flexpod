@@ -23,7 +23,7 @@ FlexPod Express requires a combination of hardware and software components that 
 
 == Hardware requirements
 
-Regardless of the hypervisor chosen, all FlexPod Express configurations use the same hardware. Therefore, even if business requirements change,  you can use a different hypervisor on the same FlexPod Express hardware.
+Regardless of the hypervisor chosen, all FlexPod Express configurations use the same hardware. Therefore, even if business requirements change, you can use a different hypervisor on the same FlexPod Express hardware.
 
 The following table lists the hardware components that are required for this FlexPod Express configuration and to implement this solution. The hardware components that are used in any implementation of the solution can vary based on customer requirements.
 
@@ -64,7 +64,7 @@ The following table lists the software that is required for all VMware vSphere i
 
 [cols=2*,options="header",cols="50,50"]
 |===
-|Software  |Version
+|Software |Version
 
 |VMware vCenter Server Appliance
 |6.7U2
