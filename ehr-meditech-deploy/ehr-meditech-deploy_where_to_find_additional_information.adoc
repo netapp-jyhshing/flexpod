@@ -37,7 +37,7 @@ To learn more about the information that is described in this document, review t
 == ONTAP documentation
 
 * https://www.netapp.com/us/documentation/index.aspx[NetApp Product Documentation^]
-* Virtual Storage Console (VSC) for vSphere documentation
+* https://mysupport.netapp.com/documentation/productlibrary/index.html?productID=30048[Virtual Storage Console (VSC) for vSphere documentation]
 * http://docs.netapp.com/ontap-9/index.jsp[ONTAP 9 Documentation Center^]:
 ** http://docs.netapp.com/ontap-9/topic/com.netapp.doc.exp-fc-esx-cpg/home.html[FC Express Guide for ESXi^]
 * https://mysupport.netapp.com/documentation/docweb/index.html?productID=62579[All ONTAP 9.3 Documentation^]:
@@ -62,7 +62,7 @@ To learn more about the information that is described in this document, review t
 
 * https://www.cisco.com/c/en/us/products/servers-unified-computing/index.html[Cisco UCS Servers Overview^]
 * https://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-b-series-blade-servers/index.html[Cisco UCS Blade Servers Overview^]
-* Cisco UCS B200 M5 Datasheet
+* https://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-b-series-blade-servers/index.html[Cisco UCS B200 M5 Datasheet]
 * https://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-manager/index.html[Cisco UCS Manager Overview^]
 * https://software.cisco.com/download/home/283612660/type/283655658/release/3.2%25283a%2529[Cisco UCS Manager 3.2(3a) Infrastructure Bundle^] (requires Cisco.com authorization)
 * https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-736967.html[Cisco Nexus 9300 Platform Switches^]
