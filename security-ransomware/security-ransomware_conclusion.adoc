@@ -1,0 +1,28 @@
+---
+sidebar: sidebar
+permalink: security-ransomware/security-ransomware_conclusion.html
+keywords: ransomeware, attack, data, backup, recovery, business, planning
+summary: The authors recommend not paying a ransom in the event of an attack because doing so reinforces the attacker’s faith in their business model. Data backup and restore operations play an important part of ransomware recovery. Therefore, they must be included as an integral part of business planning.
+---
+
+= Conclusion
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./../media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2021-05-20 14:17:51.441456
+//
+
+[.lead]
+Ransomware is a product of organized crime, and the attackers do not operate with ethics. They can refrain from providing the key for decryption even after receiving the ransom. The victim not only loses their data but also a substantial amount of money and will face consequences associated with the loss of production data.
+
+According to a https://www.forbes.com/sites/leemathews/2018/03/09/why-you-should-never-pay-a-ransomware-ransom/[Forbes article^], only 19% of ransomware victims get their data back after paying the ransom. Therefore, the authors recommend not paying a ransom in the event of an attack because doing so reinforces the attacker’s faith in their business model.
+
+Data backup and restore operations play an important part of ransomware recovery. Therefore, they must be included as an integral part of business planning. The implementation of these operations should be budgeted for so that there is no compromise on recovery capabilities in the event of an attack.
+
+The key is to select the correct technology partner in this journey, and FlexPod provides most of the needed capabilities natively with no additional cost in an all-flash FAS system.

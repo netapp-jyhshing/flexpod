@@ -1,0 +1,175 @@
+---
+sidebar: sidebar
+permalink: security-ransomware/security-ransomware_protect_and_recover_data_on_flexpod.html
+keywords: testbed, ransomeware, attack, vm, snapshot, copy, wannacry, detection, remediation, cifs
+summary: This section describes how an end user’s data can be recovered in the event of an attack and how attacks can be prevented by using a FlexPod system.
+---
+
+= Protect and Recover Data on FlexPod
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./../media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2021-05-20 14:17:51.426666
+//
+
+[.lead]
+This section describes how an end user’s data can be recovered in the event of an attack and how attacks can be prevented by using a FlexPod system.
+
+== Testbed Overview
+
+To showcase FlexPod detection, remediation, and prevention, a testbed was built based on the guidelines that are specified in the latest platform CVD available at the time this document was authored: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_datacenter_vmware_netappaffa.html[FlexPod Datacenter with VMware vSphere 6.7 U1, Cisco UCS 4th Generation, and NetApp AFF A-Series CVD^].
+
+A Windows 2016 VM, which provided a CIFS share from NetApp ONTAP software, was deployed in the VMware vSphere infrastructure. Then NetApp FPolicy was configured on the CIFS share to prevent the execution of files with certain extension types. NetApp SnapCenter software was also deployed to manage the Snapshot copies of the VMs in the infrastructure to provide application- consistent Snapshot copies.
+
+== State of VM and its Files Prior to an Attack
+
+This section provides shows the state of the files prior to an attack on the VM and the CIFS share that was mapped to it.
+
+The Documents folder of the VM had a set of PDF files that have not yet been encrypted by the WannaCry malware.
+
+image:security-ransomware_image3.png[Error: Missing Graphic Image]
+
+The following screenshot shows the CIFS share that was mapped to the VM.
+
+image:security-ransomware_image4.png[Error: Missing Graphic Image]
+
+The following screenshot shows the files on the CIFS share `fpolicy_share` that have not yet been encrypted by the WannaCry malware.
+
+image:security-ransomware_image5.png[Error: Missing Graphic Image]
+
+== Deduplication and Snapshot Information Before an Attack
+
+The storage efficiency details and size of the Snapshot copy prior to an attack are indicated and used as a reference during the detection phase.
+
+Storage savings of 19% were achieved with deduplication on the volume hosting the VM.
+
+image:security-ransomware_image6.png[Error: Missing Graphic Image]
+
+Storage savings of 45% were achieved with deduplication on the CIFS share `fpolicy_share`.
+
+image:security-ransomware_image7.png[Error: Missing Graphic Image]
+
+A Snapshot copy size of 456KB was observed for the volume hosting the VM.
+
+image:security-ransomware_image8.png[Error: Missing Graphic Image]
+
+A Snapshot copy size of 160KB was observed for the CIFS share `fpolicy_share`.
+
+image:security-ransomware_image9.png[Error: Missing Graphic Image]
+
+== WannaCry Infection on VM and CIFS Share
+
+In this section, we show how the WannaCry malware was introduced into the FlexPod environment and the subsequent changes to the system that were observed.
+
+The following steps demonstrate how the WannaCry malware binary was introduced into the VM:
+
+. The secured malware was extracted.
++
+image:security-ransomware_image10.png[Error: Missing Graphic Image]
+
+. The binary was executed.
++
+image:security-ransomware_image11.png[Error: Missing Graphic Image]
+
+=== Case 1: WannaCry Encrypts the File System Within the VM and Mapped CIFS Share
+
+The local file system and the mapped CIFS share were encrypted by the WannaCry malware.
+
+Malware starts to encrypt files with WNCRY extensions.
+
+image:security-ransomware_image12.png[Error: Missing Graphic Image]
+
+The malware encrypts all the files in the local VM and the mapped share.
+
+image:security-ransomware_image13.png[Error: Missing Graphic Image]
+
+==== Detection
+
+From the moment the malware started to encrypt the files, it triggered an exponential increase in the size of the Snapshot copies and an exponential decrease in the storage efficiency percentage.
+
+We detected a dramatic increase in the Snapshot size to 820.98MB for the volume hosting the CIFS share during the attack.
+
+image:security-ransomware_image14.png[Error: Missing Graphic Image]
+
+We detected an increase in the Snapshot copy size to 404.3MB for the volume hosting the VM.
+
+image:security-ransomware_image15.png[Error: Missing Graphic Image]
+
+The storage efficiency for the volume hosting the CIFS share decreased to 34%.
+
+image:security-ransomware_image16.png[Error: Missing Graphic Image]
+
+==== Remediation
+
+Restore the VM and mapped CIFS share by using a clean Snapshot copy create prior to the attack.
+
+*Restore VM*
+
+To restore the VM, complete the following steps:
+
+. Use the Snapshot copy you created with SnapCenter to restore the VM.
++
+image:security-ransomware_image17.png[Error: Missing Graphic Image]
+
+. Select the desired VMware- consistent Snapshot copy for restore.
++
+image:security-ransomware_image18.png[Error: Missing Graphic Image]
+
+. The entire VM is restored and restarted.
++
+image:security-ransomware_image19.png[Error: Missing Graphic Image]
+
+. Click Finish to start the restore process.
++
+image:security-ransomware_image20.png[Error: Missing Graphic Image]
+
+. The VM and its files are restored.
++
+image:security-ransomware_image21.png[Error: Missing Graphic Image]
+
+*Restore CIFS Share*
+
+To restore the CIFS share, complete the following steps:
+
+. Use the Snapshot copy of the volume taken prior to the attack to restore the share.
++
+image:security-ransomware_image22.png[Error: Missing Graphic Image]
+
+. Click OK to initiate the restore operation.
++
+image:security-ransomware_image23.png[Error: Missing Graphic Image]
+
+. View the CIFS share after the restore.
++
+image:security-ransomware_image24.png[Error: Missing Graphic Image]
+
+=== Case 2: WannaCry Encrypts File System Within the VM and Tries to Encrypt the Mapped CIFS Share that is Protected Through FPolicy
+
+==== Prevention
+
+*Configure FPolicy*
+
+To configure FPolicy on the CIFS share, run the following commands on the ONTAP cluster:
+
+....
+vserver fpolicy policy event create -vserver infra_svm -event-name Ransomware_event -protocol cifs -file-operations create,rename,write,open
+vserver fpolicy policy create -vserver infra_svm -policy-name Ransomware_policy -events Ransomware_event -engine native
+vserver fpolicy policy scope create -vserver infra_svm -policy-name Ransomware_policy -shares-to-include fpolicy_share -file-extensions-to-include WNCRY,Locky,ad4c
+vserver fpolicy enable -vserver infra_svm -policy-name Ransomware_policy -sequence-number 1
+....
+
+With this policy, files with extensions WNCRY, Locky, and ad4c are not allowed to perform the file operations create, rename, write, or open.
+
+View the status of files prior to attack—they are unencrypted and in a clean system.
+
+image:security-ransomware_image25.png[Error: Missing Graphic Image]
+
+The files on the VM are encrypted. The WannaCry malware tries to encrypt the files in the CIFS share, but FPolicy prevents it from affecting the files.
+
+image:security-ransomware_image26.png[Error: Missing Graphic Image]
