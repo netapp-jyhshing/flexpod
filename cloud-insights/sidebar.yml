@@ -2,4 +2,18 @@ section: cloud-insights
 title: NetApp Cloud Insights for FlexPod
 entries:
   - title: NetApp Cloud Insights for FlexPod
-    url: https://www.netapp.com/pdf.html?item=/media/20544-tr-4868.pdf
+    url: /cloud-insights/cloud-insights_netapp_cloud_insights_for_flexpod.html
+  - title: Use Cases
+    url: /cloud-insights/cloud-insights_use_cases.html
+  - title: Architecture
+    url: /cloud-insights/cloud-insights_architecture.html
+  - title: Design Considerations
+    url: /cloud-insights/cloud-insights_design_considerations.html
+  - title: Deploy Cloud Insights for FlexPod
+    url: /cloud-insights/cloud-insights_deploy_cloud_insights_for_flexpod.html
+  - title: Use Cases
+    url: /cloud-insights/cloud-insights_use_cases_01.html
+  - title: Videos and Demos
+    url: /cloud-insights/cloud-insights_videos_and_demos.html
+  - title: Additional Information
+    url: /cloud-insights/cloud-insights_additional_information.html

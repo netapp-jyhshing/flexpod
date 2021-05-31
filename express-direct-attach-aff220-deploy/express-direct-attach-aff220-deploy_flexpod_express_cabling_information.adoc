@@ -1,0 +1,170 @@
+---
+sidebar: sidebar
+permalink: express-direct-attach-aff220-deploy/express-direct-attach-aff220-deploy_flexpod_express_cabling_information.html
+keywords: cabling, express, information, cisco, nexus, switch, aff, storage, controller, ucs, fabric
+summary: The reference validation cabling is documented in the following tables.
+---
+
+= FlexPod Express Cabling Information
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./../media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2021-05-20 10:50:15.445875
+//
+
+[.lead]
+The reference validation cabling is documented in the following tables.
+
+The table below lists cabling information for Cisco Nexus switch 31108PCV A.
+
+|===
+|Local Device |Local Port |Remote Device |Remote Port
+
+.6+|Cisco Nexus switch 31108PCV A
+|Eth1/1
+|NetApp AFF A220 storage controller A
+|e0M
+|Eth1/2
+|Cisco UCS-mini FI-A
+|mgmt0
+|Eth1/3
+|Cisco UCS-mini FI-A
+|Eth1/1
+|Eth 1/4
+|Cisco UCS-mini FI-B
+|Eth1/1
+|Eth 1/13
+|Cisco NX 31108PCV B
+|Eth 1/13
+|Eth 1/14
+|Cisco NX 31108PCV B
+|Eth 1/14
+|===
+
+The table below lists the cabling information for Cisco Nexus switch 31108PCV B.
+
+|===
+|Local Device |Local Port |Remote Device |Remote Port
+
+.6+|Cisco Nexus switch 31108PCV B
+|Eth1/1
+|NetApp AFF A220 storage controller B
+|e0M
+|Eth1/2
+|Cisco UCS-mini FI-B
+|mgmt0
+|Eth1/3
+|Cisco UCS-mini FI-A
+|Eth1/2
+|Eth 1/4
+|Cisco UCS-mini FI-B
+|Eth1/2
+|Eth 1/13
+|Cisco NX 31108PCV A
+|Eth 1/13
+|Eth 1/14
+|Cisco NX 31108PCV A
+|Eth 1/14
+|===
+
+The table below lists cabling information for NetApp AFF A220 storage controller A.
+
+|===
+|Local Device |Local Port |Remote Device |Remote Port
+
+.5+|NetApp AFF A220 storage controller A
+
+|e0a
+|NetApp AFF A220 storage controller B
+|e0a
+|e0b
+|NetApp AFF A220 storage controller B
+|e0b
+|e0e
+|Cisco UCS-mini FI-A
+|Eth1/3
+|e0f
+|Cisco UCS-mini FI-B
+|Eth1/3
+|e0M
+|Cisco NX 31108PCV A
+|Eth1/1
+|===
+
+The table below lists cabling information for NetApp AFF A220 storage controller B.
+
+|===
+|Local Device |Local Port |Remote Device |Remote Port
+
+.5+|NetApp AFF A220 storage controller B
+
+|e0a
+|NetApp AFF A220 storage controller B
+|e0a
+|e0b
+|NetApp AFF A220 storage controller B
+|e0b
+|e0e
+|Cisco UCS-mini FI-A
+|Eth1/4
+|e0f
+|Cisco UCS-mini FI-B
+|Eth1/4
+|e0M
+|Cisco NX 31108PCV B
+|Eth1/1
+|===
+
+The table below lists cabling information for Cisco UCS Fabric Interconnect A.
+
+|===
+|Local Device |Local Port |Remote Device |Remote Port
+
+.5+|Cisco UCS Fabric Interconnect A
+
+|Eth1/1
+|Cisco NX 31108PCV A
+|Eth1/3
+|Eth1/2
+|Cisco NX 31108PCV B
+|Eth1/3
+|Eth1/3
+|NetApp AFF A220 storage controller A
+|e0e
+|Eth1/4
+|NetApp AFF A220 storage controller B
+|e0e
+|mgmt0
+|Cisco NX 31108PCV A
+|Eth1/2
+|===
+
+The table below lists cabling information for Cisco UCS Fabric Interconnect B.
+
+|===
+|Local Device |Local Port |Remote Device |Remote Port
+
+.5+|Cisco UCS Fabric Interconnect B
+
+|Eth1/1
+|Cisco NX 31108PCV A
+|Eth1/4
+|Eth1/2
+|Cisco NX 31108PCV B
+|Eth1/4
+|Eth1/3
+|NetApp AFF A220 storage controller A
+|e0f
+|Eth1/4
+|NetApp AFF A220 storage controller B
+|e0f
+|mgmt0
+|Cisco NX 31108PCV B
+|Eth1/2
+|===
