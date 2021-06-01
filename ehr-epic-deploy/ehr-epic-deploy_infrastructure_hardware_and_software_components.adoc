@@ -18,7 +18,7 @@ summary: Always use the Interoperability Matrix Tool (IMT) to validate that all 
 // 2021-05-07 11:34:58.137237
 //
 
-Always use the http://mysupport.netapp.com/matrix/[Interoperability Matrix Tool (IMT)^] to validate that all versions of software and firmware are supported. The table below lists the infrastructure hardware and software components that were used in the testing.
+Always use the http://mysupport.netapp.com/matrix/[Interoperability Matrix Tool (IMT)^] to validate that all versions of software and firmware are supported. The following table lists the infrastructure hardware and software components that were used in testing.
 
 |===
 |Layer |Product family |Version or release |Details
@@ -91,4 +91,4 @@ VMware ESXi eNIC Ethernet driver: 1.0.6.0
 |
 |===
 
-link:ehr-epic-deploy_base_infrastructure_configuration.html[Next: Base Infrastructure Configuration]
+link:ehr-epic-deploy_base_infrastructure_configuration.html[Next: Base Infrastructure Configuration.]

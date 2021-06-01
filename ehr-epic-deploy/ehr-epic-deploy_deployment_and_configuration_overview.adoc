@@ -41,4 +41,4 @@ The following figure illustrates the 16Gb FC/40GbE topology diagram for an Epic 
 
 image:ehr-epic-deploy_image9.png[Error: Missing Graphic Image]
 
-link:ehr-epic-deploy_infrastructure_hardware_and_software_components.html[Next: Infrastructure Hardware and Software Components]
+link:ehr-epic-deploy_infrastructure_hardware_and_software_components.html[Next: Infrastructure Hardware and Software Components.]
