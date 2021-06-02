@@ -1,5 +1,17 @@
 section: ehr-epic-sizing
 title: FlexPod Datacenter for Epic EHR directional sizing guide
 entries:
-  - title: FlexPod Datacenter for Epic EHR directional sizing guide
-    url: https://www.netapp.com/pdf.html?item=/media/16440-tr-4707.pdf
+  - title: FlexPod for Epic Directional Sizing Guide
+    url: /ehr-epic-sizing/ehr-epic-sizing_introduction.html
+    type: solutions
+  - title: Reference architecture
+    url: /ehr-epic-sizing/ehr-epic-sizing_netapp_storage_reference_architectures_for_epic.html
+    entries:
+      - title: Cisco UCS reference architecture for Epic
+        url: /ehr-epic-sizing/ehr-epic-sizing_cisco_ucs_reference_architecture_for_epic.html
+  - title: Technical specifications for small, medium, and large Architectures
+    url: /ehr-epic-sizing/ehr-epic-sizing_technical_specifications_for_small,_medium,_and_large_architectures.html
+  - title: Additional information
+    url: /ehr-epic-sizing/ehr-epic-sizing_additional_information.html
+  - title: Acknowledgements
+    url: /ehr-epic-sizing/ehr-epic-sizing_acknowledgements.html

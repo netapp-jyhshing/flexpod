@@ -2,4 +2,17 @@ section: express-direct-attach-aff220-deploy
 title: FlexPod Express with VMware vSphere 6.7U1 and NetApp AFF A220 with Direct-Attached IP-Based Storage
 entries:
   - title: FlexPod Express with VMware vSphere 6.7U1 and NetApp AFF A220 with Direct-Attached IP-Based Storage
-    url: https://www.netapp.com/pdf.html?item=/media/12439-nva1131deploypdf.pdf
+    url: /express-direct-attach-aff220-deploy/express-direct-attach-aff220-deploy_program_summary.html
+    type: solutions
+  - title: Solution Overview
+    url: /express-direct-attach-aff220-deploy/express-direct-attach-aff220-deploy_solution_overview.html
+  - title: Technology Requirements
+    url: /express-direct-attach-aff220-deploy/express-direct-attach-aff220-deploy_technology_requirements.html
+  - title: FlexPod Express Cabling Information
+    url: /express-direct-attach-aff220-deploy/express-direct-attach-aff220-deploy_flexpod_express_cabling_information.html
+  - title: Deployment Procedures
+    url: /express-direct-attach-aff220-deploy/express-direct-attach-aff220-deploy_deployment_procedures.html
+  - title: Conclusion
+    url: /express-direct-attach-aff220-deploy/express-direct-attach-aff220-deploy_conclusion.html
+  - title: Additional Information
+    url: /express-direct-attach-aff220-deploy/express-direct-attach-aff220-deploy_additional_information.html

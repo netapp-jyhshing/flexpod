@@ -1,5 +1,37 @@
 section: ehr-meditech-deploy
 title: FlexPod Datacenter for MEDITECH deployment guide
 entries:
-  - title: FlexPod Datacenter for MEDITECH deployment guide
-    url: https://www.netapp.com/pdf.html?item=/media/12430-tr4753pdf.pdf
+  - title: FlexPod Datacenter for MEDITECH Deployment Guide
+    url: /ehr-meditech-deploy/ehr-meditech-deploy_overview.html
+    type: solutions
+  - title: Design
+    url: /ehr-meditech-deploy/ehr-meditech-deploy_design.html
+  - title: Deployment and configuration
+    url: /ehr-meditech-deploy/ehr-meditech-deploy_deployment_and_configuration_overview.html
+    entries:
+      - title: Base infrastructure configuration
+        url: /ehr-meditech-deploy/ehr-meditech-deploy_base_infrastructure_configuration.html
+      - title: Cisco UCS blade server and switch configuration
+        url: /ehr-meditech-deploy/ehr-meditech-deploy_cisco_ucs_blade_server_and_switch_configuration.html
+      - title: ESXi configuration best practices
+        url: /ehr-meditech-deploy/ehr-meditech-deploy_esxi_configuration_best_practices.html
+      - title: NetApp configuration
+        url: /ehr-meditech-deploy/ehr-meditech-deploy_netapp_configuration.html
+      - title: Aggregate configuration
+        url: /ehr-meditech-deploy/ehr-meditech-deploy_aggregate_configuration.html
+      - title: Storage virtual machine configuration
+        url: /ehr-meditech-deploy/ehr-meditech-deploy_storage_virtual_machine_configuration.html
+      - title: Volume configuration
+        url: /ehr-meditech-deploy/ehr-meditech-deploy_volume_configuration.html
+      - title: LUN configuration
+        url: /ehr-meditech-deploy/ehr-meditech-deploy_lun_configuration.html
+      - title: Initiator group configuration
+        url: /ehr-meditech-deploy/ehr-meditech-deploy_initiator_group_configuration.html
+      - title: LUN mappings
+        url: /ehr-meditech-deploy/ehr-meditech-deploy_lun_mappings.html
+  - title: MEDITECH modules and components
+    url: /ehr-meditech-deploy/ehr-meditech-deploy_meditech_modules_and_components.html
+  - title: Acknowledgments
+    url: /ehr-meditech-deploy/ehr-meditech-deploy_acknowledgments.html
+  - title: Where to find additional information
+    url: /ehr-meditech-deploy/ehr-meditech-deploy_where_to_find_additional_information.html

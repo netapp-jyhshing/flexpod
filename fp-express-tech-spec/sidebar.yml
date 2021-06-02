@@ -1,5 +1,38 @@
 section: fp-express-tech-spec
 title: FlexPod Express technical specifications
 entries:
-  - title: FlexPod Express technical specifications
-    url: https://www.netapp.com/pdf.html?item=/media/12425-tr4293pdf.pdf
+  - title: FlexPod Express Technical Specifications
+    url: /fp-express-tech-spec/fp-express-tech-spec_overview.html
+    type: solutions
+  - title: FlexPod Platforms
+    url: /fp-express-tech-spec/fp-express-tech-spec_flexpod_platforms.html
+  - title: FlexPod Rules
+    url: /fp-express-tech-spec/fp-express-tech-spec_flexpod_rules.html
+  - title: Supported Versus Validated FlexPod Configurations
+    url: /fp-express-tech-spec/fp-express-tech-spec_supported_versus_validated_flexpod_configurations.html
+  - title: Storage Software
+    url: /fp-express-tech-spec/fp-express-tech-spec_storage_software.html
+  - title: Minimum Hardware Requirements
+    url: /fp-express-tech-spec/fp-express-tech-spec_minimum_hardware_requirements.html
+  - title: Minimum Software Requirements
+    url: /fp-express-tech-spec/fp-express-tech-spec_minimum_software_requirements.html
+  - title: Connectivity Requirements
+    url: /fp-express-tech-spec/fp-express-tech-spec_connectivity_requirements.html
+  - title: Other Requirements
+    url: /fp-express-tech-spec/fp-express-tech-spec_other_requirements.html
+  - title: Optional Features
+    url: /fp-express-tech-spec/fp-express-tech-spec__optional_features.html
+  - title: Cisco Components
+    url: /fp-express-tech-spec/fp-express-tech-spec__cisco_components.html
+  - title: NetApp Components
+    url: /fp-express-tech-spec/fp-express-tech-spec__netapp_components.html
+  - title: Power and Cabling Requirements
+    url: /fp-express-tech-spec/fp-express-tech-spec__power_and_cabling_requirements.html
+  - title: Technical Specifications and References
+    url: /fp-express-tech-spec/fp-express-tech-spec__technical_specifications_and_references.html
+  - title: Previous Architectures and Equipment
+    url: /fp-express-tech-spec/fp-express-tech-spec__previous_architectures_and_equipment.html
+  - title: Legacy Equipment
+    url: /fp-express-tech-spec/fp-express-tech-spec_legacy_equipment.html
+  - title: Additional Information
+    url: /fp-express-tech-spec/fp-express-tech-spec_additional_information.html
