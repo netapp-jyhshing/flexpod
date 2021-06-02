@@ -5,7 +5,7 @@ keywords: use, cases, active, iq, integration, dashboards, troubleshooting, stor
 summary: With Cloud Insights set up and configured to monitor your FlexPod Datacenter solution, we can explore some of the tasks that you can perform on the dashboard to assess and monitor your environment. In this section, we highlight five primary use cases for Cloud Insights.
 ---
 
-= Use Cases
+= Use cases
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -18,7 +18,6 @@ summary: With Cloud Insights set up and configured to monitor your FlexPod Datac
 // 2021-05-20 15:58:38.827428
 //
 
-[.lead]
 With Cloud Insights set up and configured to monitor your FlexPod Datacenter solution, we can explore some of the tasks that you can perform on the dashboard to assess and monitor your environment. In this section, we highlight five primary use cases for Cloud Insights:
 
 * Active IQ integration
@@ -27,11 +26,11 @@ With Cloud Insights set up and configured to monitor your FlexPod Datacenter sol
 * Advanced troubleshooting
 * Storage optimization
 
-== Active IQ Integration
+== Active IQ integration
 
 Cloud Insights is fully integrated into the Active IQ storage monitoring platform. An ONTAP system, deployed as a part of a FlexPod Datacenter solution, is automatically configured to send information back to NetApp through the AutoSupport function, which is built into each system. These reports are generated on a scheduled basis, or dynamically whenever a fault is detected in the system. The data communicated through AutoSupport is aggregated and displayed in easily accessible dashboards under the Active IQ menu in Cloud Insights.
 
-=== Access Active IQ Information Through the Cloud Insights Dashboard
+=== Access Active IQ information through the Cloud Insights dashboard
 
 To access the Active IQ information through the Cloud Insights dashboard, complete the following steps:
 
@@ -67,11 +66,11 @@ image:cloud-insights_image26.png[Error: Missing Graphic Image]
 +
 image:cloud-insights_image27.png[Error: Missing Graphic Image]
 
-=== Explore Real-time Dashboards
+=== Explore real-time dashboards
 
 Cloud Insights can display real-time dashboards of the information that has been polled from the ONTAP storage system deployed in a FlexPod Datacenter solution. The Cloud Insights Acquisition Unit collects data in regular intervals and populates the default storage system dashboard with the information collected.
 
-==== Access Real-Time Graphs Through the Cloud Insights Dashboard
+==== Access real-time graphs through the Cloud Insights dashboard
 
 From the storage system dashboard, you can see the last time that the Data Collector updated the information. An example of this is shown in the figure below.
 
@@ -85,11 +84,11 @@ By default, the graphs show information from the last three hours, but you can s
 
 image:cloud-insights_image30.png[Error: Missing Graphic Image]
 
-=== Create Custom Dashboards
+=== Create custom dashboards
 
 In addition to making use of the default dashboards that display system-wide information, you can use Cloud Insights to create fully customized dashboards that enable you to focus on resource use for specific storage volumes in the FlexPod Datacenter solution, and thus the applications deployed in the converged infrastructure that depend on those volumes to run effectively. Doing so can help you to create a better visualization of specific applications and the resources they consume in the data center environment.
 
-==== Create a Customized Dashboard to Assess Storage Resources
+==== Create a customized dashboard to assess storage resources
 
 To create a customized dashboard to assess storage resources, complete the following steps:
 
@@ -123,10 +122,10 @@ After saving the custom widget, the browser returns to the New Dashboard page wh
 +
 image:cloud-insights_image35.png[Error: Missing Graphic Image]
 
-=== Advanced Troubleshooting
+=== Advanced troubleshooting
 
 Cloud Insights enables advanced troubleshooting methods to be applied to any storage environment in a FlexPod Datacenter converged infrastructure. Using components of each of the features mentioned above: Active IQ integration, default dashboards with real-time statistics, and customized dashboards, issues that might arise are detected early and solved rapidly. Using the list of risks in Active IQ, a customer can find reported configuration errors that could lead to issue or discover bugs that have been reported and patched versions of code that can remedy them. Observing the real-time dashboards on the Cloud Insights home page can help to discover patterns in system performance that could be an early indicator of a problem on the rise and help to resolve it expediently. Lastly, being able to create customized dashboards enables customers to focus on the most important assets in their infrastructure and monitor those directly to ensure that they can meet their business continuity objectives.
 
-=== Storage Optimization
+=== Storage optimization
 
 In addition to troubleshooting, it is possible to use the data collected by Cloud Insights to optimize the ONTAP storage system deployed in a FlexPod Datacenter converged infrastructure solution. If a volume shows a high latency, perhaps because several VMs with high performance demands are sharing the same datastore, that information is displayed on the Cloud Insights dashboard. With this information, a storage administrator can choose to migrate one or more VMs either to other volumes, migrate storage volumes between tiers of aggregates, or between nodes in the ONTAP storage system, resulting in a performance optimized environment. The information gleaned from the Active IQ integration with Cloud Insights can highlight configuration issues that lead to poorer than expected performance, and provide the recommended corrective action that if implemented, can remediate any issues, and ensure an optimally tuned storage system.

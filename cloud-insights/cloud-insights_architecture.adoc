@@ -18,10 +18,9 @@ summary: In this section, we review the architecture of a FlexPod Datacenter con
 // 2021-05-20 15:58:38.805820
 //
 
-[.lead]
 In this section, we review the architecture of a FlexPod Datacenter converged infrastructure, including a NetApp AFF A800 system that is monitored by Cloud Insights.
 
-== Solution Technology
+== Solution technology
 
 A FlexPod Datacenter solution consists of the following minimum components to provide a highly available, easily scalable, validated, and supported converged infrastructure environment.
 
@@ -35,10 +34,10 @@ Or
 
 * Two Cisco UCS C-Series rackmount servers
 
-For Cloud Insights to collect data, an organization must deploy an Acquisition Unit as a virtual or physical machine either within their FlexPod Datacenter environment, or in a location where it can contact the components from which it is collecting data. You can install the Acquisition Unit software on a system running several supported Windows or Linux operating systems. The table below lists solution components for this software.
+For Cloud Insights to collect data, an organization must deploy an Acquisition Unit as a virtual or physical machine either within their FlexPod Datacenter environment, or in a location where it can contact the components from which it is collecting data. You can install the Acquisition Unit software on a system running several supported Windows or Linux operating systems. The following table lists solution components for this software.
 
 |===
-|Operating System |Version
+|Operating system |Version
 
 |Microsoft Windows
 |10
@@ -56,15 +55,15 @@ For Cloud Insights to collect data, an organization must deploy an Acquisition U
 |18.04 LTS
 |===
 
-== Architectural Diagram
+== Architectural diagram
 
-The figure below shows the solution architecture.
+The following figure shows the solution architecture.
 
 image:cloud-insights_image2.png[Error: Missing Graphic Image]
 
-== Hardware Requirements
+== Hardware requirements
 
-The table below lists the hardware components that are required to implement the solution. The hardware components that are used in any particular implementation of the solution might vary based on customer requirements.
+The following table lists the hardware components that are required to implement the solution. The hardware components that are used in any particular implementation of the solution might vary based on customer requirements.
 
 |===
 |Hardware |Quantity
@@ -83,9 +82,9 @@ The table below lists the hardware components that are required to implement the
 |2
 |===
 
-== Software Requirements
+== Software requirements
 
-The table below lists the software components that are required to implement the solution. The software components that are used in any particular implementation of the solution might vary based on customer requirements.
+The following table lists the software components that are required to implement the solution. The software components that are used in any particular implementation of the solution might vary based on customer requirements.
 
 |===
 |Software |Version
@@ -104,7 +103,7 @@ The table below lists the software components that are required to implement the
 |6.7U3
 |===
 
-== Use Case Details
+== Use case details
 
 This solution applies to the following use cases:
 

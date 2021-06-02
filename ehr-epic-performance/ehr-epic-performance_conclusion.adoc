@@ -18,7 +18,6 @@ summary: By 2020, all Epic customers must be on flash storage. NetApp ONTAP was 
 // 2021-05-20 13:41:30.117431
 //
 
-[.lead]
 By 2020, all Epic customers must be on flash storage. NetApp ONTAP was the first all- flash array to get a high- comfort rating from Epic, and it is listed under Enterprise Storage Arrays. All NetApp platforms that run a GA version of ONTAP are high comfort.
 
 Epic requires that critical workloads like Production, Report, and Clarity are physically separated on storage allocations called pools. NetApp provides multiple pools of storage in a single cluster with each node and offers a simplified single cluster and single OS for the entire Epic solution. ONTAP supports all protocols for NAS and SAN, with mixed tiers of storage for SSD, HDD, and cloud.

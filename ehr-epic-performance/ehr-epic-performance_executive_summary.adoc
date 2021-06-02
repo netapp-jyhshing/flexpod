@@ -18,7 +18,6 @@ summary: To showcase the storage efficiency and performance of NetApp’s All Fl
 // 2021-05-20 13:41:30.095471
 //
 
-[.lead]
 To showcase the storage efficiency and performance of NetApp’s All Flash FAS platform, NetApp performed a study to measure Epic EHR performance on AFF A300 and AFF A700 systems. NetApp measured the data throughput, peak IOPS, and average latency of an AFF A300 running ONTAP 9.5 and an AFF A700 storage controller running ONTAP 9.4, each running an Epic EHR workload. In a manner similar to SPC-3 testing, all inline storage efficiency features were enabled.
 
 We ran the Epic GenIO workload generator on an AFF A300 cluster that contained a total of twenty-four 3.8TB SSDs and on an AFF A700 cluster that contained a total of forty-eight 3.8TB SSDs. We tested our cluster at a range of load points that drove the storage to peak CPU utilization. At each load point, we collected information about the storage IOPS and latency.

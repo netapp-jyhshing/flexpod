@@ -5,7 +5,7 @@ keywords: flexpod, epic, performance, testing, healthcare, workloads, hardware, 
 summary: The objective of this report is to highlight the performance of FlexPod with NetApp All Flash A300 and A700 storage systems with Epic Healthcare workloads.
 ---
 
-= FlexPod for Epic Performance Testing
+= TR-4784: FlexPod for Epic Performance Testing
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -28,7 +28,7 @@ Brandon Agee
 
 The objective of this report is to highlight the performance of FlexPod with NetApp All Flash A300 and A700 storage systems with Epic Healthcare workloads.
 
-=== Epic Hardware Configuration Guide
+=== Epic Hardware configuration guide
 
 For acceptable end-user performance, Epic production and disaster recovery operational database (ODB) target- read and target- write time requirements are as follows:
 
@@ -43,7 +43,7 @@ For acceptable end-user performance, Epic production and disaster recovery opera
 [NOTE]
 These requirements change with time. Epic prepares a customer- specific Epic Hardware Configuration Guide (HCG). Refer to your HCG for details on requirements.
 
-== Overall Solution Benefits
+== Overall solution benefits
 
 By running an Epic environment on a FlexPod architectural foundation, healthcare organizations can see an improvement in staff productivity and a decrease in capital and operating expenses. FlexPod Datacenter with Epic delivers several benefits specific to the healthcare industry:
 
@@ -59,7 +59,7 @@ By running an Epic environment on a FlexPod architectural foundation, healthcare
 * *Productivity.* Quickly deploy and scale this solution for optimal clinician end-user experiences.
 * *Data Fabric.* The NetApp Data Fabric architecture weaves data together across sites, beyond physical boundaries, and across applications. The NetApp Data Fabric is built for data-driven enterprises in a data-centric world. Data is created and used in multiple locations, and it often must be leveraged and shared with other locations, applications, and infrastructures. Customers want a way to manage data that is consistent and integrated. It provides a way to manage data that puts IT in control and simplifies ever-increasing IT complexity.
 
-== Cisco Unified Computing System, Cisco Nexus and MDS Switching, and ONTAP All-Flash Storage
+== Cisco Unified Computing System, Cisco Nexus and MDS Switching, and ONTAP all-flash storage
 
 The FlexPod for Epic Healthcare delivers the performance, efficiency, manageability, scalability, and data protection that IT organizations need to meet for the most stringent Epic requirements. By accelerating Epic production database performance and by reducing application deployment time from months to weeks, FlexPod helps organizations maximize the potential of their Epic investment.
 
@@ -77,7 +77,7 @@ Using service profiles helps to ensure that servers are configured consistently 
 
 Cisco UCS has been extensively tested with Epic over a multiyear period to demonstrate that it meets server configuration requirements. Cisco UCS is a supported server platform, as listed in customers’ “Epic Hardware Configuration Guide.”
 
-=== Cisco Nexus and Cisco MDS Ethernet and Fibre Channel Switching
+=== Cisco Nexus and Cisco MDS Ethernet and Fibre Channel switching
 
 Cisco Nexus switches and MDS multilayer directors provide enterprise-class connectivity and SAN consolidation. Cisco multiprotocol storage networking reduces business risk by providing flexibility and options. Supported protocols include Fibre Channel (FC), Fibre Connection (FICON), FC over Ethernet (FCoE), SCSI over IP (iSCSI), and FC over IP (FCIP).
 
@@ -93,11 +93,11 @@ In summary, the Cisco UCS provides the following important advantages for Epic d
 
 Together, Cisco UCS with Cisco Nexus switches and MDS multilayer directors provide a compelling computer, networking, and SAN connectivity solution for Epic.
 
-=== NetApp All Flash Storage Systems
+=== NetApp all-flash storage systems
 
 NetApp AFF systems address enterprise storage requirements with high performance, superior flexibility, and best-in-class data management. Built on ONTAP data management software, AFF systems speed up your business without compromising the efficiency, reliability, or flexibility of your IT operations. With enterprise-grade all-flash arrays, AFF systems accelerate, manage, and protect your business-critical data and enable an easy and risk-free transition to flash media for your data center.
 
-Designed specifically for flash, AFF A- series all-flash systems deliver industry-leading performance, capacity, density, scalability, security, and network connectivity in a dense form factor. With the addition of a new entry-level system, the new AFF A- series family extends enterprise-grade flash to midsize businesses. At up to seven million IOPS per cluster with sub- millisecond latency, the AFF A series is the fastest family of all-flash arrays, built on a true unified scale-out architecture.
+Designed specifically for flash, AFF A-series all-flash systems deliver industry-leading performance, capacity, density, scalability, security, and network connectivity in a dense form factor. With the addition of a new entry-level system, the new AFF A- series family extends enterprise-grade flash to midsize businesses. At up to seven million IOPS per cluster with sub- millisecond latency, the AFF A series is the fastest family of all-flash arrays, built on a true unified scale-out architecture.
 
 With the AFF A series, you can complete twice the work at half the latency relative to the previous generation of AFF systems. The members of the AFF A series are the industry’s first all-flash arrays that provide both 40Gb Ethernet (40GbE) and 32Gb Fibre Channel (FC) connectivity. Therefore, they eliminate the bandwidth bottlenecks that are increasingly moving from storage to the network as flash becomes faster and faster.
 
