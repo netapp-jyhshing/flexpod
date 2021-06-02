@@ -5,7 +5,7 @@ keywords: flexpod, directional, sizing, solution, benefits, scope, audience
 summary: This report provides guidance for sizing FlexPod for a MEDITECH EHR application software environment.
 ---
 
-= FlexPod for MEDITECH Directional Sizing
+= TR-4774: FlexPod for MEDITECH Directional Sizing
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -18,7 +18,6 @@ summary: This report provides guidance for sizing FlexPod for a MEDITECH EHR app
 // 2021-05-20 13:29:17.650810
 //
 
-[.lead]
 Brandon Agee, John Duignan, NetApp
 Mike Brennan, Jon Ebmeir, Cisco
 
@@ -26,7 +25,7 @@ This report provides guidance for sizing FlexPod for a MEDITECH EHR application 
 
 == Purpose
 
-FlexPod systems can be deployed to host MEDITECH EXPANSE, 6.x, 5.x, and MAGIC services. FlexPod servers that host the MEDITECH application layer provide an integrated platform for a dependable, high- performance infrastructure. The FlexPod integrated platform is deployed rapidly by skilled FlexPod channel partners and is supported by Cisco and NetApp technical assistance centers.
+FlexPod systems can be deployed to host MEDITECH EXPANSE, 6.x, 5.x, and MAGIC services. FlexPod servers that host the MEDITECH application layer provide an integrated platform for a dependable, high-performance infrastructure. The FlexPod integrated platform is deployed rapidly by skilled FlexPod channel partners and is supported by Cisco and NetApp technical assistance centers.
 
 Sizing is based on information in MEDITECH’s hardware configuration proposal and the MEDITECH task document. The goal is to determine the optimal size for compute, network, and storage infrastructure components.
 
@@ -34,7 +33,7 @@ The link:ehr-meditech-sizing_meditech_workload_overview.html[MEDITECH Workload O
 
 The link:ehr-meditech-sizing_technical_specifications_for_small,_medium_and_large_architectures.html[Technical Specifications for Small, Medium, and Large Architectures] section details a sample Bill of Materials for the different storage architectures described in the section. The configurations given are general guidelines only. Always size the systems using the sizers based on the workload and tune the configurations accordingly.
 
-== Overall Solution Benefits
+== Overall solution benefits
 
 Running a MEDITECH environment on the FlexPod architectural foundation can help healthcare organizations improve productivity and decrease capital and operating expenses. FlexPod provides a prevalidated, rigorously tested, converged infrastructure from the strategic partnership of Cisco and NetApp. It is engineered and designed specifically for delivering predictable low-latency system performance and high availability. This approach results in faster response time for users of the MEDITECH EHR system.
 

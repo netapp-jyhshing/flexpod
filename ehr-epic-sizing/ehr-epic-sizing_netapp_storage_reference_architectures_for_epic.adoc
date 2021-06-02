@@ -18,7 +18,6 @@ summary: An appropriate storage architecture can be determined by the overall da
 // 2021-05-07 11:05:29.189157
 //
 
-[.lead]
 An appropriate storage architecture can be determined by the overall database size and the total IOPS. Performance alone is not the only factor, and you might decide to use a larger node count based on additional customer requirements.
 
 Given the storage requirements for Epic software environments, NetApp has three reference architectures based on the size of the environment. Epic requires the use of NetApp sizing methods to properly size a NetApp storage system for use in Epic environments. For quantitative performance requirements and sizing guidance, see NetApp https://fieldportal.netapp.com/?oparams=68786[TR-3930i: NetApp Sizing Guidelines for Epic^]. NetApp Field Portal access is required to view this document.
@@ -31,7 +30,7 @@ The three storage reference architectures are as follows:
 
 * *Small.* Four-node architecture with two nodes in production and two nodes in DR (fewer than 5M global references)
 * *Medium.* Six-node architecture with four nodes in production and two nodes in DR (more than 5M global references)
-* *Large.* Twelve- or- more node architecture with six to ten nodes in production (5M- 10M global references)
+* *Large.* Twelve-or-more node architecture with six to ten nodes in production (5M-10M global references)
 
 [NOTE]
 Global references = (Read IOPS + (Write Operations per 80-Second Write Burst / 45)) * 225. These numbers are taken from the customer-specific Epic Hardware Configuration Guide.
@@ -48,22 +47,22 @@ The Epic Database Storage Layout Recommendations document provides recommendatio
 
 [NOTE]
 ====
-NetApp recommends starting with larger size LUNs because the size of the LUNs themselves have no cost to storage. For ease of operation, make sure that the number of LUNs and initial size can grow well beyond expected requirements after 3 years. Growing LUNs is much easier to manage than adding LUNs while scaling. With thin- provisioned LUNs and volumes, the storage- used space shows up in the aggregate.
+NetApp recommends starting with larger size LUNs because the size of the LUNs themselves have no cost to storage. For ease of operation, make sure that the number of LUNs and initial size can grow well beyond expected requirements after 3 years. Growing LUNs is much easier to manage than adding LUNs while scaling. With thin-provisioned LUNs and volumes, the storage- used space shows up in the aggregate.
 
 Epic requires database, journal, and application or system storage to be presented to database servers as LUNs through FC.
 ====
 
 Use one LUN per volume for Epic production and for Clarity. For larger deployments, NetApp recommends 24 to 32 LUNs for the Epic database. Factors that determine the number of LUNs to use are:
 
-* Overall size of the Epic DB after 3 years. For larger DBs, determine the maximum size of the LUN for that operating system (OS) and make sure that you have enough LUNs to scale. For example, if you need a 60TB Epic database and the OS LUNs have a 4TB maximum, you will need 24 to 32 LUNs to provide scale and head room.
+* Overall size of the Epic DB after 3 years. For larger DBs, determine the maximum size of the LUN for that operating system (OS) and make sure that you have enough LUNs to scale. For example, if you need a 60TB Epic database and the OS LUNs have a 4TB maximum, you need 24 to 32 LUNs to provide scale and head room.
 
 Regardless of whether the architecture is small, medium, or large:
 
-* ONTAP allows easy nondisruptive scale up and scale out. Disks and nodes can be upgraded, added, or removed by using ONTAP nondisruptive operations. Customers can start with 4 nodes and move to 6 nodes or upgrade to larger controllers nondisruptively.
+* ONTAP allows easy nondisruptive scale up and scale out. Disks and nodes can be upgraded, added, or removed by using ONTAP nondisruptive operations. Customers can start with four nodes and move to six nodes or upgrade to larger controllers nondisruptively.
 * NetApp OnCommand Workflow Automation workflows can back up and refresh Epic full-copy test environments. This solution simplifies the architecture and saves on storage capacity with integrated efficiencies.
 * The DR shadow database server is part of a customer’s business continuity strategy (used to support SRO functionality and potentially configured to be an SRW instance). Therefore, the placement and sizing of the third storage system are usually the same as in the production database storage system.
 * Database consistency requires some consideration. If NetApp SnapMirror backup copies are used in relation to business continuity, see the Epic document Business Continuity Technical Solutions Guide. For information about the use of SnapMirror technologies, see https://www.netapp.com/us/media/tr-3446.pdf[TR-3446: SnapMirror Async Overview and Best Practices Guide^].
-* Isolation of production from potential bully workloads is a key design objective of Epic. A *storage pool* is a fault domain in which workload performance must be isolated and protected. Each node in an ONTAP cluster is a fault domain and can be considered as a pool of storage.
+* Isolation of production from potential bully workloads is a key design objective of Epic. A storage pool is a fault domain in which workload performance must be isolated and protected. Each node in an ONTAP cluster is a fault domain and can be considered as a pool of storage.
 
 All platforms in the ONTAP family can run the full host of feature sets for Epic workloads.
 
@@ -81,7 +80,7 @@ NetApp SnapMirror or SnapVault replication can be set up as needed for workloads
 
 image:ehr-epic-sizing_image2.png[Error: Missing Graphic Image]
 
-From a storage design and layout perspective, the following figure shows a high- level storage layout for the production database and the other constructs that comprise the Epic workload.
+From a storage design and layout perspective, the following figure shows a high-level storage layout for the production database and the other constructs that comprise the Epic workload.
 
 image:ehr-epic-sizing_image3.png[Error: Missing Graphic Image]
 
@@ -91,7 +90,9 @@ The medium reference architecture is a six-node architecture with four nodes in 
 
 For this size, the All-Flash Reference Architecture Strategy Handbook states that you need to separate Epic Report workloads from Clarity, and that you need at least four nodes in production.
 
-The six-node architecture is the most commonly deployed architecture in Epic environments. Customers with more than 5,000,000 global references are required to place Report and Clarity in separate fault domains. See the Epic All-Flash Reference Architecture Strategy Handbook.* *Customers with fewer than 5,000,000 global references can opt to go with six nodes rather than four nodes for the following key advantages:
+The six-node architecture is the most commonly deployed architecture in Epic environments. Customers with more than 5,000,000 global references are required to place Report and Clarity in separate fault domains. See the Epic All-Flash Reference Architecture Strategy Handbook.
+
+Customers with fewer than 5,000,000 global references can opt to go with six nodes rather than four nodes for the following key advantages:
 
 * Offload backup archive process from production
 * Offload all test environments from production
@@ -112,7 +113,7 @@ image:ehr-epic-sizing_image5.png[Error: Missing Graphic Image]
 
 == Large configuration: reference architecture for greater than 10M global references (more than 50K IOPS)
 
-The large architecture is typically a twelve- or- more- node architecture with six to ten nodes in production, with more than 10M global references. For large Epic deployments, Epic Production, Epic Report, and Clarity can be placed on a dedicated HA pair with storage evenly balanced among the nodes, as shown in the figure below.
+The large architecture is typically a twelve-or-more-node architecture with six to ten nodes in production, with more than 10M global references. For large Epic deployments, Epic Production, Epic Report, and Clarity can be placed on a dedicated HA pair with storage evenly balanced among the nodes, as shown in the figure below.
 
 Larger customers have two options:
 

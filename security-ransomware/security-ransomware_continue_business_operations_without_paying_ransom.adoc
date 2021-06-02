@@ -5,7 +5,7 @@ keywords: ransom, pay, business, operations, restore, data, attack, prevent, rec
 summary: The NetApp capabilities described in this document help you restore data within minutes after an attack and prevent attacks in the first place so that you can continue business operations unhindered.
 ---
 
-= Continue Business Operations Without Paying Ransom
+= Continue business operations without paying ransom
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -18,9 +18,8 @@ summary: The NetApp capabilities described in this document help you restore dat
 // 2021-05-20 14:17:51.438746
 //
 
-[.lead]
 The NetApp capabilities described in this document help you restore data within minutes after an attack and prevent attacks in the first place so that you can continue business operations unhindered.
 
-A Snapshot copy schedule can be set to meet the desired recovery point objective (RPO). Snapshot copy- based restore operations are very quick; therefore, a very low recovery time objective (RTO) can be achieved.
+A Snapshot copy schedule can be set to meet the desired recovery point objective (RPO). Snapshot copy-based restore operations are very quick; therefore, a very low recovery time objective (RTO) can be achieved.
 
 Above all, you do not have to pay any ransom as a result of an attack, and you can quickly get back to regular operations.

@@ -18,7 +18,6 @@ summary: This section pertains to deployment on ONTAP 8.3 and later versions.
 // 2021-05-07 11:13:53.286233
 //
 
-[.lead]
 This section pertains to deployment on ONTAP 8.3 and later versions.
 
 [NOTE]
@@ -30,8 +29,8 @@ You should create one dedicated SVM per ONTAP storage cluster to own and to mana
 
 == SVM language encoding setting
 
-NetApp recommends that you set the language encoding for all SVMs. If no language encoding setting is specified at the time that the SVM is created, the default language encoding setting is used. The default language encoding setting is C.UTF -8 for ONTAP. After the language encoding has been set, you cannot modify the language of an SVM with Infinite Volume later.
+NetApp recommends that you set the language encoding for all SVMs. If no language encoding setting is specified at the time that the SVM is created, the default language encoding setting is used. The default language encoding setting is C.UTF-8 for ONTAP. After the language encoding has been set, you cannot modify the language of an SVM with Infinite Volume later.
 
 The volumes that are associated with the SVM inherit the SVM language encoding setting unless you explicitly specify another setting when the volumes are created. To enable certain operations to work, you should use the language encoding setting consistently in all volumes for your site. For example, SnapMirror requires the source and destination SVM to have the same language encoding setting.
 
-link:ehr-meditech-deploy_volume_configuration.html[Next: Volume Configuration]
+link:ehr-meditech-deploy_volume_configuration.html[Next: Volume Configuration.]

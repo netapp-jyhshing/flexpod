@@ -48,4 +48,4 @@ NOTE: NetApp highly recommends that you run the reallocation task on one volume 
 
 For more information about determining an appropriate volume reallocation schedule for your production database storage, see section 3.12 in https://fieldportal.netapp.com/content/192896[NetApp TR-3929: Reallocate Best Practices Guide^]. That section also guides you on how to create a weekly reallocation schedule for a busy site.
 
-link:ehr-meditech-deploy_lun_configuration.html[Next: LUN Configuration]
+link:ehr-meditech-deploy_lun_configuration.html[Next: LUN Configuration.]

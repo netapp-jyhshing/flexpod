@@ -18,7 +18,6 @@ summary: The number of MEDITECH hosts in your environment determines the number 
 // 2021-05-07 11:13:53.318035
 //
 
-[.lead]
 The number of MEDITECH hosts in your environment determines the number of LUNs that are created within the NetApp FAS or AFF system. The Hardware Configuration Proposal specifies the size of each LUN.
 
 == LUN provisioning
@@ -49,4 +48,4 @@ An example of a MEDITECH LUN name is `MTFS05E`, in which:
 * `05` denotes host number 5.
 * `E` denotes the Windows E drive.
 
-link:ehr-meditech-deploy_initiator_group_configuration.html[Next: Initiator Group Configuration]
+link:ehr-meditech-deploy_initiator_group_configuration.html[Next: Initiator Group Configuration.]

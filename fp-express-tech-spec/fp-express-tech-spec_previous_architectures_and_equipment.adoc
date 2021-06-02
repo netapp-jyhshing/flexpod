@@ -5,7 +5,7 @@ keywords: architecture, equipment, previous, hardware, verified, small, medium, 
 summary: This section lists the previous FlexPod Express architectures and hardware used within them.
 ---
 
-= Previous Architectures and Equipment
+= Previous architectures and equipment
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -18,18 +18,17 @@ summary: This section lists the previous FlexPod Express architectures and hardw
 // 2021-05-20 13:19:48.631473
 //
 
-[.lead]
 FlexPod is a flexible solution allowing customers to use both existing and new equipment currently for sale by Cisco and NetApp. Occasionally, certain models of equipment from both Cisco and NetApp are designated end of life.
 
 Even though these models of equipment are no longer available, customers who bought one of these models before the end-of-sale date can use that equipment in a FlexPod configuration.
 
 Additionally, FlexPod Express architectures are periodically refreshed to introduce the latest hardware and software from Cisco and NetApp to the FlexPod Express solution. This section lists the previous FlexPod Express architectures and hardware used within them.
 
-== Previous FlexPod Express Architectures
+== Previous FlexPod Express architectures
 
 This section describes the previous FlexPod Express architectures.
 
-=== FlexPod Express Small and Medium Configurations
+=== FlexPod Express small and medium configurations
 
 The FlexPod Express small and medium configurations include the following components:
 
@@ -37,15 +36,15 @@ The FlexPod Express small and medium configurations include the following compon
 * At least two Cisco UCS C-Series rack mount servers
 * Two FAS2200 or FAS2500 series controllers in an HA pair configuration
 
-The figure below illustrates the FlexPod Express small configuration.
+The following figure illustrates the FlexPod Express small configuration.
 
 image:fp-express-tech-spec_image4.png[Error: Missing Graphic Image]
 
-The figure below illustrates the FlexPod Express medium configuration.
+The following figure illustrates the FlexPod Express medium configuration.
 
 image:fp-express-tech-spec_image5.png[Error: Missing Graphic Image]
 
-=== FlexPod Express Large Configuration
+=== FlexPod Express large configuration
 
 The FlexPod Express large configuration includes the following components:
 
@@ -54,11 +53,11 @@ The FlexPod Express large configuration includes the following components:
 * Two FAS2552, FAS2554, or FAS8020 controllers in an HA pair configuration (requires two 10GbE ports per controller)
 * One NetApp disk shelf with any supported disk type (when the FAS8020 is used)
 
-The figure below illustrates the FlexPod Express large configuration.
+The following figure illustrates the FlexPod Express large configuration.
 
 image:fp-express-tech-spec_image6.png[Error: Missing Graphic Image]
 
-=== Previous FlexPod Express Verified Architectures
+=== Previous FlexPod Express verified architectures
 
 Previous FlexPod Express verified architectures are still supported. The architecture and deployment documents include:
 
@@ -68,12 +67,12 @@ Previous FlexPod Express verified architectures are still supported. The archite
 * link:http://www.netapp.com/us/media/nva-0021-deploy.pdf[FlexPod Express with Microsoft Windows Server 2012 R2 Hyper-V: Small and Medium Configurations]
 * link:http://www.netapp.com/us/media/tr-4350.pdf[FlexPod Express with Microsoft Windows Server 2012 R2 Hyper-V: Large Configuration]
 
-=== Previous Hardware
+=== Previous hardware
 
-The table below lists the hardware used in previous FlexPod Express architectures.
+The following table lists the hardware used in previous FlexPod Express architectures.
 
 |===
-|Hardware Used in Previous Architectures |Technical Specifications (If Available)
+|Hardware used in previous architectures |Technical specifications (if available)
 
 |Cisco UCS C220 M3
 |

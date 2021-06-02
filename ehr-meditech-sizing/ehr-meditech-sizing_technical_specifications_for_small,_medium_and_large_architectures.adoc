@@ -5,7 +5,7 @@ keywords: technical, specifications, small, medium, large, architectures, bill, 
 summary: This section discusses a sample Bill of Materials for different size storage architectures.
 ---
 
-= Technical Specifications for Small, Medium and Large Architectures
+= Technical specifications for small, medium and large architectures
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -18,10 +18,9 @@ summary: This section discusses a sample Bill of Materials for different size st
 // 2021-05-20 13:29:17.665014
 //
 
-[.lead]
 This section discusses a sample Bill of Materials for different size storage architectures.
 
-== Bill of Material for Small, Medium, and Large Architectures.
+== Bill of material for small, medium, and large architectures.
 
 The FlexPod design is a flexible infrastructure that encompasses many different components and software versions. Use https://fieldportal.netapp.com/content/443847[TR-4036: FlexPod Technical Specifications^] as a guide to assembling a valid FlexPod configuration. The configurations in the table below are the minimum requirements for FlexPod, and are just a sample. The configuration can be expanded for each product family as required for different environments and use cases.
 
@@ -67,17 +66,17 @@ For this sizing exercise small corresponds to a Category 3 MEDITECH environment,
 [NOTE]
 Some customer environments might have multiple MEDITECH production workloads running simultaneously or might have higher IOPS requirements. In such cases, work with the NetApp account team to size the storage systems according to the required IOPS and capacity. You should be able to determine the right platform to serve the workloads. For example, there are customers successfully running multiple MEDITECH environments on a NetApp AFF A700 all-flash storage system HA pair.
 
-The table below shows the standard software required for MEDITECH configurations.
+The following table shows the standard software required for MEDITECH configurations.
 
 |===
-|Software |Product Family |Version or Release |Details
+|Software |Product family |Version or release |Details
 
 |Storage
 |ONTAP
 |ONTAP 9.4 general availability (GA)
 |
 .3+|Network
-|Cisco UCS Fabric Interconnects
+|Cisco UCS fabric interconnects
 |Cisco UCSM 4.x
 |Current recommended release
 |Cisco Nexus Ethernet switches
@@ -109,15 +108,15 @@ The table below shows the standard software required for MEDITECH configurations
 |
 |===
 
-The table below shows small (category 3) example configuration – infrastructure components
+The following table shows an small (category 3) example configuration – infrastructure components.
 
 |===
-|Layer |Product Family |Quantity and Model |Details
+|Layer |Product family |Quantity and model |Details
 
 .5+|Compute
 |Cisco UCS 5108 Chassis
 |1
-|Supports up to eight half-width or four full-width blades. Add chassis as server requirement grows
+|Supports up to eight half-width or four full-width blades. Add chassis as server requirement grows.
 |Cisco Chassis I/O Modules
 |2 x 2208
 |8GB x 10GB uplink ports
@@ -156,23 +155,23 @@ VMware ESXi eNIC Ethernet driver: 1.0.27.0
 |
 |===
 
-The table below shows medium (category 5) example configuration – Infrastructure components
+The following table shows medium (category 5) example configuration – Infrastructure components
 
 |===
-|Layer |Product Family |Quantity and Model |Details
+|Layer |Product family |Quantity and model |Details
 
 .5+|Compute
-|Cisco UCS 5108 Chassis
+|Cisco UCS 5108 chassis
 |1
 |Supports up to eight half-width or four full-width blades. Add chassis as server requirement grows.
-|Cisco Chassis I/O Modules
+|Cisco chassis I/O modules
 |2 x 2208
-|8GB x 10GB uplink Ports
+|8GB x 10GB uplink ports
 |Cisco UCS blade servers
 |6 x B200 M5
 |Each with 2 x 16 cores, 2.5GHz/or higher clock speed, and 384GB or more memory
 BIOS 3.2(3#)
-|Cisco UCS Virtual Interface Card (VIC)
+|Cisco UCS virtual interface card (VIC)
 |6 x UCS 1440 VICs
 |VMware ESXi fNIC FC driver: 1.6.0.47
 VMware ESXi eNIC Ethernet driver: 1.0.27.0
@@ -203,28 +202,28 @@ VMware ESXi eNIC Ethernet driver: 1.0.27.0
 |
 |===
 
-The table below shows large (category 6) example configuration – infrastructure components
+The following table shows a large (category 6) example configuration – infrastructure components.
 
 |===
-|Layer |Product Family |Quantity and Model |Details
+|Layer |Product family |Quantity and model |Details
 
 .5+|Compute
-|Cisco UCS 5108 Chassis
+|Cisco UCS 5108 chassis
 |1
 |
-|Cisco Chassis I/O Modules
+|Cisco chassis I/O modules
 |2 x 2208
-|8 x 10GB uplink Ports
+|8 x 10GB uplink ports
 |Cisco UCS blade servers
 |8 x B200 M5
 |Each with 2 x 24 cores, 2.7GHz and 768GB
 BIOS 3.2(3#)
-|Cisco UCS Virtual Interface Card (VIC)
+|Cisco UCS virtual interface card (VIC)
 |8 x UCS 1440 VICs
 |VMware ESXi fNIC FC driver: 1.6.0.47
 VMware ESXi eNIC Ethernet driver: 1.0.27.0
 (review interoperability matrix: https://ucshcltool.cloudapps.cisco.com/public/)
-|2 x Cisco UCS Fabric Interconnects (FI)
+|2 x Cisco UCS fabric interconnects (FI)
 |2 x UCS 6454 FI
 |4th-generation fabric interconnects supporting 10GB/25GB/100GB Ethernet and 32GB FC
 |Network
@@ -251,4 +250,4 @@ VMware ESXi eNIC Ethernet driver: 1.0.27.0
 |===
 
 [NOTE]
-These configurations provide a starting point for sizing guidance. Some customer environments might have multiple MEDITECH production and non-MEDITECH workloads running simultaneously, or they might have higher IOP requirements. You should work with the NetApp account team to size the storage systems based on the required IOPS, workloads, and capacity, to determine the right platform to serve the workloads.
+These configurations provide a starting point for sizing guidance. Some customer environments might have multiple MEDITECH production and non-MEDITECH workloads running simultaneously, or they might have higher IOP requirements. You should work with the NetApp account team to size the storage systems based on the required IOPS, workloads, and capacity to determine the right platform to serve the workloads.

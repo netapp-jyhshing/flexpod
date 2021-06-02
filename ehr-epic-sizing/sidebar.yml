@@ -3,6 +3,7 @@ title: FlexPod Datacenter for Epic EHR directional sizing guide
 entries:
   - title: FlexPod for Epic Directional Sizing Guide
     url: /ehr-epic-sizing/ehr-epic-sizing_introduction.html
+    type: solutions
   - title: Reference architecture
     url: /ehr-epic-sizing/ehr-epic-sizing_netapp_storage_reference_architectures_for_epic.html
     entries:

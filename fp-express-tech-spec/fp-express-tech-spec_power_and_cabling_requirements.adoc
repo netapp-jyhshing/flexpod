@@ -5,7 +5,7 @@ keywords: power, cabling, requirements, flexpod, express, cisco, ucs, minimum, c
 summary: This section describes the power and minimum cabling requirements for a FlexPod Express design.
 ---
 
-= Power and Cabling Requirements
+= Power and cabling requirements
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -18,19 +18,19 @@ summary: This section describes the power and minimum cabling requirements for a
 // 2021-05-20 13:19:48.619895
 //
 
-[.lead]
+
 This section describes the power and minimum cabling requirements for a FlexPod Express design.
 
-== Power Requirements
+== Power requirements
 
 The power requirements are based on U.S. specifications and assume the use of AC power. Other countries might have different power requirements. Direct current (DC) power options are also available for most components. For additional data about the maximum power required as well as other detailed power information, consult the detailed technical specifications for each hardware component.
 
 For detailed Cisco UCS power data, see the http://www.cisco.com/assets/cdc_content_elements/flash/dataCenter/cisco_ucs_power_calculator/[Cisco UCS Power Calculator^].
 
-The table below lists the power ports required per device.
+The following table lists the power ports required per device.
 
 |===
-|Cisco Nexus Switches |Power Cables Required
+|Cisco Nexus switches |Power cables required
 
 |Cisco Nexus 3048
 |2x C13/C14 power cables for each Cisco Nexus 3000 series switch
@@ -41,14 +41,14 @@ The table below lists the power ports required per device.
 |===
 
 |===
-|Cisco UCS Chassis |Power Cables Required
+|Cisco UCS chassis |Power cables required
 
 |Cisco UCS 5108
 |2 CAB-US515P-C19-US/CAB-US520-C19-US for each Cisco UCS chassis
 |===
 
 |===
-|Cisco UCS B-Series Servers |Power Cables Required
+|Cisco UCS B-Series servers |Power cables required
 
 |Cisco UCS B200 M4
 |N/A; blade server is powered by chassis
@@ -61,7 +61,7 @@ The table below lists the power ports required per device.
 |===
 
 |===
-|Cisco UCS C-Series Servers |Power Ports Required
+|Cisco UCS C-Series servers |Power ports required
 
 |Cisco UCS C220 M4
 .3+|2 x C13/C14 power cables for each Cisco UCS server
@@ -73,7 +73,7 @@ Cisco UCS C480 M5
 |===
 
 |===
-|NetApp FAS Controllers |Power Ports Required (per HA Pair)
+|NetApp FAS controllers |Power ports required (per HA pair)
 
 |FAS2554
 |2 x C13/C14
@@ -86,14 +86,14 @@ Cisco UCS C480 M5
 |===
 
 |===
-|E-Series Controllers |Power Ports Required (per HA Pair)
+|E-Series controllers |Power ports required (per HA pair)
 
 |E2824
 |2 x C14/C20
 |===
 
 |===
-|NetApp FAS Disk Shelves |Power Ports Required
+|NetApp FAS disk shelves |Power ports required
 
 |DS212C
 |2 x C13/C14
@@ -108,7 +108,7 @@ Cisco UCS C480 M5
 |===
 
 |===
-|E-Series Disk Shelves |Power Ports Required
+|E-Series disk shelves |Power ports required
 
 |DE460C
 |2 x C14/C20
@@ -118,14 +118,14 @@ Cisco UCS C480 M5
 |2 x C14/C20
 |===
 
-== Minimum Cable Requirements
+== Minimum cable requirements
 
 This section describes the minimum cable requirements for a FlexPod Express design. Most FlexPod implementations require additional cables, but the number varies based on the deployment size and scope.
 
-The table below lists the minimum number of cables required for each device.
+The following table lists the minimum number of cables required for each device.
 
 |===
-|Cisco Nexus 3000 Series Switches |Cables Required
+|Cisco Nexus 3000 Series switches |Cables required
 
 |Cisco Nexus 31108
 .5+|At least two 10GbE fiber or Twinax cables per switch

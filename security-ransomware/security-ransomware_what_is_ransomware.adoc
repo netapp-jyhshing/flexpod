@@ -1,11 +1,11 @@
 ---
 sidebar: sidebar
-permalink: security-ransomware/security-ransomware_what_is_ransomware?.html
+permalink: security-ransomware/security-ransomware_what_is_ransomware.html
 keywords: data, loss, ransomeware, financial, risk, center, spread, solution
 summary: Ransomware is a type of malware that is based on cryptovirology, which is the use of cryptography to build malicious software. This malware can make use of both symmetric and asymmetric key encryption to lock a victim’s data and demand a ransom to provide the key to decrypt the victim’s data.
 ---
 
-= FlexPod, The Solution to Ransomware
+= TR-4802: FlexPod, The Solution to Ransomware
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -18,14 +18,13 @@ summary: Ransomware is a type of malware that is based on cryptovirology, which 
 // 2021-05-20 14:17:51.409573
 //
 
-[.lead]
 Arvind Ramakrishnan, NetApp
 
-To understand Ransomware, it is necessary to first understand a few key points about cryptography. Cryptographical methods enable the encryption of data with a shared secret key (symmetric key encryption) or a pair of keys (asymmetric key encryption). One of these keys is a widely available public key and the other is an undisclosed private key.
+To understand ransomware, it is necessary to first understand a few key points about cryptography. Cryptographical methods enable the encryption of data with a shared secret key (symmetric key encryption) or a pair of keys (asymmetric key encryption). One of these keys is a widely available public key and the other is an undisclosed private key.
 
 Ransomware is a type of malware that is based on cryptovirology, which is the use of cryptography to build malicious software. This malware can make use of both symmetric and asymmetric key encryption to lock a victim’s data and demand a ransom to provide the key to decrypt the victim’s data.
 
-== How Does Ransomware Work?
+== How does ransomware work?
 
 The following steps describe how ransomware uses cryptography to encrypt the victim’s data without any scope for decryption or recovery by the victim:
 
@@ -48,7 +47,7 @@ Individuals and organizations face the following challenges when they are attack
 * There is no assurance that the attacker will refrain from broadcasting the sensitive data in spite of paying the ransom.
 * In large enterprises, identifying the loophole that led to a ransomware attack is a tedious task, and securing all the systems involves a lot of effort.
 
-== Who is at Risk?
+== Who is at risk?
 
 Anyone can be attacked by ransomware, including individuals and large organizations. Organizations that do not implement well- defined security measures and practices are even more vulnerable to such attacks. The effect of the attack on a large organization can be several times larger than what an individual might endure.
 
@@ -63,7 +62,7 @@ Attackers tend to focus on the following potential targets:
 
 This is not an exhaustive list of targets. You cannot consider yourself safe from attacks if you fall outside of one of these categories.
 
-== How Does Ransomware Enter a System or Spread?
+== How does ransomware enter a system or spread?
 
 There are several ways in which ransomware can enter a system or spread to other systems. In today’s world, almost all systems are connected to one another other through the internet, LANs, WANs, and so on. The amount of data that is being generated and exchanged between these systems is only increasing.
 
@@ -77,19 +76,19 @@ Some of the most common ways by which ransomware can spread include methods that
 * Connecting to insecure public networks
 * Accessing web URLs
 
-== Consequences of Data Loss
+== Consequences of data loss
 
 The consequences or effects of data loss can reach more widely than organizations might anticipate. The effects can vary depending on the duration of downtime or the time period during which an organization doesn’t have access to its data. The longer the attack endures, the bigger the effect on the organization’s revenue, brand, and reputation. An organization can also face legal issues and a steep decline in productivity.
 
 As these issues continue to persist over time, they begin to magnify and might end up changing an organization’s culture, depending on how it responds to the attack. In today’s world, information spreads at a rapid rate and negative news about an organization could cause permanent damage to its reputation. An organization could face huge penalties for data loss, which could eventually lead to the closure of a business.
 
-== Financial Effects
+== Financial effects
 
-According to a recent https://www.mcafee.com/enterprise/en-us/assets/executive-summaries/es-economic-impact-cybercrime.pdf[McAfee report^], the global costs incurred due to cybercrime are roughly $600 billion, which is approximately 0.8% of global GDP. When this amount is compared against the growing worldwide internet economy of $4. 2 trillion, it equates to a 14% tax on growth.
+According to a recent https://www.mcafee.com/enterprise/en-us/assets/executive-summaries/es-economic-impact-cybercrime.pdf[McAfee report^], the global costs incurred due to cybercrime are roughly $600 billion, which is approximately 0.8% of global GDP. When this amount is compared against the growing worldwide internet economy of $4.2 trillion, it equates to a 14% tax on growth.
 
 Ransomware takes a significant share of this financial cost. In 2018, the costs incurred due to ransomware attacks were approximately $8 billion―an amount predicted to reach $11.5 billion in 2019.
 
-== What is the Solution?
+== What is the solution?
 
 Recovering from a ransomware attack with minimal downtime is only possible by implementing a proactive disaster recovery plan. Having the ability to recover from an attack is good, but preventing an attack altogether is ideal.
 

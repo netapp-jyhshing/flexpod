@@ -3,6 +3,7 @@ title: FlexPod Datacenter for MEDITECH deployment guide
 entries:
   - title: FlexPod Datacenter for MEDITECH Deployment Guide
     url: /ehr-meditech-deploy/ehr-meditech-deploy_overview.html
+    type: solutions
   - title: Design
     url: /ehr-meditech-deploy/ehr-meditech-deploy_design.html
   - title: Deployment and configuration

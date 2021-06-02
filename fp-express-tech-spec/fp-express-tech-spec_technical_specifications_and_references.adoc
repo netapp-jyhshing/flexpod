@@ -18,12 +18,11 @@ summary: This section describes additional important technical specifications fo
 // 2021-05-20 13:19:48.623827
 //
 
-[.lead]
 This section describes additional important technical specifications for each of the FlexPod Express components.
 
-== Cisco UCS B-Series Blade Servers
+== Cisco UCS B-Series blade servers
 
-The table below lists the Cisco UCS B-Series blade server options.
+The  following table lists the Cisco UCS B-Series blade server options.
 
 |===
 |Component |Cisco UCS B200 M4 |Cisco UCS B420 M4 |Cisco UCS B200 M5
@@ -55,9 +54,9 @@ Scalable processors
 |80Gbps
 |===
 
-== Cisco UCS C-Series Rack Servers
+== Cisco UCS C-Series rack servers
 
-The table below lists Cisco UCS C-Series rack server options.
+The following table lists Cisco UCS C-Series rack server options.
 
 |===
 |Component |Cisco UCS C220 M4 |Cisco UCS C240 M4 |Cisco UCS C460 M4 |Cisco UCS C220 M5
@@ -86,10 +85,10 @@ The table below lists Cisco UCS C-Series rack server options.
 |1 RU
 |===
 
-The table below lists the datasheets for the Cisco UCS C-Series rack server options.
+The following table lists the datasheets for the Cisco UCS C-Series rack server options.
 
 |===
-|Component |Cisco UCS Datasheet
+|Component |Cisco UCS datasheet
 
 |Cisco UCS C220 M4
 |
@@ -105,9 +104,9 @@ http://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-c
 https://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/c220m5-sff-specsheet.pdf
 |===
 
-== Cisco Nexus 3000 Series Switches
+== Cisco Nexus 3000 Series switches
 
-The table below lists the Cisco Nexus 3000 series switch options.
+The following table lists the Cisco Nexus 3000 series switch options.
 
 |===
 |Component |Cisco Nexus 3048 |Cisco Nexus 3524 |Cisco Nexus 31108 |Cisco Nexus 3172PQ
@@ -137,7 +136,7 @@ The table below lists the Cisco Nexus 3000 series switch options.
 |Yes
 |===
 
-The table below lists the datasheets for the Cisco Nexus 3000 series switch options.
+The following table lists the datasheets for the Cisco Nexus 3000 series switch options.
 
 |===
 |Component |Cisco Nexus Datasheet
@@ -168,7 +167,7 @@ https://www.cisco.com/c/en/us/products/switches/nexus-3548-x-switch/index.html
 https://www.cisco.com/c/en/us/products/switches/nexus-3524-x-switch/index.html
 |===
 
-The table below lists the Cisco Nexus 9000 series switch options.
+The following table lists the Cisco Nexus 9000 series switch options.
 
 |===
 |Component |Cisco Nexus 9396 |Cisco Nexus 9372
@@ -184,10 +183,10 @@ The table below lists the Cisco Nexus 9000 series switch options.
 |48
 |===
 
-The table below lists the Cisco Nexus 9000 series switch options datasheets.
+The following table lists the Cisco Nexus 9000 series switch options datasheets.
 
 |===
-|Component |Cisco Nexus Datasheet
+|Component |Cisco Nexus datasheet
 
 |Cisco Nexus 9396
 |
@@ -200,12 +199,12 @@ http://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-swit
 https://www.cisco.com/c/en/us/products/switches/nexus-9396px-switch/index.html?dtid=osscdc000283
 |===
 
-== NetApp FAS Storage Controllers
+== NetApp FAS storage controllers
 
-The table below lists the current NetApp FAS storage controller options.
+The following table lists the current NetApp FAS storage controller options.
 
 |===
-|Current Component |FAS2620 |FAS2650
+|Current component |FAS2620 |FAS2650
 
 |Configuration
 |2 controllers in a 2U chassis
@@ -238,7 +237,7 @@ The table below lists the current NetApp FAS storage controller options.
 [NOTE]
 For details about the FAS storage controller option, see the https://hwu.netapp.com/Controller/Index?platformTypeId=2032[FAS models^] section of the Hardware Universe. For AFF, see https://hwu.netapp.com/Controller/Index?platformTypeId=5265148[AFF models^] section.
 
-The table below lists the characteristics of a FAS8020 controller system.
+The following table lists the characteristics of a FAS8020 controller system.
 
 |===
 |Component |FAS8020
@@ -267,10 +266,10 @@ The table below lists the characteristics of a FAS8020 controller system.
 |24TB
 |===
 
-The table below lists the datasheets for NetApp storage controllers.
+The following table lists the datasheets for NetApp storage controllers.
 
 |===
-|Component |Storage Controller Datasheet
+|Component |Storage controller datasheet
 
 |FAS2600 series
 |
@@ -283,9 +282,9 @@ http://www.netapp.com/us/products/storage-systems/fas2500/fas2500-tech-specs.asp
 http://www.netapp.com/us/products/storage-systems/fas8000/fas8000-tech-specs.aspx
 |===
 
-== NetApp FAS Ethernet Adapters
+== NetApp FAS Ethernet adapters
 
-The table below lists NetApp FAS 10GbE adapters.
+The following table lists NetApp FAS 10GbE adapters.
 
 |===
 |Component |X1117A-R6
@@ -303,9 +302,9 @@ The FAS2600 and FAS2500 series storage systems have onboard 10GbE ports. For mor
 [NOTE]
 For more adapter details based on the AFF or FAS model, see the https://hwu.netapp.com/Adapter/Index[Adapter section^] in the Hardware Universe.
 
-== NetApp FAS Disk Shelves
+== NetApp FAS disk shelves
 
-The table below lists the current NetApp FAS disk shelf options.
+The following table lists the current NetApp FAS disk shelf options.
 
 |===
 |Component |DS460C |DS224C |DS212C |DS2246 |DS4246
@@ -341,13 +340,13 @@ For more information, see the NetApp disk shelves datasheet.
 [NOTE]
 For more information about the disk shelves, see the NetApp Hardware Universe https://hwu.netapp.com/Shelves/Index?osTypeId=2032[Disk Shelves section^].
 
-== NetApp FAS Disk Drives
+== NetApp FAS disk drives
 
 The technical specifications for the NetApp disks include form factor size, disk capacity, disk RPM, supporting controllers, and Data ONTAP version requirements and are located in the Drives section on http://hwu.netapp.com/Drives/Index?queryId=1581392[NetApp Hardware Universe^].
 
-== E-Series Storage Controllers
+== E-Series storage controllers
 
-The table below lists the current E-Series storage controller options.
+The following table lists the current E-Series storage controller options.
 
 |===
 |Current Component |E2812 |E2824 |E2860
@@ -378,19 +377,19 @@ The table below lists the current E-Series storage controller options.
 3+|512
 |===
 
-The table below lists the datasheets for the current E-Series storage controller.
+The following table lists the datasheets for the current E-Series storage controller.
 
 |===
-|Component |Storage Controller Datasheet
+|Component |Storage controller datasheet
 
 |E2800
 |
 http://www.netapp.com/us/media/ds-3805.pdf
 |===
 
-== E-Series Adapters
+== E-Series adapters
 
-The table below lists the E-Series adapters.
+The following table lists the E-Series adapters.
 
 |===
 |Component |X-56023-00-0E-C |X-56025-00-0E-C |X-56027-00-0E-C |X-56024-00-0E-C |X-56026-00-0E-C
@@ -409,9 +408,9 @@ The table below lists the E-Series adapters.
 |SAS
 |===
 
-== E-Series Disk Shelves
+== E-Series disk shelves
 
-The table below lists the E-Series disk shelf options.
+The following table lists the E-Series disk shelf options.
 
 |===
 |Component |DE212C |DE224C |DE460C
@@ -436,6 +435,6 @@ The table below lists the E-Series disk shelf options.
 |IOM12
 |===
 
-== E-Series Disk Drives
+== E-Series disk drives
 
 The technical specifications for the NetApp disk drives include form factor size, disk capacity, disk RPM, supporting controllers, and SANtricity version requirements and are located in the Drives section on http://hwu.netapp.com/Drives/Index?queryId=1844075[NetApp Hardware Universe^].

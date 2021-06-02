@@ -18,7 +18,6 @@ summary: To learn more about the information that is described in this document,
 // 2021-05-07 11:05:29.262582
 //
 
-[.lead]
 To learn more about the information that is described in this document, see the following documents or websites:
 
 * FlexPod Datacenter with FC Cisco Validated Design. Detailed deployment of FlexPod Datacenter environment.

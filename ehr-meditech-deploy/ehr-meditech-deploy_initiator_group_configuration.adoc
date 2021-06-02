@@ -18,7 +18,6 @@ summary: When you use FC as the data network protocol, create two initiator grou
 // 2021-05-07 11:13:53.343253
 //
 
-[.lead]
 When you use FC as the data network protocol, create two initiator groups (igroups) on each storage controller. The first igroup contains the WWPNs of the FC host interface cards on the VMware ESXi servers that host the MEDITECH host VMs (igroup for MEDITECH).
 
 You must set the MEDITECH igroup operating system type according to the environment setup. For example:
@@ -31,4 +30,4 @@ The operating system type for an igroup might be different from the operating sy
 
 To determine the correct value for the operating system type, see the sections “LUN Igroup Create” and “LUN Create” in the https://library.netapp.com/ecm/ecm_download_file/ECMP1366832[Clustered Data ONTAP 8.2 Commands: Manual Page Reference^].
 
-link:ehr-meditech-deploy_lun_mappings.html[Next: LUN Mappings]
+link:ehr-meditech-deploy_lun_mappings.html[Next: LUN Mappings.]

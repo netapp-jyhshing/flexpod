@@ -18,7 +18,6 @@ summary: For the ESXi host-side configuration, configure the VMware hosts as you
 // 2021-05-07 11:13:53.230259
 //
 
-[.lead]
 For the ESXi host-side configuration, configure the VMware hosts as you would run any enterprise database workload:
 
 * VSC for VMware vSphere checks and sets the ESXi host multipathing settings and HBA timeout settings that work best with NetApp storage systems. The values that VSC sets are based on rigorous internal testing by NetApp.
@@ -38,4 +37,4 @@ image:ehr-meditech-deploy_image7.png[Error: Missing Graphic Image]
 
 . Click OK.
 
-link:ehr-meditech-deploy_netapp_configuration.html[Next: NetApp Configuration]
+link:ehr-meditech-deploy_netapp_configuration.html[Next: NetApp Configuration.]

@@ -18,8 +18,7 @@ summary: NetApp storage that is deployed for MEDITECH software environments uses
 // 2021-05-07 11:13:53.243302
 //
 
-[.lead]
-NetApp storage that is deployed for MEDITECH software environments uses storage controllers in a high-availability- pair configuration. Storage must be presented from both controllers to MEDITECH database servers over the FC Protocol. The configuration presents storage from both controllers to evenly balance the application load during normal operation.
+NetApp storage that is deployed for MEDITECH software environments uses storage controllers in a high-availability-pair configuration. Storage must be presented from both controllers to MEDITECH database servers over the FC Protocol. The configuration presents storage from both controllers to evenly balance the application load during normal operation.
 
 == ONTAP configuration
 
@@ -52,7 +51,7 @@ autosupport modify -node * -transport https
 autosupport modify -node * -hostnamesubj true
 ....
 
-=== Hardware-Assisted Takeover Configuration
+=== Hardware-assisted takeover configuration
 
 On each node, enable hardware-assisted takeover to minimize the time that it takes to initiate a takeover in the unlikely event of a controller failure. To configure hardware-assisted takeover, complete the following steps:
 
@@ -79,4 +78,4 @@ MEDITECH::> storage failover modify -node prod1-01 -hwassist true
 MEDITECH::> storage failover modify -node prod1-02 -hwassist true
 ....
 
-link:ehr-meditech-deploy_aggregate_configuration.html[Next: Aggregate Configuration]
+link:ehr-meditech-deploy_aggregate_configuration.html[Next: Aggregate Configuration.]

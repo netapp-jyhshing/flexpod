@@ -18,10 +18,9 @@ summary: This section describes the types of compute and storage workloads that 
 // 2021-05-20 13:29:17.657482
 //
 
-[.lead]
 This section describes the types of compute and storage workloads that you might find in MEDITECH environments.
 
-== MEDITECH and Backup Workloads
+== MEDITECH and backup workloads
 
 When you size NetApp storage systems for MEDITECH environments, you must consider both the MEDITECH production workload and the backup workload.
 
@@ -33,7 +32,7 @@ When you size NetApp storage systems for MEDITECH environments, you must conside
 
 The following sections describe the I/O characteristics and performance requirements of these two workloads.
 
-== MEDITECH Workload
+== MEDITECH workload
 
 In a MEDITECH environment, multiple servers that run MEDITECH software perform various tasks as an integrated system known as the MEDITECH system. For more information about the MEDITECH system, see the MEDITECH documentation:
 

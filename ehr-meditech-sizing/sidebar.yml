@@ -3,6 +3,7 @@ title: FlexPod for Meditech Directional Sizing Guide
 entries:
   - title: FlexPod for MEDITECH Directional Sizing
     url: /ehr-meditech-sizing/ehr-meditech-sizing_introduction.html
+    type: solutions
   - title: MEDITECH Workload Overview
     url: /ehr-meditech-sizing/ehr-meditech-sizing_meditech_workload_overview.html
   - title: Technical Specifications for Small, Medium and Large Architectures

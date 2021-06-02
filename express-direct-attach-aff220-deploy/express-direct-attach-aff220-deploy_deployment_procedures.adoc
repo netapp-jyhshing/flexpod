@@ -18,7 +18,6 @@ summary: This document provides details for configuring a fully redundant, highl
 // 2021-05-20 10:50:15.472427
 //
 
-[.lead]
 This document provides details for configuring a fully redundant, highly available FlexPod Express system. To reflect this redundancy, the components being configured in each step are referred to as either component A or component B. For example, controller A and controller B identify the two NetApp storage controllers that are provisioned in this document. Switch A and switch B identify a pair of Cisco Nexus switches. Fabric Interconnect A and Fabric Interconnect B are the two Integrated Nexus Fabric Interconnects.
 
 In addition, this document describes steps for provisioning multiple Cisco UCS hosts, which are identified sequentially as server A, server B, and so on.
@@ -35,7 +34,7 @@ This document enables you to fully configure the FlexPod Express environment. In
 If you use separate in-band and out-of-band management VLANs, you must create a layer 3 route between them. For this validation, a common management VLAN was used.
 
 |===
-|VLAN Name |VLAN Purpose |ID Used in Validating This Document
+|VLAN name |VLAN purpose |ID used in validating this document
 
 |Management VLAN
 |VLAN for management interfaces
@@ -62,7 +61,7 @@ If you use separate in-band and out-of-band management VLANs, you must create a 
 
 The VLAN numbers are needed throughout the configuration of FlexPod Express. The VLANs are referred to as `\<<var_xxxx_vlan>>`, where `xxxx` is the purpose of the VLAN (such as iSCSI-A).
 
-The table below lists the VMware VMs created.
+The following table lists the VMware VMs created.
 
 |===
 |VM Description |Host Name
@@ -71,11 +70,11 @@ The table below lists the VMware VMs created.
 |Seahawks-vcsa.cie.netapp.com
 |===
 
-== Cisco Nexus 31108PCV Deployment Procedure
+== Cisco Nexus 31108PCV deployment procedure
 
 This section details the Cisco Nexus 31308PCV switch configuration used in a FlexPod Express environment.
 
-=== Initial Setup of Cisco Nexus 31108PCV Switch
+=== Initial setup of Cisco Nexus 31108PCV switch
 
 This procedures describes how to configure the Cisco Nexus switches for use in a base FlexPod Express environment.
 
@@ -133,7 +132,7 @@ Use this configuration and save it? (yes/no) [y]: Enter
 
 . Repeat steps 1 through 5 for Cisco Nexus switch B.
 
-=== Enable Advanced Features
+=== Enable advanced features
 
 Certain advanced features must be enabled in Cisco NX-OS to provide additional configuration options.
 
@@ -154,7 +153,7 @@ The default port channel load-balancing hash uses the source and destination IP 
 port-channel load-balance src-dst ip-l4port
 ....
 
-=== Perform Global Spanning-Tree Configuration
+=== Perform global spanning-tree configuration
 
 The Cisco Nexus platform uses a new protection feature called bridge assurance. Bridge assurance helps protect against a unidirectional link or other software failure with a device that continues to forward data traffic when it is no longer running the spanning-tree algorithm. Ports can be placed in one of several states, including network or edge, depending on the platform.
 
@@ -173,7 +172,7 @@ spanning-tree port type edge bpduguard default
 
 === Define VLANs
 
-Before individual ports with different VLANs are configured, the layer 2 VLANs must be defined on the switch. It is also a good practice to name the VLANs for easy troubleshooting in the future.
+Before individual ports with different VLANs are configured, the layer-2 VLANs must be defined on the switch. It is also a good practice to name the VLANs for easy troubleshooting in the future.
 
 From configuration mode (`config t`), run the following commands to define and describe the layer 2 VLANs on Cisco Nexus switch A and switch B:
 
@@ -195,13 +194,13 @@ vlan <<native_vlan_id>>
 exit
 ....
 
-=== Configure Access and Management Port Descriptions
+=== Configure access and management port descriptions
 
-As is the case with assigning names to the layer 2 VLANs, setting descriptions for all the interfaces can help with both provisioning and troubleshooting.
+As is the case with assigning names to the layer-2 VLANs, setting descriptions for all the interfaces can help with both provisioning and troubleshooting.
 
 From configuration mode (`config t`) in each of the switches, enter the following port descriptions for the FlexPod Express large configuration:
 
-==== Cisco Nexus Switch A
+==== Cisco Nexus switch A
 
 ....
 int eth1/1
@@ -218,7 +217,7 @@ int eth1/14
   description vPC peer-link 31108PVC-B 1/14
 ....
 
-==== Cisco Nexus Switch B
+==== Cisco Nexus switch B
 
 ....
 int eth1/1
@@ -235,13 +234,13 @@ int eth1/14
   description vPC peer-link 31108PVC-B 1/14
 ....
 
-=== Configure Server and Storage Management Interfaces
+=== Configure server and storage management interfaces
 
 The management interfaces for both the server and the storage typically use only a single VLAN. Therefore, configure the management interface ports as access ports. Define the management VLAN for each switch and change the spanning-tree port type to edge.
 
 From configuration mode (`config t`), run the following commands to configure the port settings for the management interfaces of both the servers and the storage:
 
-==== Cisco Nexus Switch A
+==== Cisco Nexus switch A
 
 ....
 int eth1/1-2
@@ -252,7 +251,7 @@ int eth1/1-2
 exit
 ....
 
-==== Cisco Nexus Switch B
+==== Cisco Nexus switch B
 
 ....
 int eth1/1-2
@@ -263,9 +262,9 @@ int eth1/1-2
 exit
 ....
 
-=== Add NTP Distribution Interface
+=== Add NTP distribution interface
 
-==== Cisco Nexus Switch A
+==== Cisco Nexus switch A
 
 From the global configuration mode, execute the following commands.
 
@@ -276,7 +275,7 @@ no shutdown
 exitntp peer <switch-b-ntp-ip> use-vrf default
 ....
 
-==== Cisco Nexus Switch B
+==== Cisco Nexus switch B
 
 From the global configuration mode, execute the following commands.
 
@@ -287,9 +286,9 @@ no shutdown
 exitntp peer <switch-a-ntp-ip> use-vrf default
 ....
 
-=== Perform Virtual Port Channel Global Configuration
+=== Perform virtual port channel global configuration
 
-A virtual port channel (vPC) enables links that are physically connected to two different Cisco Nexus switches to appear as a single port channel to a third device. The third device can be a switch, server, or any other networking device. A vPC can provide layer 2 multipathing, which allows you to create redundancy by increasing bandwidth, enabling multiple parallel paths between nodes, and load-balancing traffic where alternative paths exist.
+A virtual port channel (vPC) enables links that are physically connected to two different Cisco Nexus switches to appear as a single port channel to a third device. The third device can be a switch, server, or any other networking device. A vPC can provide layer-2 multipathing, which allows you to create redundancy by increasing bandwidth, enabling multiple parallel paths between nodes, and load-balancing traffic where alternative paths exist.
 
 A vPC provides the following benefits:
 
@@ -305,7 +304,7 @@ The vPC feature requires some initial setup between the two Cisco Nexus switches
 
 From configuration mode (`config t`), run the following commands to configure the vPC global configuration for both switches:
 
-==== Cisco Nexus Switch A
+==== Cisco Nexus switch A
 
 ....
 vpc domain 1
@@ -348,7 +347,7 @@ int eth1/4
 copy run start
 ....
 
-==== Cisco Nexus Switch B
+==== Cisco Nexus switch B
 
 ....
 vpc domain 1
@@ -397,11 +396,11 @@ copy run start
 [NOTE]
 In this solution validation, a maximum transmission unit (MTU) of 9000 was used. However, based on application requirements, you can configure an appropriate value of MTU. It is important to set the same MTU value across the FlexPod solution. Incorrect MTU configurations between components result in packets being dropped.
 
-=== Uplink into Existing Network Infrastructure
+=== Uplink into existing network infrastructure
 
 Depending on the available network infrastructure, several methods and features can be used to uplink the FlexPod environment. If an existing Cisco Nexus environment is present, NetApp recommends using vPCs to uplink the Cisco Nexus 31108PVC switches included in the FlexPod environment into the infrastructure. The uplinks can be 10GbE uplinks for a 10GbE infrastructure solution or 1GbE for a 1GbE infrastructure solution if required. The previously described procedures can be used to create an uplink vPC to the existing environment. Make sure to run copy run start to save the configuration on each switch after the configuration is completed.
 
-== NetApp Storage Deployment Procedure (Part 1)
+== NetApp storage deployment procedure (part 1)
 
 This section describes the NetApp AFF storage deployment procedure.
 
@@ -417,21 +416,21 @@ Confirm that the hardware and software components that you would like to use are
 . Alternatively, to compare components by storage appliance, click Compare Storage Systems.
 
 |===
-|Controller AFF2XX Series Prerequisites
+|Controller AFF2XX Series prerequisites
 
-|To plan the physical location of the storage systems, see the . Refer to the following sections:
+|To plan the physical location of the storage systems, see the the following sections:
 Electrical requirements
 Supported power cords
 Onboard ports and cables
 |===
 
-==== Storage Controllers
+==== Storage controllers
 
 Follow the physical installation procedures for the controllers in the https://library-clnt.dmz.netapp.com/documentation/docweb/index.html?productID=62331&language=en-US[AFF A220 Documentation^].
 
 === NetApp ONTAP 9.5
 
-==== Configuration Worksheet
+==== Configuration worksheet
 
 Before running the setup script, complete the configuration worksheet from the product manual. The configuration worksheet is available in the http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-ssg/home.html[ONTAP 9.5 Software Setup Guide^] (available in the http://docs.netapp.com/ontap-9/index.jsp[ONTAP 9 Documentation Center^]). The table below illustrates ONTAP 9.5 installation and configuration information.
 
@@ -492,7 +491,7 @@ This system is set up in a two-node switchless cluster configuration.
 |<< switch-b-ntp-ip >>
 |===
 
-==== Configure Node A
+==== Configure node A
 
 To configure node A, complete the following steps:
 
@@ -542,7 +541,7 @@ The initialization and creation of the root aggregate can take 90 minutes or mor
 
 . While node A is initializing, begin configuring node B.
 
-==== Configure Node B
+==== Configure node B
 
 To configure node B, complete the following steps:
 
@@ -594,7 +593,7 @@ When installing new software, the system might perform firmware upgrades to the 
 +
 The initialization and creation of the root aggregate can take 90 minutes or more to complete, depending on the number and type of disks attached. When initialization is complete, the storage system reboots. Note that SSDs take considerably less time to initialize.
 
-=== Continuation Node A Configuration and Cluster Configuration
+=== Continuation node A configuration and cluster configuration
 
 From a console port program attached to the storage controller A (node A) console port, run the node setup script. This script appears when ONTAP 9.5 boots on the node for the first time.
 
@@ -630,7 +629,7 @@ Otherwise, press Enter to complete cluster setup using the command line interfac
 . Navigate to the IP address of the node’s management interface.
 +
 [NOTE]
- Cluster setup can also be performed by using the CLI. This document describes cluster setup using NetApp System Manager guided setup.
+Cluster setup can also be performed by using the CLI. This document describes cluster setup using NetApp System Manager guided setup.
 
 . Click Guided Setup to configure the cluster.
 . Enter `\<<var_clustername>>` for the cluster name and `\<<var_nodeA>>` and `\<<var_nodeB>>` for each of the nodes that you are configuring. Enter the password that you would like to use for the storage system. Select Switchless Cluster for the cluster type. Enter the cluster base license.
@@ -656,11 +655,11 @@ You must, at a minimum, set up the event notification method before you can proc
 
 . When indicated that the cluster configuration has completed, click Manage Your Cluster to configure the storage.
 
-=== Continuation of Storage Cluster Configuration
+=== Continuation of storage cluster configuration
 
 After the configuration of the storage nodes and base cluster, you can continue with the configuration of the storage cluster.
 
-==== Zero All Spare Disks
+==== Zero all spare disks
 
 To zero all spare disks in the cluster, run the following command:
 
@@ -668,7 +667,7 @@ To zero all spare disks in the cluster, run the following command:
 disk zerospares
 ....
 
-==== Set On-Board UTA2 Ports Personality
+==== Set on-board UTA2 ports personality
 
 . Verify the current mode and the current type of the ports by running the `ucadmin show` command.
 +
@@ -719,7 +718,7 @@ To enable the Cisco Discovery Protocol (CDP) on the NetApp storage controllers, 
 node run -node * options cdpd.enable on
 ....
 
-==== Enable Link-layer Discovery Protocol on all Ethernet Ports
+==== Enable Link-layer Discovery Protocol on all Ethernet ports
 
 Enable the exchange of Link-layer Discovery Protocol (LLDP) neighbor information between the storage and network switches by running the following command. This command enables LLDP on all ports of all nodes in the cluster.
 
@@ -727,7 +726,7 @@ Enable the exchange of Link-layer Discovery Protocol (LLDP) neighbor information
 node run * options lldp.enable on
 ....
 
-==== Rename Management Logical Interfaces
+==== Rename management logical interfaces
 
 To rename the management logical interfaces (LIFs), complete the following steps:
 
@@ -749,7 +748,7 @@ network interface rename –vserver <<clustername>> –lif cluster_setup_cluster
 network interface rename -vserver <<clustername>> -lif cluster_setup_node_mgmt_lif_AFF A220_A_1 - newname AFF A220-01_mgmt1
 ....
 
-==== Set Auto-Revert on Cluster Management
+==== Set auto-revert on cluster management
 
 Set the `auto-revert` parameter on the cluster management interface.
 
@@ -757,7 +756,7 @@ Set the `auto-revert` parameter on the cluster management interface.
 network interface modify –vserver <<clustername>> -lif cluster_mgmt –auto-revert true
 ....
 
-==== Set Up Service Processor Network Interface
+==== Set up service processor network interface
 
 To assign a static IPv4 address to the service processor on each node, run the following commands:
 
@@ -769,7 +768,7 @@ system service-processor network modify –node <<var_nodeB>> -address-family IP
 [NOTE]
 The service processor IP addresses should be in the same subnet as the node management IP addresses.
 
-==== Enable Storage Failover in ONTAP
+==== Enable storage failover in ONTAP
 
 To confirm that storage failover is enabled, run the following commands in a failover pair:
 
@@ -778,7 +777,7 @@ To confirm that storage failover is enabled, run the following commands in a fai
 ....
 storage failover show
 ....
-
++
 Both `\<<var_nodeA>>` and `\<<var_nodeB>>` must be able to perform a takeover. Go to step 3 if the nodes can perform a takeover.
 
 . Enable failover on one of the two nodes.
@@ -824,7 +823,7 @@ storage failover modify –hwassist-partner-ip <<var_nodeB_mgmt_ip>> -node <<var
 storage failover modify –hwassist-partner-ip <<var_nodeA_mgmt_ip>> -node <<var_nodeB>>
 ....
 
-==== Create Jumbo Frame MTU Broadcast Domain in ONTAP
+==== Create jumbo frame MTU broadcast domain in ONTAP
 
 To create a data broadcast domain with an MTU of 9000, run the following commands:
 
@@ -834,7 +833,7 @@ broadcast-domain create -broadcast-domain Infra_iSCSI-A -mtu 9000
 broadcast-domain create -broadcast-domain Infra_iSCSI-B -mtu 9000
 ....
 
-==== Remove Data Ports from Default Broadcast Domain
+==== Remove data ports from default broadcast domain
 
 The 10GbE data ports are used for iSCSI/NFS traffic, and these ports should be removed from the default domain. Ports e0e and e0f are not used and should also be removed from the default domain.
 
@@ -844,7 +843,7 @@ To remove the ports from the broadcast domain, run the following command:
 broadcast-domain remove-ports -broadcast-domain Default -ports <<var_nodeA>>:e0c, <<var_nodeA>>:e0d, <<var_nodeA>>:e0e, <<var_nodeA>>:e0f, <<var_nodeB>>:e0c, <<var_nodeB>>:e0d, <<var_nodeA>>:e0e, <<var_nodeA>>:e0f
 ....
 
-==== Disable Flow Control on UTA2 Ports
+==== Disable flow control on UTA2 ports
 
 It is a NetApp best practice to disable flow control on all UTA2 ports that are connected to external devices. To disable flow control, run the following commands:
 
@@ -870,7 +869,7 @@ Warning: Changing the network port settings will cause a several second interrup
 [NOTE]
 The Cisco UCS Mini direct connection to ONTAP does not support LACP.
 
-==== Configure Jumbo Frames in NetApp ONTAP
+==== Configure jumbo frames in NetApp ONTAP
 
 To configure an ONTAP network port to use jumbo frames (that usually have an MTU of 9,000 bytes), run the following commands from the cluster shell:
 
@@ -921,7 +920,7 @@ network port vlan create –node <<var_nodeA>> -vlan-name e0m-<<mgmt_vlan_id>>
 network port vlan create –node <<var_nodeB>> -vlan-name e0m-<<mgmt_vlan_id>>
 ....
 
-==== Create Aggregates in ONTAP
+==== Create aggregates in ONTAP
 
 An aggregate containing the root volume is created during the ONTAP setup process. To create additional aggregates, determine the aggregate name, the node on which to create it, and the number of disks it contains.
 
@@ -938,7 +937,7 @@ Start with five disks; you can add disks to an aggregate when additional storage
 
 The aggregate cannot be created until disk zeroing completes. Run the `aggr show` command to display the aggregate creation status. Do not proceed until `aggr1_nodeA` is online.
 
-==== Configure Time Zone in ONTAP
+==== Configure time zone in ONTAP
 
 To configure time synchronization and to set the time zone on the cluster, run the following command:
 
@@ -1003,7 +1002,7 @@ The NetApp AutoSupport tool sends support summary information to NetApp through 
 system node autosupport modify -node * -state enable –mail-hosts <<var_mailhost>> -transport https -support enable -noteto <<var_storage_admin_email>>
 ....
 
-==== Create a Storage Virtual Machine
+==== Create a storage virtual machine
 
 To create an infrastructure storage virtual machine (SVM), complete the following steps:
 
@@ -1075,7 +1074,7 @@ volume modify –vserver Infra-SVM –volume rootvol –policy default
 [NOTE]
 The NetApp VSC automatically handles export policies if you choose to install it after vSphere has been set up. If you do not install it, you must create export policy rules when additional Cisco UCS B-Series servers are added.
 
-==== Create iSCSI Service in ONTAP
+==== Create iSCSI service in ONTAP
 
 To create the iSCSI service, complete the following step:
 
@@ -1086,7 +1085,7 @@ iscsi create -vserver Infra-SVM
 iscsi show
 ....
 
-==== Create Load-Sharing Mirror of SVM Root Volume in ONTAP
+==== Create load-sharing mirror of SVM root volume in ONTAP
 
 To create a load-sharing mirror of the SVM root volume in ONTAP, complete the following steps:
 
@@ -1115,7 +1114,7 @@ snapmirror create -source-path Infra-SVM:rootvol -destination-path Infra-SVM:roo
 snapmirror initialize-ls-set -source-path Infra-SVM:rootvol snapmirror show
 ....
 
-==== Configure HTTPS Access in ONTAP
+==== Configure HTTPS access in ONTAP
 
 To configure secure access to the storage controller, complete the following steps:
 
@@ -1175,7 +1174,7 @@ set –privilege admin
 vserver services web modify –name spi|ontapi|compat –vserver * -enabled true
 ....
 
-==== Create a NetApp FlexVol Volume in ONTAP
+==== Create a NetApp FlexVol volume in ONTAP
 
 To create a NetApp FlexVol® volume, enter the volume name, size, and the aggregate on which it exists. Create two VMware datastore volumes and a server boot volume.
 
@@ -1189,7 +1188,7 @@ volume create -vserver Infra-SVM -volume infra_swap -aggregate aggr1_nodeA -size
 volume create -vserver Infra-SVM -volume esxi_boot -aggregate aggr1_nodeA -size 100GB -state online -policy default -space-guarantee none -percent-snapshot-space 0
 ....
 
-==== Enable Deduplication in ONTAP
+==== Enable deduplication in ONTAP
 
 To enable deduplication on appropriate volumes once a day, run the following commands:
 
@@ -1256,10 +1255,10 @@ network interface show
 
 ==== Create NFS LIFs in ONTAP
 
-The table below lists the information needed to complete this configuration.
+The following table lists the information needed to complete this configuration.
 
 |===
-|Detail |Detail Value
+|Detail |Detail value
 
 |Storage node A NFS LIF 01 a IP
 |\<<var_nodeA_nfs_lif_01_a_ip>>
@@ -1293,12 +1292,12 @@ network interface create -vserver Infra-SVM -lif nfs_lif02_b -role data -data-pr
 network interface show
 ....
 
-==== Add Infrastructure SVM Administrator
+==== Add infrastructure SVM administrator
 
-The table below lists the information needed to complete this configuration.
+The following table lists the information needed to complete this configuration.
 
 |===
-|Detail |Detail Value
+|Detail |Detail value
 
 |Vsmgmt IP
 |\<<var_svm_mgmt_ip>>
@@ -1337,15 +1336,15 @@ Enter it again: <<var_password>>
 security login unlock –username vsadmin –vserver
 ....
 
-== Cisco UCS Server Configuration
+== Cisco UCS server configuration
 
-=== FlexPod Cisco UCS Base
+=== FlexPod Cisco UCS base
 
 Perform Initial Setup of Cisco UCS 6324 Fabric Interconnect for FlexPod Environments.
 
 This section provides detailed procedures to configure Cisco UCS for use in a FlexPod ROBO environment by using Cisco UCS Manger.
 
-=== Cisco UCS Fabric Interconnect 6324 A
+=== Cisco UCS fabric interconnect 6324 A
 
 Cisco UCS uses access layer networking and servers. This high-performance, next-generation server system provides a data center with a high degree of workload agility and scalability.
 
@@ -1353,9 +1352,9 @@ Cisco UCS Manager 4.0(1b) supports the 6324 Fabric Interconnect that integrates 
 
 The hardware and software components support Cisco's unified fabric, which runs multiple types of data center traffic over a single converged network adapter.
 
-=== Initial System Setup
+=== Initial system setup
 
-The first time when you access a Fabric Interconnect in a Cisco UCS domain, a setup wizard prompts you for the following information required to configure the system:
+The first time when you access a fabric interconnect in a Cisco UCS domain, a setup wizard prompts you for the following information required to configure the system:
 
 * Installation method (GUI or CLI)
 * Setup mode (restore from full system backup or initial setup)
@@ -1367,10 +1366,10 @@ The first time when you access a Fabric Interconnect in a Cisco UCS domain, a se
 * DNS Server IPv4 or IPv6 address
 * Default domain name
 
-The table below lists the information needed to complete the Cisco UCS initial configuration on Fabric Interconnect A
+The following table lists the information needed to complete the Cisco UCS initial configuration on Fabric Interconnect A
 
 |===
-|Detail |Detail/Value
+|Detail |Detail/value
 
 |System Name 
 |\<<var_ucs_clustername>>
@@ -1442,10 +1441,10 @@ Default domain name: <<var_domain_name>>
 . Review the settings displayed on the console. If they are correct, answer `yes` to apply and save the configuration.
 . Wait for the login prompt to verify that the configuration has been saved.
 
-The table below lists the information needed to complete the Cisco UCS initial configuration on Fabric Interconnect B.
+The following table lists the information needed to complete the Cisco UCS initial configuration on Fabric Interconnect B.
 
 |===
-|Detail |Detail/Value
+|Detail |Detail/value
 
 |System Name 
 |\<<var_ucs_clustername>>
@@ -1494,7 +1493,7 @@ The table below lists the information needed to complete the Cisco UCS initial c
 
 . Wait for the login prompt to confirm that the configuration has been saved.
 
-=== Log in to Cisco UCS Manager
+=== Log into Cisco UCS Manager
 
 To log into the Cisco Unified Computing System (UCS) environment, complete the following steps:
 
@@ -1507,7 +1506,7 @@ You may need to wait at least 5 minutes after configuring the second fabric inte
 . When prompted, enter admin as the user name and enter the administrator password.
 . Click Login to log in to Cisco UCS Manager.
 
-=== Cisco UCS Manager Software Version 4.0(1b)
+=== Cisco UCS Manager software version 4.0(1b)
 
 This document assumes the use of Cisco UCS Manager Software version 4.0(1b). To upgrade the Cisco UCS Manager software and the Cisco UCS 6324 Fabric Interconnect software refer to  https://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-manager/products-installation-and-configuration-guides-list.html[Cisco UCS Manager Install and Upgrade Guides.^]
 
@@ -1520,7 +1519,7 @@ Cisco highly recommends that you configure Call Home in Cisco UCS Manager. Conf
 . Change the State to On.
 . Fill in all the fields according to your Management preferences and click Save Changes and OK to complete configuring Call Home.
 
-=== Add Block of IP Addresses for Keyboard, Video, Mouse Access
+=== Add block of IP addresses for keyboard, video, mouse access
 
 To create a block of IP addresses for in band server keyboard, video, mouse (KVM) access in the Cisco UCS environment, complete the following steps:
 
@@ -1553,7 +1552,7 @@ image:express-direct-attach-aff220-deploy_image8.png[Error: Missing Graphic Imag
 +
 image:express-direct-attach-aff220-deploy_image9.png[Error: Missing Graphic Image]
 
-=== Edit Chassis Discovery Policy
+=== Edit chassis discovery policy
 
 Setting the discovery policy simplifies the addition of Cisco UCS B-Series chassis and of additional fabric extenders for further Cisco UCS C-Series connectivity. To modify the chassis discovery policy, complete the following steps:
 
@@ -1564,7 +1563,7 @@ Setting the discovery policy simplifies the addition of Cisco UCS B-Series chass
 . Click Save Changes.
 . Click OK.
 
-=== Enable Server, Uplink, and Storage Ports
+=== Enable server, uplink, and storage ports
 
 To enable server and uplink ports, complete the following steps:
 
@@ -1595,7 +1594,7 @@ image:express-direct-attach-aff220-deploy_image10.png[Error: Missing Graphic Ima
 +
 image:express-direct-attach-aff220-deploy_image11.png[Error: Missing Graphic Image]
 
-=== Create Uplink Port Channels to Cisco Nexus 31108 Switches
+=== Create uplink port channels to Cisco Nexus 31108 switches
 
 To configure the necessary port channels in the Cisco UCS environment, complete the following steps:
 
@@ -1635,7 +1634,7 @@ The port channel should have an Overall Status of Up.
 . Under Port Channels, select the newly created port-channel.
 . The port channel should have an Overall Status of Up.
 
-=== Create an Organization (Optional)
+=== Create an organization (optional)
 
 Organizations are used to organizing resources and restricting access to various groups within the IT organization, thereby enabling multitenancy of the compute resources.
 
@@ -1649,7 +1648,7 @@ To configure an organization in the Cisco UCS environment, complete the followin
 . Optional: Enter a description for the organization. Click OK.
 . Click OK in the confirmation message.
 
-=== Configure Storage Appliance Ports and Storage VLANs
+=== Configure storage appliance ports and storage VLANs
 
 To configure the storage appliance ports and storage VLANs, complete the following steps:
 
@@ -1727,7 +1726,7 @@ image:express-direct-attach-aff220-deploy_image17.png[Error: Missing Graphic Ima
 . Under VLANs, select the iSCSI-B-VLAN, NFS VLAN, and Native VLAN. Set the Native-VLAN as the Native VLAN. Unselect the default VLAN.
 . Click Save Changes and OK.
 
-=== Set Jumbo Frames in Cisco UCS Fabric
+=== Set jumbo frames in Cisco UCS fabric
 
 To configure jumbo frames and enable quality of service in the Cisco UCS fabric, complete the following steps:
 
@@ -1741,7 +1740,7 @@ image:express-direct-attach-aff220-deploy_image18.png[Error: Missing Graphic Ima
 . Click Save Changes.
 . Click OK.
 
-=== Acknowledge Cisco UCS Chassis
+=== Acknowledge Cisco UCS chassis
 
 To acknowledge all Cisco UCS chassis, complete the following steps:
 
@@ -1751,11 +1750,11 @@ To acknowledge all Cisco UCS chassis, complete the following steps:
 . Click OK and then click OK to complete acknowledging the chassis.
 . Click Close to close the Properties window.
 
-=== Load Cisco UCS 4.0(1b) Firmware Images
+=== Load Cisco UCS 4.0(1b) firmware images
 
 To upgrade the Cisco UCS Manager software and the Cisco UCS Fabric Interconnect software to version 4.0(1b) refer to https://www.cisco.com/en/US/products/ps10281/prod_installation_guides_list.html[Cisco UCS Manager Install and Upgrade Guides^].
 
-=== Create Host Firmware Package
+=== Create host firmware package
 
 Firmware management policies allow the administrator to select the corresponding packages for a given server configuration. These policies often include packages for adapter, BIOS, board controller, FC adapters, host bus adapter (HBA) option ROM, and storage controller properties.
 
@@ -1772,7 +1771,7 @@ image:express-direct-attach-aff220-deploy_image19.png[Error: Missing Graphic Ima
 
 . Click OK then OK again to modify the host firmware package.
 
-=== Create MAC Address Pools
+=== Create MAC address pools
 
 To configure the necessary MAC address pools for the Cisco UCS environment, complete the following steps:
 
@@ -1813,7 +1812,7 @@ For the FlexPod solution, it is recommended to place 0B in the next to last octe
 . Click Finish.
 . In the confirmation message, click OK.
 
-=== Create iSCSI IQN Pool
+=== Create iSCSI IQN pool
 
 To configure the necessary IQN pools for the Cisco UCS environment, complete the following steps:
 
@@ -1838,7 +1837,7 @@ image:express-direct-attach-aff220-deploy_image21.png[Error: Missing Graphic Ima
 
 . Click Finish.
 
-=== Create iSCSI Initiator IP Address Pools
+=== Create iSCSI initiator IP address pools
 
 To configure the necessary IP pools iSCSI boot for the Cisco UCS environment, complete the following steps:
 
@@ -1865,7 +1864,7 @@ To configure the necessary IP pools iSCSI boot for the Cisco UCS environment, co
 . Click Next.
 . Click Finish.
 
-=== Create UUID Suffix Pool
+=== Create UUID suffix pool
 
 To configure the necessary universally unique identifier (UUID) suffix pool for the Cisco UCS environment, complete the following steps:
 
@@ -1884,7 +1883,7 @@ To configure the necessary universally unique identifier (UUID) suffix pool for 
 . Click Finish.
 . Click OK.
 
-=== Create Server Pool
+=== Create server pool
 
 To configure the necessary server pool for the Cisco UCS environment, complete the following steps:
 
@@ -1916,7 +1915,7 @@ To create a Network Control Policy for Cisco Discovery Protocol (CDP) and Link L
 +
 image:express-direct-attach-aff220-deploy_image22.png[Error: Missing Graphic Image]
 
-=== Create Power Control Policy
+=== Create power control policy
 
 To create a power control policy for the Cisco UCS environment, complete the following steps:
 
@@ -1930,7 +1929,7 @@ To create a power control policy for the Cisco UCS environment, complete the fol
 +
 image:express-direct-attach-aff220-deploy_image23.png[Error: Missing Graphic Image]
 
-=== Create Server Pool Qualification Policy (Optional)
+=== Create server pool qualification policy (Optional)
 
 To create an optional server pool qualification policy for the Cisco UCS environment, complete the following steps:
 
@@ -1950,7 +1949,7 @@ This example creates a policy for Cisco UCS B-Series servers with the Intel E266
 +
 image:express-direct-attach-aff220-deploy_image24.png[Error: Missing Graphic Image]
 
-=== Create Server BIOS Policy
+=== Create server BIOS policy
 
 To create a server BIOS policy for the Cisco UCS environment, complete the following steps:
 
@@ -1982,14 +1981,14 @@ image:express-direct-attach-aff220-deploy_image26.png[Error: Missing Graphic Ima
 image:express-direct-attach-aff220-deploy_image27.png[Error: Missing Graphic Image]
 
 . Click RAS Memory and set the following parameters:
-.. LV DDR Mode: performance mode
+** LV DDR Mode: performance mode
 +
 image:express-direct-attach-aff220-deploy_image28.png[Error: Missing Graphic Image]
 
 . Click Finish to create the BIOS policy.
 . Click OK.
 
-=== Update the Default Maintenance Policy
+=== Update the default maintenance policy
 
 To update the default Maintenance Policy, complete the following steps:
 
@@ -2004,14 +2003,14 @@ image:express-direct-attach-aff220-deploy_image29.png[Error: Missing Graphic Ima
 . Click Save Changes.
 . Click OK to accept the change.
 
-=== Create vNIC Templates
+=== Create vNIC templates
 
 To create multiple virtual network interface card (vNIC) templates for the Cisco UCS environment, complete the procedures described in this section.
 
 [NOTE]
  A total of four vNIC templates are created.  
 
-==== Create Infrastructure vNICs
+==== Create infrastructure vNICs
 
 To create an infrastructure vNIC, complete the following steps:
 
@@ -2113,7 +2112,7 @@ image:express-direct-attach-aff220-deploy_image32.png[Error: Missing Graphic Ima
 +
 image:express-direct-attach-aff220-deploy_image33.png[Error: Missing Graphic Image]
 
-=== Create LAN Connectivity Policy for iSCSI Boot
+=== Create LAN connectivity policy for iSCSI boot
 
 This procedure applies to a Cisco UCS environment in which two iSCSI LIFs are on cluster node 1 (`iscsi_lif01a` and `iscsi_lif01b`) and two iSCSI LIFs are on cluster node 2 (`iscsi_lif02a` and `iscsi_lif02b`). Also, it is assumed that the A LIFs are connected to Fabric A (Cisco UCS 6324 A) and the B LIFs are connected to Fabric B (Cisco UCS 6324 B).
 
@@ -2173,7 +2172,7 @@ image:express-direct-attach-aff220-deploy_image35.png[Error: Missing Graphic Ima
 +
 image:express-direct-attach-aff220-deploy_image36.png[Error: Missing Graphic Image]
 
-==== Create vMedia Policy for VMware ESXi 6.7U1 Install Boot
+==== Create vMedia policy for VMware ESXi 6.7U1 install boot
 
 In the NetApp Data ONTAP setup steps an HTTP web server is required, which is used for hosting NetApp Data ONTAP as well as VMware software. The vMedia Policy created here maps the VMware ESXi 6. 7U1 ISO to the Cisco UCS server in order to boot the ESXi installation. To create this policy, complete the following steps:
 
@@ -2205,7 +2204,7 @@ For any new servers added to the Cisco UCS environment the vMedia service profil
 +
 image:express-direct-attach-aff220-deploy_image37.png[Error: Missing Graphic Image]
 
-=== Create iSCSI Boot Policy
+=== Create iSCSI boot policy
 
 The procedure in this section applies to a Cisco UCS environment in which two iSCSI logical interfaces (LIFs) are on cluster node 1 (`iscsi_lif01a` and `iscsi_lif01b`) and two iSCSI LIFs are on cluster node 2 (`iscsi_lif02a` and `iscsi_lif02b`). Also, it is assumed that the A LIFs are connected to Fabric A (Cisco UCS Fabric Interconnect A) and the B LIFs are connected to Fabric B (Cisco UCS Fabric Interconnect B).
 
@@ -2231,7 +2230,7 @@ To create a boot policy for the Cisco UCS environment, complete the following st
 +
 image:express-direct-attach-aff220-deploy_image38.png[Error: Missing Graphic Image]
 
-=== Create Service Profile Template
+=== Create service profile template
 
 In this procedure, one service profile template for Infrastructure ESXi hosts is created for Fabric A boot.
 
@@ -2247,14 +2246,14 @@ To create the service profile template, complete the following steps:
 +
 image:express-direct-attach-aff220-deploy_image39.png[Error: Missing Graphic Image]
 
-==== Configure Storage Provisioning
+==== Configure storage provisioning
 
 To configure storage provisioning, complete the following steps:
 
 . If you have servers with no physical disks, click Local Disk Configuration Policy and select the SAN Boot Local Storage Policy. Otherwise, select the default Local Storage Policy.
 . Click Next.
 
-==== Configure Networking Options
+==== Configure networking options
 
 To configure the networking options, complete the following steps:
 
@@ -2265,32 +2264,32 @@ To configure the networking options, complete the following steps:
 +
 image:express-direct-attach-aff220-deploy_image40.png[Error: Missing Graphic Image]
 
-==== Configure SAN Connectivity
+==== Configure SAN connectivity
 
 To configure SAN connectivity, complete the following steps:
 
 . For the vHBAs, select No for the How Would you Like to Configure SAN Connectivity? option.
 . Click Next.
 
-==== Configure Zoning
+==== Configure zoning
 
 To configure zoning, simply click Next.
 
-==== Configure vNIC/HBA Placement
+==== Configure vNIC/HBA placement
 
 To configure vNIC/HBA placement, complete the following steps:
 
 . From the Select Placement drop-down list, leave the placement policy as Let System Perform Placement.
 . Click Next.
 
-==== Configure vMedia Policy
+==== Configure vMedia policy
 
 To configure the vMedia policy, complete the following steps:
 
 . Do not select a vMedia Policy.
 . Click Next.
 
-==== Configure Server Boot Order
+==== Configure server boot order
 
 To configure the server boot order, complete the following steps:
 
@@ -2355,7 +2354,7 @@ image:express-direct-attach-aff220-deploy_image48.png[Error: Missing Graphic Ima
 
 . Click Next.
 
-==== Configure Maintenance Policy
+==== Configure maintenance policy
 
 To configure the maintenance policy, complete the following steps:
 
@@ -2365,7 +2364,7 @@ image:express-direct-attach-aff220-deploy_image49.png[Error: Missing Graphic Ima
 
 . Click Next.
 
-==== Configure Server Assignment
+==== Configure server assignment
 
 To configure the server assignment, complete the following steps:
 
@@ -2377,7 +2376,7 @@ image:express-direct-attach-aff220-deploy_image50.png[Error: Missing Graphic Ima
 
 . Click Next.
 
-==== Configure Operational Policies
+==== Configure operational policies
 
 To configure the operational policies, complete the following steps:
 
@@ -2389,7 +2388,7 @@ image:express-direct-attach-aff220-deploy_image51.png[Error: Missing Graphic Ima
 . Click Finish to create the service profile template.
 . Click OK in the confirmation message.
 
-=== Create vMedia-Enabled Service Profile Template
+=== Create vMedia-enabled service profile template
 
 To create a service profile template with vMedia enabled, complete the following steps:
 
@@ -2402,7 +2401,7 @@ To create a service profile template with vMedia enabled, complete the following
 . Select the ESXi-6. 7U1-HTTP vMedia Policy and click OK.
 . Click OK to confirm.
 
-=== Create Service Profiles
+=== Create service profiles
 
 To create service profiles from the service profile template, complete the following steps:
 
@@ -2422,11 +2421,11 @@ image:express-direct-attach-aff220-deploy_image52.png[Error: Missing Graphic Ima
 [NOTE]
 The service profiles are automatically associated with the servers in their assigned server pools.
 
-== Storage Configuration Part 2: Boot LUNs and Initiator Groups
+== Storage configuration part 2: boot LUNs and initiator groups
 
-=== ONTAP Boot Storage Setup
+=== ONTAP boot storage setup
 
-==== Create Initiator Groups
+==== Create initiator groups
 
 To create initiator groups (igroups), complete the following steps:
 
@@ -2443,7 +2442,7 @@ Use the values listed in Table 1 and Table 2 for the IQN information.
 
 . To view the three igroups just created, run the `igroup show` command.
 
-==== Map Boot LUNs to Igroups
+==== Map boot LUNs to igroups
 
 To map boot LUNs to igroups, complete the following step:
 
@@ -2453,13 +2452,13 @@ To map boot LUNs to igroups, complete the following step:
 lun map –vserver Infra-SVM –volume esxi_boot –lun VM-Host-Infra- A –igroup VM-Host-Infra-01 –lun-id 0lun map –vserver Infra-SVM –volume esxi_boot –lun VM-Host-Infra- B –igroup VM-Host-Infra-02 –lun-id 0
 ....
 
-== VMware vSphere 6.7U1 Deployment Procedure
+== VMware vSphere 6.7U1 deployment procedure
 
 This section provides detailed procedures for installing VMware ESXi 6.7U1 in a FlexPod Express configuration. After the procedures are completed, two booted ESXi hosts are provisioned.
 
 Several methods exist for installing ESXi in a VMware environment. These procedures focus on how to use the built-in KVM console and virtual media features in Cisco UCS Manager to map remote installation media to individual servers and connect to their boot LUNs.
 
-=== Download Cisco Custom Image for ESXi 6.7U1
+=== Download Cisco custom image for ESXi 6.7U1
 
 If the VMware ESXi custom image has not been downloaded, complete the following steps to complete the download:
 
@@ -2486,7 +2485,7 @@ To log in to the Cisco UCS environment, complete the following steps:
 . Right-click `VM-Host-Infra-02`. and select KVM Console.
 . Follow the prompts to launch the Java-based KVM console.
 
-==== Set Up VMware ESXi Installation
+==== Set up VMware ESXi installation
 
 ESXi Hosts VM-Host-Infra-01 and VM-Host- Infra-02
 
@@ -2522,7 +2521,7 @@ The ESXi installation image must be unmapped to make sure that the server reboot
 . After the installation is complete, press Enter to reboot the server.
 . In Cisco UCS Manager, bind the current service profile to the non-vMedia service profile template to prevent mounting the ESXi installation iso over HTTP.
 
-==== Set Up Management Networking for ESXi Hosts
+==== Set up management networking for ESXi hosts
 
 Adding a management network for each VMware host is necessary for managing the host. To add a management network for the VMware hosts, complete the following steps on each ESXi host:
 
@@ -2569,7 +2568,7 @@ Because the IP address is assigned manually, the DNS information must also be en
 . Press Esc to exit the Configure Management Network submenu.
 . Press Y to confirm the changes and reboot the ESXi host.
 
-==== Reset VMware ESXi Host VMkernel Port vmk0 MAC Address (Optional)
+==== Reset VMware ESXi host VMkernel port vmk0 MAC address (optional)
 
 ESXi Host VM-Host-Infra-01 and VM-Host-Infra-02
 
@@ -2599,7 +2598,7 @@ esxcfg-vmknic –l
 . Type `exit` to log out of the command line interface.
 . Press Ctrl-Alt-F2 to return to the ESXi console menu interface.
 
-==== Log in to VMware ESXi Hosts by Using VMware Host Client
+==== Log into VMware ESXi hosts with VMware host client
 
 ESXi Host VM-Host-Infra-01
 
@@ -2612,13 +2611,13 @@ To log in to the VM-Host-Infra-01 ESXi host by using the VMware Host Client, com
 . Click Login to connect.
 . Repeat this process to log in to `VM-Host-Infra-02` in a separate browser tab or window.
 
-==== Install VMware Drivers for the Cisco Virtual Interface Card (VIC)
+==== Install VMware drivers for the Cisco Virtual Interface Card (VIC)
 
 Download and extract the offline bundle for the following VMware VIC driver to the Management workstation:
 
 * nenic Driver version 1.0.25.0
 
-==== ESXi Hosts VM-Host-Infra-01 and VM-Host-Infra-02
+==== ESXi hosts VM-Host-Infra-01 and VM-Host-Infra-02
 
 To install VMware VIC Drivers on the ESXi host VM-Host-Infra-01 and VM-Host-Infra-02, complete the following steps:
 
@@ -2641,7 +2640,7 @@ reboot
 
 . Log into the Host Client on each host once reboot is complete and exit Maintenance Mode.
 
-==== Set Up VMkernel Ports and Virtual Switch
+==== Set up VMkernel ports and virtual switch
 
 ESXi Host VM-Host-Infra-01 and VM-Host-Infra-02
 
@@ -2723,7 +2722,7 @@ image:express-direct-attach-aff220-deploy_image54.png[Error: Missing Graphic Ima
 +
 image:express-direct-attach-aff220-deploy_image55.png[Error: Missing Graphic Image]
 
-==== Setup iSCSI Multipathing
+==== Setup iSCSI multipathing
 
 ESXi Hosts VM-Host-Infra-01 and VM-Host-Infra-02
 
@@ -2747,7 +2746,7 @@ To obtain all of the `iscsi_lif` IP addresses, log in to NetApp storage cluster 
 [NOTE]
 The host automatically rescans the storage adapter and the targets are added to static targets.
 
-==== Mount Required Datastores
+==== Mount required datastores
 
 ESXi Hosts VM-Host-Infra-01 and VM-Host-Infra-02
 
@@ -2784,7 +2783,7 @@ image:express-direct-attach-aff220-deploy_image60.jpeg[Error: Missing Graphic Im
 
 . Mount both datastores on both ESXi hosts.
 
-==== Configure NTP on ESXi Hosts
+==== Configure NTP on ESXi hosts
 
 ESXi Hosts VM-Host-Infra-01 and VM-Host-Infra-02
 
@@ -2806,7 +2805,7 @@ image:express-direct-attach-aff220-deploy_image61.png[Error: Missing Graphic Ima
 [NOTE]
 The NTP server time might vary slightly from the host time.
 
-==== Configure ESXi Host Swap
+==== Configure ESXi host swap
 
 ESXi Hosts VM-Host-Infra-01 and VM-Host-Infra-02
 
@@ -2842,7 +2841,7 @@ This section provides detailed procedures for installing VMware vCenter Server 6
 [NOTE]
 FlexPod Express uses the VMware vCenter Server Appliance (VCSA).
 
-=== Install VMware vCenter Server Appliance
+=== Install VMware vCenter server appliance
 
 To install VCSA, complete the following steps:
 
@@ -2920,7 +2919,7 @@ A message appears indicating that the setup was successful.
 [NOTE]
 The links that the installer provides to access vCenter Server are clickable.
 
-==== Configure VMware vCenter Server 6.7 and vSphere Clustering
+==== Configure VMware vCenter Server 6.7 and vSphere clustering
 
 To configure VMware vCenter Server 6.7 and vSphere clustering, complete the following steps:
 
@@ -2966,7 +2965,7 @@ This step can be completed later if desired.
 +
 This process must be completed for any additional hosts added to the FlexPod Express configuration.
 
-==== Configure Coredump on ESXi Hosts
+==== Configure coredump on ESXi hosts
 
 ESXi Dump Collector Setup for iSCSI-Booted Hosts
 

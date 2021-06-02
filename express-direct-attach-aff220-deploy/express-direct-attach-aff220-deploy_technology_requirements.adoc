@@ -5,7 +5,7 @@ keywords: technology, requirements, flexpod, express, hardware, software, hyperv
 summary: A FlexPod Express system requires a combination of hardware and software components. FlexPod Express also describes the hardware components that are required to add hypervisor nodes to the system in units of two.
 ---
 
-= Technology Requirements
+= Technology requirements
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -18,14 +18,13 @@ summary: A FlexPod Express system requires a combination of hardware and softwar
 // 2021-05-20 10:50:15.420695
 //
 
-[.lead]
 A FlexPod Express system requires a combination of hardware and software components. FlexPod Express also describes the hardware components that are required to add hypervisor nodes to the system in units of two.
 
-== Hardware Requirements
+== Hardware requirements
 
 Regardless of the hypervisor chosen, all FlexPod Express configurations use the same hardware. Therefore, even if business requirements change, either hypervisor can run on the same FlexPod Express hardware.
 
-The table below lists the hardware components that are required for all FlexPod Express configurations.
+The following table lists the hardware components that are required for all FlexPod Express configurations.
 
 |===
 |Hardware |Quantity
@@ -42,9 +41,9 @@ The table below lists the hardware components that are required for all FlexPod 
 |1
 |===
 
-== Software Requirements
+== Software requirements
 
-The table below lists the software components that are required to implement the architectures of the FlexPod Express solutions.
+The following table lists the software components that are required to implement the architectures of the FlexPod Express solutions.
 
 |===
 |Software |Version |Details
@@ -66,7 +65,7 @@ The table below lists the software components that are required to implement the
 |For AFF A220 controllers
 |===
 
-The table below lists the software that is required for all VMware vSphere implementations on FlexPod Express.
+The following table lists the software that is required for all VMware vSphere implementations on FlexPod Express.
 
 |===
 |Software |Version

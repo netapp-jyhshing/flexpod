@@ -18,6 +18,8 @@ summary: The following people contributed to the creation of this guide.
 // 2021-05-07 11:13:53.380338
 //
 
+The following people contributed to the creation of this guide.
+
 * Brandon Agee, Technical Marketing Engineer, NetApp
 * Atul Bhalodia, Technical Marketing Engineer, NetApp
 * Ketan Mota, Senior Product Manager, NetApp

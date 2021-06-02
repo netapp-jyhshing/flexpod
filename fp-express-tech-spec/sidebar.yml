@@ -3,6 +3,7 @@ title: FlexPod Express technical specifications
 entries:
   - title: FlexPod Express Technical Specifications
     url: /fp-express-tech-spec/fp-express-tech-spec_overview.html
+    type: solutions
   - title: FlexPod Platforms
     url: /fp-express-tech-spec/fp-express-tech-spec_flexpod_platforms.html
   - title: FlexPod Rules

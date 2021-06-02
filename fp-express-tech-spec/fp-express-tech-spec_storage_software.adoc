@@ -18,7 +18,6 @@ summary: The storage software listed in this section are supported in the FlexPo
 // 2021-05-20 13:19:48.578185
 //
 
-[.lead]
 The storage software listed in this section are supported in the FlexPod Express platform.
 
 == NetApp ONTAP
@@ -27,6 +26,6 @@ The NetApp ONTAP software is installed on every NetApp storage system.
 
 FlexPod is validated with ONTAP providing a highly scalable storage architecture that enables nondisruptive operations, nondisruptive upgrades, and an agile data infrastructure. For more information about ONTAP, see the http://www.netapp.com/us/products/platform-os/ontap/index.aspx[ONTAP Data Management Software product page^].
 
-== E-Series SANtricity Software
+== E-Series SANtricity software
 
 E-Series SANtricity software is the OS that runs on every E-Series storage system. SANtricity provides a highly flexible system that meets varying application needs and offers built-in high availability and a wide variety of data protection features. For more information, see the http://www.netapp.com/us/products/platform-os/santricity/index.aspx[SANtricity Software product site^].

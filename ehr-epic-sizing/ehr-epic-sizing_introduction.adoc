@@ -19,10 +19,10 @@ summary: This technical report provides guidance for sizing FlexPod (NetApp stor
 // 2021-05-07 11:05:29.140528
 //
 
-== Purpose
-
 Brian O’Mahony, Ganesh Kamath, Atul Bhalodia, NetApp
 Mike Brennan, Jon Ebmeier, Cisco
+
+== Purpose
 
 This technical report provides guidance for sizing FlexPod (NetApp storage and Cisco Unified Computing System) for an Epic Electronic Health Record (EHR) application software environment.
 
@@ -32,15 +32,15 @@ The sizing exercise described in this document covers users, global reference co
 
 This document is outlined into the following main sections:
 
-link:ehr-epic-sizing_netapp_storage_reference_architectures_for_epic.html[Reference Architecture], which describes the small, medium, and large compute storage architectures that can be used to host the Epic production database workload.
+* link:ehr-epic-sizing_netapp_storage_reference_architectures_for_epic.html[Reference Architecture], which describes the small, medium, and large compute storage architectures that can be used to host the Epic production database workload.
 
-link:ehr-epic-sizing_technical_specifications_for_small,_medium,_and_large_architectures.html[Technical Specifications], which details a sample bill of materials for the storage architectures. The configurations that are described are only for general guidance. Always size the systems according to your workload and tune the configurations as necessary.
+* link:ehr-epic-sizing_technical_specifications_for_small,_medium,_and_large_architectures.html[Technical Specifications], which details a sample bill of materials for the storage architectures. The configurations that are described are only for general guidance. Always size the systems according to your workload and tune the configurations as necessary.
 
 == Overall solution benefits
 
 By running an Epic environment on the FlexPod architectural foundation, healthcare organizations can expect to see improved staff productivity and decreased capital and operating expenses. FlexPod, a prevalidated, rigorously tested converged infrastructure from the strategic partnership of Cisco and NetApp, is engineered and designed specifically to deliver predictable low-latency system performance and high availability. This approach results in high comfort levels and the best response time for users of the Epic EHR system.
 
-The FlexPod solution from Cisco and NetApp meets Epic system requirements with a high- performing, modular, prevalidated, converged, virtualized, efficient, scalable, and cost-effective platform. FlexPod Datacenter with Epic delivers the following benefits specific to the healthcare industry:
+The FlexPod solution from Cisco and NetApp meets Epic system requirements with a high-performing, modular, prevalidated, converged, virtualized, efficient, scalable, and cost-effective platform. FlexPod Datacenter with Epic delivers the following benefits specific to the healthcare industry:
 
 * *Modular architecture.* FlexPod addresses the varied needs of the Epic modular architecture with purpose-configured FlexPod platforms for each specific workload. All components are connected through a clustered server and storage management fabric and a cohesive management toolset.
 * *Accelerated application deployment.* The prevalidated architecture reduces implementation integration time and risk to expedite Epic project plans. NetApp OnCommand Workforce Automation (WFA) workflows for Epic automate Epic backup and refresh and remove the need for custom unsupported scripts. Whether the solution is used for an initial rollout of Epic, a hardware refresh, or expansion, more resources can be shifted to the business value of the project.
@@ -52,7 +52,7 @@ The FlexPod solution from Cisco and NetApp meets Epic system requirements with a
 * *Pooled resource optimization.* Help reduce physical server and storage controller counts, load balance workload demands, and boost utilization while improving performance.
 * *Quality of service (QoS).* FlexPod offers QoS on the entire stack. Industry-leading QoS storage policies enable differentiated service levels in a shared environment. These policies enable optimal performance for workloads and help in isolating and controlling runaway applications.
 * *Storage efficiency.* Reduce storage costs with the NetApp 7:1 http://www.netapp.com/us/media/netapp-aff-efficiency-guarantee.pdf[storage efficiency guarantee^].
-* *Agility.* The industry-leading workflow automation, orchestration, and management tools offered by FlexPod systems allow IT to be far more responsive to business requests. These requests can range from Epic backup and provisioning of additional test and training environments to analytics database replications for population health- management initiatives.
+* *Agility.* The industry-leading workflow automation, orchestration, and management tools offered by FlexPod systems allow IT to be far more responsive to business requests. These requests can range from Epic backup and provisioning of additional test and training environments to analytics database replications for population health-management initiatives.
 * *Productivity.* Quickly deploy and scale this solution for optimal clinician end-user experience.
 * *Data Fabric.* The NetApp Data Fabric architecture weaves data together across sites, beyond physical boundaries, and across applications. The Data Fabric is built for data-driven enterprises in a data-centric world. Data is created and used in multiple locations, and it often needs to be leveraged and shared with other locations, applications, and infrastructures. Customers want a way to manage data that is consistent and integrated. The Data Fabric offers a way to manage data that puts IT in control and simplifies ever-increasing IT complexity.
 

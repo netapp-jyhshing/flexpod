@@ -18,14 +18,13 @@ summary: The architecture of FlexPod for MEDITECH is based on guidance from MEDI
 // 2021-05-07 11:13:53.074896
 //
 
-[.lead]
 The architecture of FlexPod for MEDITECH is based on guidance from MEDITECH, Cisco, and NetApp and from partner experience in working with MEDITECH customers of all sizes. The architecture is adaptable and applies best practices for MEDITECH, depending on your data center strategy; the size of your organization; and whether your system is centralized, distributed, or multitenant.
 
 The correct storage architecture can be determined by the overall size with the total IOPS. Performance alone is not the only factor, and you might decide to use a larger node count based on additional customer requirements. The advantage of using NetApp storage is that you can easily and nondisruptively scale up the cluster as your requirements change. You can also nondisruptively remove nodes from the cluster to repurpose equipment or during equipment refreshes.
 
 Here are some of the benefits of the NetApp ONTAP storage architecture:
 
-* *Easy, nondisruptive scale- up and scale- out.* You can upgrade, add, or remove disks and nodes by using ONTAP nondisruptive operations. You can start with four nodes and move to six nodes or upgrade to larger controllers nondisruptively.
+* *Easy, nondisruptive scale-up and scale-out.* You can upgrade, add, or remove disks and nodes by using ONTAP nondisruptive operations. You can start with four nodes and move to six nodes or upgrade to larger controllers nondisruptively.
 * *Storage efficiencies.* Reduce your total capacity requirements with deduplication, NetApp FlexClone, inline compression, inline compaction, thin replication, thin provisioning, and aggregate deduplication. The FlexClone capability enables you to almost instantly create clones to support backup and testing environment refreshes. These clones consume more storage only as changes are made.
 * *Disaster recovery shadow database server.* The disaster recovery shadow database server is part of your business continuity strategy (used to support storage read-only functionality and potentially configured to be a storage read/write instance). Therefore, the placement and sizing of the third storage system are usually the same as in your production database storage system.
 * *Database consistency (requires some consideration).* If you use NetApp SnapMirror backup copies in relation to business continuity, see http://media.netapp.com/documents/tr-3446.pdf[TR-3446: SnapMirror Async Overview and Best Practices Guide^].

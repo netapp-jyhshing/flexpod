@@ -5,7 +5,7 @@ keywords: testbed, ransomeware, attack, vm, snapshot, copy, wannacry, detection,
 summary: This section describes how an end user’s data can be recovered in the event of an attack and how attacks can be prevented by using a FlexPod system.
 ---
 
-= Protect and Recover Data on FlexPod
+= Protect and recover data on FlexPod
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -18,16 +18,15 @@ summary: This section describes how an end user’s data can be recovered in the
 // 2021-05-20 14:17:51.426666
 //
 
-[.lead]
 This section describes how an end user’s data can be recovered in the event of an attack and how attacks can be prevented by using a FlexPod system.
 
-== Testbed Overview
+== Testbed overview
 
 To showcase FlexPod detection, remediation, and prevention, a testbed was built based on the guidelines that are specified in the latest platform CVD available at the time this document was authored: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_datacenter_vmware_netappaffa.html[FlexPod Datacenter with VMware vSphere 6.7 U1, Cisco UCS 4th Generation, and NetApp AFF A-Series CVD^].
 
 A Windows 2016 VM, which provided a CIFS share from NetApp ONTAP software, was deployed in the VMware vSphere infrastructure. Then NetApp FPolicy was configured on the CIFS share to prevent the execution of files with certain extension types. NetApp SnapCenter software was also deployed to manage the Snapshot copies of the VMs in the infrastructure to provide application- consistent Snapshot copies.
 
-== State of VM and its Files Prior to an Attack
+== State of VM and its files prior to an attack
 
 This section provides shows the state of the files prior to an attack on the VM and the CIFS share that was mapped to it.
 
@@ -43,7 +42,7 @@ The following screenshot shows the files on the CIFS share `fpolicy_share` that 
 
 image:security-ransomware_image5.png[Error: Missing Graphic Image]
 
-== Deduplication and Snapshot Information Before an Attack
+== Deduplication and Snapshot information before an attack
 
 The storage efficiency details and size of the Snapshot copy prior to an attack are indicated and used as a reference during the detection phase.
 
@@ -63,7 +62,7 @@ A Snapshot copy size of 160KB was observed for the CIFS share `fpolicy_share`.
 
 image:security-ransomware_image9.png[Error: Missing Graphic Image]
 
-== WannaCry Infection on VM and CIFS Share
+== WannaCry infection on VM and CIFS share
 
 In this section, we show how the WannaCry malware was introduced into the FlexPod environment and the subsequent changes to the system that were observed.
 
@@ -77,7 +76,7 @@ image:security-ransomware_image10.png[Error: Missing Graphic Image]
 +
 image:security-ransomware_image11.png[Error: Missing Graphic Image]
 
-=== Case 1: WannaCry Encrypts the File System Within the VM and Mapped CIFS Share
+=== Case 1: WannaCry encrypts the file system within the VM and mapped CIFS share
 
 The local file system and the mapped CIFS share were encrypted by the WannaCry malware.
 
@@ -149,7 +148,7 @@ image:security-ransomware_image23.png[Error: Missing Graphic Image]
 +
 image:security-ransomware_image24.png[Error: Missing Graphic Image]
 
-=== Case 2: WannaCry Encrypts File System Within the VM and Tries to Encrypt the Mapped CIFS Share that is Protected Through FPolicy
+=== Case 2: WannaCry encrypts file system within the VM and tries to encrypt the mapped CIFS share that is protected through FPolicy
 
 ==== Prevention
 

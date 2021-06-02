@@ -18,10 +18,9 @@ summary: This section describes the optional features for FlexPod Express.
 // 2021-05-20 13:19:48.598656
 //
 
-[.lead]
 This section describes the optional features for FlexPod Express.
 
-== iSCSI Boot Option
+== iSCSI boot option
 
 The FlexPod Express architecture uses iSCSI boot. The minimum requirements for the iSCSI boot option include:
 
@@ -29,21 +28,21 @@ The FlexPod Express architecture uses iSCSI boot. The minimum requirements for t
 * A two-port 10Gbps Ethernet adapter on each node in the NetApp storage controller HA pair
 * An adapter in the Cisco UCS server that is capable of iSCSI boot
 
-== Configuration Options
+== Configuration options
 
 This section provides more information about the configuration required and validated in the FlexPod Express architecture.
 
 === FlexPod Express with Cisco UCS C-Series and AFF C190 Series
 
-The figure below illustrates the FlexPod Express with Cisco UCS C-Series and AFF C190 series solution. This solution supports both 10GbE uplinks.
+The following figure illustrates the FlexPod Express with Cisco UCS C-Series and AFF C190 series solution. This solution supports both 10GbE uplinks.
 
 image:fp-express-tech-spec_image2.png[Error: Missing Graphic Image]
 
-For more information about this configuration, see “FlexPod Express with VMware vSphere 6.7 and NetApp AFF C190 NVA Deployment Guide” (in progress).
+For more information about this configuration, see the FlexPod Express with VMware vSphere 6.7 and NetApp AFF C190 NVA Deployment Guide (in progress).
 
 === FlexPod Express with Cisco UCS Mini and AFF A220 and FAS 2750/2720
 
-The figure below illustrates the FlexPod Express with Cisco UCS- managed configuration.
+The following figure illustrates the FlexPod Express with Cisco UCS- managed configuration.
 
 image:fp-express-tech-spec_image3.png[Error: Missing Graphic Image]
 

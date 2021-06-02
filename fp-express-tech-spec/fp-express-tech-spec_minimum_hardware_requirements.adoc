@@ -5,7 +5,7 @@ keywords: minimum, hardware, requirements, fas, cimc, configuration, rack, serve
 summary: This section describes the minimum hardware requirements for the different versions of FlexPod Express.
 ---
 
-= Minimum Hardware Requirements
+= Minimum hardware requirements
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -18,24 +18,23 @@ summary: This section describes the minimum hardware requirements for the differ
 // 2021-05-20 13:19:48.580769
 //
 
-[.lead]
 This section describes the minimum hardware requirements for the different versions of FlexPod Express.
 
 == FlexPod Express with NetApp FAS
 
 The hardware requirements for FlexPod Express solutions that use NetApp FAS controllers for underlying storage include the configurations describe in this section.
 
-=== CIMC-Based Configuration (Standalone Rack Servers)
+=== CIMC-based configuration (standalone rack servers)
 
 The Cisco Integrated Management Controller (CIMC) configuration includes the following hardware components:
 
 * Two 10Gbps standard Ethernet switches in a redundant configuration (Cisco Nexus 0808 is recommended, with Cisco Nexus 3000 and 9000 models supported)
 * Cisco UCS C-Series standalone rack servers
-* Two AFF C190, AFF A220, FAS2600, or FAS 2700 series controllers in a high-availability (HA) pair configuration deployed as a two- node cluster
+* Two AFF C190, AFF A220, FAS2600, or FAS 2700 series controllers in a high-availability (HA) pair configuration deployed as a two-node cluster
 
-=== Cisco UCS-Managed Configuration
+=== Cisco UCS-managed configuration
 
-The Cisco UCS- managed confirmation includes the following hardware components:
+The Cisco UCS-managed confirmation includes the following hardware components:
 
 * Two 10Gbps standard Ethernet switches in a redundant configuration (Cisco Nexus 3524 is recommended)
 * One Cisco UCS 5108 alternating current (AC) blade server chassis
@@ -53,4 +52,4 @@ The hardware requirements for the FlexPod Express with E-Series starter configur
 * One HA pair configuration of an E-Series E2824 storage system loaded with minimum 12 disk drives
 * Two 10Gbps standard Ethernet switches in a redundant configuration (existing switches in the data center can be used)
 
-These hardware components are required to build a starter configuration of the solution; additional blade servers and disk drives can be added as needed. The E-Series E2824 storage system can be replaced with a higher platform and can also be run as an all- flash system.
+These hardware components are required to build a starter configuration of the solution; additional blade servers and disk drives can be added as needed. The E-Series E2824 storage system can be replaced with a higher platform and can also be run as an all-flash system.

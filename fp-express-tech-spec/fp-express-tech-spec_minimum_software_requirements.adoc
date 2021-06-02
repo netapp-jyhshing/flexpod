@@ -18,10 +18,9 @@ summary: This section describes the minimum software requirements for the differ
 // 2021-05-20 13:19:48.587494
 //
 
-[.lead]
 This section describes the minimum software requirements for the different versions of FlexPod Express.
 
-== Software Requirements for FlexPod Express with NetApp AFF or FAS
+== Software requirements for FlexPod Express with NetApp AFF or FAS
 
 The software requirements for the FlexPod Express with NetApp FAS include:
 
@@ -31,7 +30,7 @@ The software requirements for the FlexPod Express with NetApp FAS include:
 
 All software must be listed and supported in the http://support.netapp.com/matrix/[NetApp IMT^]. Certain software features might require more recent versions of code than the minimums listed in previous architectures.
 
-== Software Requirements for FlexPod Express with E-Series
+== Software requirements for FlexPod Express with E-Series
 
 The software requirements for the FlexPod Express with E-Series include:
 

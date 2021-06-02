@@ -18,13 +18,12 @@ summary: The reference validation cabling is documented in the following tables.
 // 2021-05-20 10:50:15.445875
 //
 
-[.lead]
 The reference validation cabling is documented in the following tables.
 
-The table below lists cabling information for Cisco Nexus switch 31108PCV A.
+The following table lists cabling information for Cisco Nexus switch 31108PCV A.
 
 |===
-|Local Device |Local Port |Remote Device |Remote Port
+|Local device |Local port |Remote device |Remote port
 
 .6+|Cisco Nexus switch 31108PCV A
 |Eth1/1
@@ -47,10 +46,10 @@ The table below lists cabling information for Cisco Nexus switch 31108PCV A.
 |Eth 1/14
 |===
 
-The table below lists the cabling information for Cisco Nexus switch 31108PCV B.
+The following table lists the cabling information for Cisco Nexus switch 31108PCV B.
 
 |===
-|Local Device |Local Port |Remote Device |Remote Port
+|Local device |Local port |Remote device |Remote port
 
 .6+|Cisco Nexus switch 31108PCV B
 |Eth1/1
@@ -73,10 +72,10 @@ The table below lists the cabling information for Cisco Nexus switch 31108PCV B.
 |Eth 1/14
 |===
 
-The table below lists cabling information for NetApp AFF A220 storage controller A.
+The following table lists cabling information for NetApp AFF A220 storage controller A.
 
 |===
-|Local Device |Local Port |Remote Device |Remote Port
+|Local device |Local port |Remote device |Remote port
 
 .5+|NetApp AFF A220 storage controller A
 
@@ -97,10 +96,10 @@ The table below lists cabling information for NetApp AFF A220 storage controller
 |Eth1/1
 |===
 
-The table below lists cabling information for NetApp AFF A220 storage controller B.
+The following table lists cabling information for NetApp AFF A220 storage controller B.
 
 |===
-|Local Device |Local Port |Remote Device |Remote Port
+|Local device |Local port |Remote device |Remote port
 
 .5+|NetApp AFF A220 storage controller B
 
@@ -121,10 +120,10 @@ The table below lists cabling information for NetApp AFF A220 storage controller
 |Eth1/1
 |===
 
-The table below lists cabling information for Cisco UCS Fabric Interconnect A.
+The following table lists cabling information for Cisco UCS Fabric Interconnect A.
 
 |===
-|Local Device |Local Port |Remote Device |Remote Port
+|Local device |Local port |Remote device |Remote port
 
 .5+|Cisco UCS Fabric Interconnect A
 
@@ -145,10 +144,10 @@ The table below lists cabling information for Cisco UCS Fabric Interconnect A.
 |Eth1/2
 |===
 
-The table below lists cabling information for Cisco UCS Fabric Interconnect B.
+The following table lists cabling information for Cisco UCS Fabric Interconnect B.
 
 |===
-|Local Device |Local Port |Remote Device |Remote Port
+|Local device |Local port |Remote device |Remote port
 
 .5+|Cisco UCS Fabric Interconnect B
 

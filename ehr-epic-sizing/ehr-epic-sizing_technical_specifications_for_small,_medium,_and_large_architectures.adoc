@@ -18,7 +18,6 @@ summary: The FlexPod design enables a flexible infrastructure that encompasses m
 // 2021-05-07 11:05:29.245686
 //
 
-[.lead]
 The FlexPod design enables a flexible infrastructure that encompasses many different components and software versions. Use https://fieldportal.netapp.com/content/443847[TR-4036: FlexPod Technical Specifications^] as a guide for building or assembling a valid FlexPod configuration. The configurations that are detailed are only the minimum requirements for FlexPod, and they are just a sample. They can be expanded in the included product families as required for different environments and use cases.
 
 The following table lists the capacity configurations for the Epic production database workload. The total capacity listed accommodates the need for all Epic components.

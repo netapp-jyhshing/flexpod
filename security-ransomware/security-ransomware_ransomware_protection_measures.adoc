@@ -5,7 +5,7 @@ keywords: ransomeware, protection, measures, storage, snapshot, snaprestore, sna
 summary: This section discusses the key features of NetApp ONTAP data management software and the tools for Cisco UCS and Cisco Nexus that you can use to effectively protect and recover from ransomware attacks.
 ---
 
-= Ransomware Protection Measures
+= Ransomware protection measures
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -18,7 +18,6 @@ summary: This section discusses the key features of NetApp ONTAP data management
 // 2021-05-20 14:17:51.420760
 //
 
-[.lead]
 This section discusses the key features of NetApp ONTAP data management software and the tools for Cisco UCS and Cisco Nexus that you can use to effectively protect and recover from ransomware attacks.
 
 == Storage: NetApp ONTAP

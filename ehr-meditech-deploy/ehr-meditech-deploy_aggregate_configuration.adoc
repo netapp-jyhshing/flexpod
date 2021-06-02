@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: ehr-meditech-deploy/ehr-meditech-deploy_aggregate_configuration.html
-keywords: aggregate, configuration, raid, groups, dp, storage, expansion, snapshot, copy, 
+keywords: aggregate, configuration, raid, groups, dp, storage, expansion, snapshot, copy,
 summary: NetApp recommends NetApp RAID DP technology as the RAID type for all aggregates in a NetApp FAS or AFF system, including regular NetApp Flash Pool aggregates. MEDITECH documentation might specify the use of RAID 10, but MEDITECH has approved the use of RAID DP.
 ---
 
@@ -22,7 +22,7 @@ summary: NetApp recommends NetApp RAID DP technology as the RAID type for all ag
 
 NetApp recommends NetApp RAID DP technology as the RAID type for all aggregates in a NetApp FAS or AFF system, including regular NetApp Flash Pool aggregates. MEDITECH documentation might specify the use of RAID 10, but MEDITECH has approved the use of RAID DP.
 
-== RAID group size and number of RAID Groups
+== RAID group size and number of RAID groups
 
 The default RAID group size is 16. This size might or might not be optimal for the aggregates for the MEDITECH hosts at your specific site. For the number of disks that NetApp recommends that you use in a RAID group, see https://fieldportal.netapp.com/content/190829[NetApp TR-3838: Storage Subsystem Configuration Guide^].
 
@@ -47,5 +47,4 @@ For more information about using reallocation after an aggregate expansion, see 
 
 Set the aggregate-level NetApp Snapshot copy reserve to zero and disable the default aggregate Snapshot schedule. Delete any preexisting aggregate-level Snapshot copies if possible.
 
-
-link:ehr-meditech-deploy_storage_virtual_machine_configuration.html[Next: Storage Virtual Machine Configuration]
+link:ehr-meditech-deploy_storage_virtual_machine_configuration.html[Next: Storage Virtual Machine Configuration.]
