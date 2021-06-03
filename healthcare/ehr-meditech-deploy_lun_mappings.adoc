@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: ehr-meditech-deploy/ehr-meditech-deploy_lun_mappings.html
+permalink: healthcare/ehr-meditech-deploy_lun_mappings.html
 keywords: lun, mappings, meditech, host
 summary: LUN mappings for the MEDITECH hosts are established when the LUNs are created.
 ---

@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: ehr-meditech-sizing/ehr-meditech-sizing_acknowledgments.html
+permalink: healthcare/ehr-meditech-sizing_acknowledgments.html
 keywords: acknowledgements, contributions, writers
 summary: The following people contributed to the writing and creation of this guide.
 ---

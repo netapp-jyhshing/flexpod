@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: ehr-meditech-deploy/ehr-meditech-deploy_cisco_ucs_blade_server_and_switch_configuration.html
+permalink: healthcare/ehr-meditech-deploy_cisco_ucs_blade_server_and_switch_configuration.html
 keywords: cisco, ucs, blade, server, switch, configuration, nexus, mds
 summary: This document provides high-level guidance on the basic configuration of a FlexPod environment for MEDITECH software. In this section, we present high-level steps with some examples to prepare the Cisco UCS compute platform element of the FlexPod configuration.
 ---

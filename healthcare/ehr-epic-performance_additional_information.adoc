@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: ehr-epic-performance/ehr-epic-performance_additional_information.html
+permalink: healthcare/ehr-epic-performance_additional_information.html
 keywords: additional, information, flexpod, epic, performance, testing
 summary: To learn more about the information that is described in this document, see the following documents or websites.
 ---

@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: ehr-meditech-deploy/ehr-meditech-deploy_design.html
+permalink: healthcare/ehr-meditech-deploy_design.html
 keywords: architecture, storage, layout, aggregates, database, disk, type, control, failover, hardware, aff
 summary: The architecture of FlexPod for MEDITECH is based on guidance from MEDITECH, Cisco, and NetApp and from partner experience in working with MEDITECH customers of all sizes. The architecture is adaptable and applies best practices for MEDITECH, depending on your data center strategy; the size of your organization; and whether your system is centralized, distributed, or multitenant.
 ---

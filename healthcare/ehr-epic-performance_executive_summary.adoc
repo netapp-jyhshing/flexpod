@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: ehr-epic-performance/ehr-epic-performance_executive_summary.html
+permalink: healthcare/ehr-epic-performance_executive_summary.html
 keywords: epic, performance, storage, efficiency, all, flash, fas, platform, ehr
 summary: To showcase the storage efficiency and performance of NetApp’s All Flash FAS platform, NetApp performed a study to measure Epic EHR performance on AFF A300 and AFF A700 systems.
 ---

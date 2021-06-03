@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: ehr-meditech-deploy/ehr-meditech-deploy_initiator_group_configuration.html
+permalink: healthcare/ehr-meditech-deploy_initiator_group_configuration.html
 keywords: initiator, group, configuration, fc, data, network, protocol, igroups
 summary: When you use FC as the data network protocol, create two initiator groups (igroups) on each storage controller. The first igroup contains the WWPNs of the FC host interface cards on the VMware ESXi servers that host the MEDITECH host VMs (igroup for MEDITECH).
 ---

@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: ehr-epic-performance/ehr-epic-performance_acknowledgements.html
+permalink: healthcare/ehr-epic-performance_acknowledgements.html
 keywords: acknowledgements, author, contributors
 summary: The following people contributed to the creation of this guide.
 ---

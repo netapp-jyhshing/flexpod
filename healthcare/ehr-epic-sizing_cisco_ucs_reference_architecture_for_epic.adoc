@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: ehr-epic-sizing/ehr-epic-sizing_cisco_ucs_reference_architecture_for_epic.html
+permalink: healthcare/ehr-epic-sizing_cisco_ucs_reference_architecture_for_epic.html
 keywords: cisco, ucs, reference, architecture, basic, expanded, hyperspace, implementation
 summary: When it comes to deploying Epic, Cisco has designed Cisco UCS reference architectures that align directly with Epic’s best practices. Cisco UCS delivers a tightly integrated solution for high performance, high availability, reliability, and scalability to support physician practices and hospital systems with several thousand beds.
 ---

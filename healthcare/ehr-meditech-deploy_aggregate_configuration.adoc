@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: ehr-meditech-deploy/ehr-meditech-deploy_aggregate_configuration.html
+permalink: healthcare/ehr-meditech-deploy_aggregate_configuration.html
 keywords: aggregate, configuration, raid, groups, dp, storage, expansion, snapshot, copy,
 summary: NetApp recommends NetApp RAID DP technology as the RAID type for all aggregates in a NetApp FAS or AFF system, including regular NetApp Flash Pool aggregates. MEDITECH documentation might specify the use of RAID 10, but MEDITECH has approved the use of RAID DP.
 ---

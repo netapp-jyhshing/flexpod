@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: ehr-epic-performance/ehr-epic-performance_test_methodology.html
+permalink: healthcare/ehr-epic-performance_test_methodology.html
 keywords: test, methodology, generationio, tool, genio, storage, harware, software, vms
 summary: The GenerationIO tool (GenIO) is used by Epic to validate that storage is production ready. This test focuses on performance by pushing storage to its limits and determining the headroom on storage controllers by ramping up until requirements fail.
 ---

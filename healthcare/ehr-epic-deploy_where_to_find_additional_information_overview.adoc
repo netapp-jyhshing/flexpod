@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: ehr-epic-deploy/ehr-epic-deploy_where_to_find_additional_information_overview.html
+permalink: healthcare/ehr-epic-deploy_where_to_find_additional_information_overview.html
 keywords: additional, information, flexpod, deployment, epic, ehr
 summary: To learn more about the information that is described in this document, see the following documents or websites.
 ---

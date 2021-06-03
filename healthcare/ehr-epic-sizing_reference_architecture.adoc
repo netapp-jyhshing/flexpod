@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: ehr-epic-sizing/ehr-epic-sizing_reference_architecture.html
+permalink: healthcare/ehr-epic-sizing_reference_architecture.html
 keywords:
 summary:
 ---

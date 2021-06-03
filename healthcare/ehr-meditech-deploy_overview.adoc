@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: ehr-meditech-deploy/ehr-meditech-deploy_overview.html
+permalink: healthcare/ehr-meditech-deploy_overview.html
 keywords: datacenter, meditech, deployment, solution, benefits, infrastructure, architecture, cisco, storage, volume, lun
 summary: By running a MEDITECH environment on the FlexPod architectural foundation, your healthcare organization can expect an improvement in staff productivity and a decrease in capital and operational expenditures.
 ---

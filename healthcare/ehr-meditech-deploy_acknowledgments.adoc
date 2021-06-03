@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: ehr-meditech-deploy/ehr-meditech-deploy_acknowledgments.html
+permalink: healthcare/ehr-meditech-deploy_acknowledgments.html
 keywords: acknowledgements, contributors, authors
 summary: The following people contributed to the creation of this guide.
 ---

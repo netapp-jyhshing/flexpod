@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: ehr-epic-performance/ehr-epic-performance_conclusion.html
+permalink: healthcare/ehr-epic-performance_conclusion.html
 keywords: flash, storage, epic, array, pools, adaptive, qos, performance
 summary: By 2020, all Epic customers must be on flash storage. NetApp ONTAP was the first all- flash array to get a high- comfort rating from Epic, and it is listed under Enterprise Storage Arrays. All NetApp platforms that run a GA version of ONTAP are high comfort.
 ---

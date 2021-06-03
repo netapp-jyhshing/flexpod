@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: ehr-epic-performance/ehr-epic-performance_workload_testing.html
+permalink: healthcare/ehr-epic-performance_workload_testing.html
 keywords: data, generation, aff, a300, genio, aqos, adaptive, quality, test, server, procedure
 summary: The AFF A300 HA pair can comfortably run the largest Epic instance in existence. If you have two or more very large Epic instances, you might need to use an AFF A700, based on the outcome of the NetApp SPM tool.
 ---

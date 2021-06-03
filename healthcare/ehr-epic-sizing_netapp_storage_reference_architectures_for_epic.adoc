@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: ehr-epic-sizing/ehr-epic-sizing_netapp_storage_reference_architectures_for_epic.html
+permalink: healthcare/ehr-epic-sizing_netapp_storage_reference_architectures_for_epic.html
 keywords: storage, reference, architecture, epic, lun, small, medium, larger, configuration
 summary: An appropriate storage architecture can be determined by the overall database size and the total IOPS. Performance alone is not the only factor, and you might decide to use a larger node count based on additional customer requirements.
 ---

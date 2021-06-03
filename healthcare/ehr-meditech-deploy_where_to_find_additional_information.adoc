@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: ehr-meditech-deploy/ehr-meditech-deploy_where_to_find_additional_information.html
+permalink: healthcare/ehr-meditech-deploy_where_to_find_additional_information.html
 keywords: additional, information, links, flexpod, meditech, deployment
 summary: To learn more about the information that is described in this document, review the following documents or websites.
 ---

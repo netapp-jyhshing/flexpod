@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: ehr-epic-sizing/ehr-epic-sizing_technical_specifications_for_small,_medium,_and_large_architectures.html
+permalink: healthcare/ehr-epic-sizing_technical_specifications_for_small,_medium,_and_large_architectures.html
 keywords: technical, specifications, architecture, components, software, epic
 summary: The FlexPod design enables a flexible infrastructure that encompasses many different components and software versions.
 ---

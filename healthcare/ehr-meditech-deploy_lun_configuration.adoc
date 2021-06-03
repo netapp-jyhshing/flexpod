@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: ehr-meditech-deploy/ehr-meditech-deploy_lun_configuration.html
+permalink: healthcare/ehr-meditech-deploy_lun_configuration.html
 keywords: lun, configuration, provisioning, operating, system, type, size, presentation
 summary: The number of MEDITECH hosts in your environment determines the number of LUNs that are created within the NetApp FAS or AFF system. The Hardware Configuration Proposal specifies the size of each LUN.
 ---

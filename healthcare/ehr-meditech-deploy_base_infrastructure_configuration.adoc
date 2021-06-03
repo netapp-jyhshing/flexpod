@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: ehr-meditech-deploy/ehr-meditech-deploy_base_infrastructure_configuration.html
+permalink: healthcare/ehr-meditech-deploy_base_infrastructure_configuration.html
 keywords: base, infrastructure, configuration, network, storage, connections, software, host
 summary: The following network connections, storage connections, and software must be in place to configure the infrastructure.
 ---

@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: ehr-meditech-sizing/ehr-meditech-sizing_introduction.html
+permalink: healthcare/ehr-meditech-sizing_introduction.html
 keywords: flexpod, directional, sizing, solution, benefits, scope, audience
 summary: This report provides guidance for sizing FlexPod for a MEDITECH EHR application software environment.
 ---

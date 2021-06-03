@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: ehr-meditech-deploy/ehr-meditech-deploy_esxi_configuration_best_practices.html
+permalink: healthcare/ehr-meditech-deploy_esxi_configuration_best_practices.html
 keywords: esxi, configuration, practices, vsc, vmware, vaai, host, multipathing
 summary: For the ESXi host-side configuration, configure the VMware hosts as you would run any enterprise database workload.
 ---

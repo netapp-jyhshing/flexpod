@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: ehr-epic-performance/ehr-epic-performance_introduction.html
+permalink: healthcare/ehr-epic-performance_introduction.html
 keywords: flexpod, epic, performance, testing, healthcare, workloads, hardware, configuration, cisco, unified, computing, system
 summary: The objective of this report is to highlight the performance of FlexPod with NetApp All Flash A300 and A700 storage systems with Epic Healthcare workloads.
 ---

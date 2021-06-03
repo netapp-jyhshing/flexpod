@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: ehr-epic-sizing/ehr-epic-sizing_introduction.html
+permalink: healthcare/ehr-epic-sizing_introduction.html
 keywords: flexpod, epic, directional, sizing, solution, benefits, scope
 summary: This technical report provides guidance for sizing FlexPod (NetApp storage and Cisco Unified Computing System) for an Epic Electronic Health Record (EHR) application software environment.
 ---

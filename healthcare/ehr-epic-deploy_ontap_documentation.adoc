@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: ehr-epic-deploy/ehr-epic-deploy_ontap_documentation.html
+permalink: healthcare/ehr-epic-deploy_ontap_documentation.html
 keywords: ontap, documentation, guides, flexpod, deployment
 summary: The following links and guides are relevant to this document and FlexPod deployment.
 ---

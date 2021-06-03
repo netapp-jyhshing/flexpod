@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: ehr-meditech-sizing/ehr-meditech-sizing_technical_specifications_for_small,_medium_and_large_architectures.html
+permalink: healthcare/ehr-meditech-sizing_technical_specifications_for_small,_medium_and_large_architectures.html
 keywords: technical, specifications, small, medium, large, architectures, bill, material
 summary: This section discusses a sample Bill of Materials for different size storage architectures.
 ---

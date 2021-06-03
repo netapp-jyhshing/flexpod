@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: ehr-meditech-deploy/ehr-meditech-deploy_deployment_and_configuration_overview.html
+permalink: healthcare/ehr-meditech-deploy_deployment_and_configuration_overview.html
 keywords: ontap, cisco, blade, ucs, rack, mount, server, cabling, diagram
 summary: This section details storage guidance for FlexPod deployment in environments that use ONTAP or Cisco UCS blade and rack-mount servers.
 ---

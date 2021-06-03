@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: ehr-meditech-sizing/ehr-meditech-sizing_meditech_workload_overview.html
+permalink: healthcare/ehr-meditech-sizing_meditech_workload_overview.html
 keywords: meditech, workload, backup, cisco, ucs, reference, architecture, platforms
 summary: This section describes the types of compute and storage workloads that you might find in MEDITECH environments.
 ---

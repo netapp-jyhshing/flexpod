@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: ehr-meditech-deploy/ehr-meditech-deploy_netapp_configuration.html
+permalink: healthcare/ehr-meditech-deploy_netapp_configuration.html
 keywords: configuration, storage, meditech, software, environments, controllers, hardware, takeover, licenses
 summary: NetApp storage that is deployed for MEDITECH software environments uses storage controllers in a high-availability- pair configuration. Storage must be presented from both controllers to MEDITECH database servers over the FC Protocol. The configuration presents storage from both controllers to evenly balance the application load during normal operation.
 ---

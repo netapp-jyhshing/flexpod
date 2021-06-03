@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: ehr-epic-deploy/ehr-epic-deploy_cisco_ucs_blade_server_and_switch_configuration.html
+permalink: healthcare/ehr-epic-deploy_cisco_ucs_blade_server_and_switch_configuration.html
 keywords: cisco, ucs, blade, server, switch, configuration
 summary: The FlexPod for Epic software is designed with fault tolerance at every level. There is no single point of failure in the system. This document is intended to provide high-level guidance on the basic configuration of a FlexPod environment for Epic software.
 ---

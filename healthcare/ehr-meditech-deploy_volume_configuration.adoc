@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: ehr-meditech-deploy/ehr-meditech-deploy_volume_configuration.html
+permalink: healthcare/ehr-meditech-deploy_volume_configuration.html
 keywords: volume, provisioning, snapshot, copy, volume, default, aggregate, reallocate, schedule
 summary: MEDITECH volumes that are dedicated for MEDITECH hosts can be either thick or thin provisioned and can be accessed using Snapshot copies. You can also use volume-level reallocation to optimize the layout of data on disk to improve write latencies and sequential read access.
 ---

@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: ehr-meditech-sizing/ehr-meditech-sizing_additional_information.html
+permalink: healthcare/ehr-meditech-sizing_additional_information.html
 keywords: additional, information, guides, meditech, sizing
 summary: To learn more about the information that is described in this document, see the following documents or websites.
 ---

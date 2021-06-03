@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: ehr-meditech-deploy/ehr-meditech-deploy_storage_virtual_machine_configuration.html
+permalink: healthcare/ehr-meditech-deploy_storage_virtual_machine_configuration.html
 keywords: storage, virtual, machine, configuration, svm, meditech, host, luns, language, encoding
 summary: This section pertains to deployment on ONTAP 8.3 and later versions.
 ---

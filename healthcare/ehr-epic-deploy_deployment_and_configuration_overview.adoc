@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: ehr-epic-deploy/ehr-epic-deploy_deployment_and_configuration_overview.html
+permalink: healthcare/ehr-epic-deploy_deployment_and_configuration_overview.html
 keywords: storage, flexpod, deployment, ontap, cisco, ucs
 summary: The NetApp storage FlexPod deployment guidance provided in this document only covers environments that use ONTAP and environments that use Cisco UCS blade and rack-mount servers. This page also details the 16Gb FC/40GbE topology diagram for an Epic deployment.
 ---

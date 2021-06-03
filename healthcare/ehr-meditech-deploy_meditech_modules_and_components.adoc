@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: ehr-meditech-deploy/ehr-meditech-deploy_meditech_modules_and_components.html
+permalink: healthcare/ehr-meditech-deploy_meditech_modules_and_components.html
 keywords: meditech, modules, components, application, function, type
 summary: The MEDITECH application covers several modules and components.
 ---
