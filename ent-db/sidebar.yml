@@ -1,0 +1,45 @@
+section: ent-db
+title: Enterprise Databases
+entries:
+  - title: SAP
+    entries:
+      - title: SAP HANA FC SAN CVD [Deploy]
+        url: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_sap_ucsm40_fcsan.html
+      - title: SAP Non-HANA with SQL White Paper (WP) [Design]
+        url: https://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-computing/ucs-b-series-blade-servers/sap-appservers-flexpod-with-sql.pdf
+      - title: FlexPod Datacenter for SAP Solution with Cisco UCS 3rd Generation and NetApp AFF A–Series [Design]
+        url: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_sap_ontap96.html
+      - title: FlexPod Datacenter for SAP Solution using FibreChannel SAN with Cisco UCS Manager 4.0 and NetApp ONTAP 9.7 [Design]
+        url: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_sap_ucsm40_fcsan_design.html
+      - title: Deploy SAP Data Hub on FlexPod with Cisco Container Platform (White Paper)
+        url: https://www.cisco.com/c/en/us/solutions/collateral/data-center-virtualization/unified-computing/sap-datahub-on-flexpod-with-cisco-container-platform.html
+      - title: FlexPod Datacenter for SAP Solution with Cisco ACI, Cisco UCS Manager 4.0, and NetApp AFF A–Series  [Design]
+        url: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_datacenter_ACI_sap_netappaffa_design.html
+      - title: FlexPod Datacenter for SAP Solution with Cisco ACI, Cisco UCS Manager 4.0, and NetApp AFF A–Series  [Deploy]
+        url: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_datacenter_ACI_sap_netappaffa.html
+      - title: FlexPod Datacenter for SAP Solution with Cisco UCS Manager 4.0 and NetApp AFF A with ONTAP 9.6 (CVD) [Design]
+        url: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_datacenter_sap_netappaffa_design.html
+      - title: SAP Application Servers on FlexPod with Oracle Database and Cisco UCS and NetApp AFF (White Paper)
+        url: https://www.cisco.com/c/en/us/solutions/collateral/data-center-virtualization/unified-computing/flexpod-oracle-database-sap-app-servers.html
+      - title: Virtualized SAP HANA on FlexPod Datacenter: Design Considerations and Best Practices (White Paper)
+        url: https://www.cisco.com/c/dam/en/us/solutions/collateral/data-center-virtualization/unified-computing/whitepaper-c11-741878.pdf
+      - title: FlexPod Datacenter for SAP Solution with Cisco UCS Manager 3.2 and Cisco Application Centric Infrastructure (ACI) [Design]
+        url: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_saphana_aci_UCSM32.html
+      - title: FlexPod Datacenter for SAP Solution with IP-Based Storage using NetApp AFF A-Series and Cisco UCS Manager 3.2
+        url: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_saphana_n9k_aff_ucsm.html
+  - title: Oracle
+    entries:
+      - title: FlexPod Datacenter with Oracle 19c RAC Databases on Cisco UCS and NetApp AFF with NVMe over FibreChannel [Deploy]
+        url: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_oracle_ucs_m5.html
+      - title: FlexPod Datacenter with Oracle RAC Databases on Cisco UCS and NetApp AFF A-Series [Design]
+        url: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_orc12cr2_affaseries.html
+      - title: FlexPod Datacenter with Oracle RAC on Oracle Linux [Deploy]
+        url: http://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_orcrac_12c_bm.html
+  - title: Microsoft SQL Server
+    entries:
+      - title: FlexPod Datacenter for Microsoft SQL Server 2019 and VMware vSphere 6.7 [Design]
+        url: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/mssql2019_flexpod.html
+      - title: FlexPod Datacenter with Microsoft SQL Server 2016 and VMware vSphere 6.5
+        url: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/mssql2016_flexpod_vmware_cvd.html
+      - title: FlexPod Datacenter with Microsoft SQL Server 2017 on Linux VM Running on VMware and Hyper-V [Design]
+        url: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/mssql2017_flexpod_linux.html
