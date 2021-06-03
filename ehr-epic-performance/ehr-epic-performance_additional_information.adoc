@@ -5,7 +5,7 @@ keywords: additional, information, flexpod, epic, performance, testing
 summary: To learn more about the information that is described in this document, see the following documents or websites.
 ---
 
-= Additional Information
+= Where to find additional information
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -18,7 +18,6 @@ summary: To learn more about the information that is described in this document,
 // 2021-05-20 13:41:30.119602
 //
 
-[.lead]
 To learn more about the information that is described in this document, see the following documents or websites:
 
 == FlexPod Design Zone
@@ -35,7 +34,7 @@ https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_esx
 +
 https://www.cisco.com/c/dam/en_us/solutions/industries/healthcare/Epic_on_UCS_tech_brief_FNL.pdf[https://www.cisco.com/c/dam/en_us/solutions/industries/healthcare/Epic_on_UCS_tech_brief_FNL.pdf^]
 
-== NetApp Technical Reports
+== NetApp technical reports
 
 * TR-4693: FlexPod Datacenter for Epic EHR Deployment Guide
 +
@@ -65,7 +64,7 @@ https://www.netapp.com/us/media/tr-4017.pdf[https://www.netapp.com/us/media/tr-4
 +
 https://www.netapp.com/us/media/tr-3446.pdf[https://www.netapp.com/us/media/tr-3446.pdf^]
 
-== ONTAP Documentation
+== ONTAP documentation
 
 * NetApp product documentation
 +
@@ -79,7 +78,7 @@ https://mysupport.netapp.com/documentation/productlibrary/index.html?productID=3
 +
 http://docs.netapp.com/ontap-9/index.jsp[http://docs.netapp.com/ontap-9/index.jsp^]
 
-== Cisco Nexus, MDS, Cisco UCS, and Cisco UCS Manager Guides
+== Cisco Nexus, MDS, Cisco UCS, and Cisco UCS Manager guides
 
 * Cisco UCS Servers Overview
 +

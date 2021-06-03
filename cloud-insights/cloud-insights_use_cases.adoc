@@ -5,7 +5,7 @@ keywords: target, cases, audience, cloud, insights, flexpod, ontap
 summary: The target audience and cases to which this solution applies are listed in this section.
 ---
 
-= Use Cases
+= Use cases
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -18,14 +18,13 @@ summary: The target audience and cases to which this solution applies are listed
 // 2021-05-20 15:58:38.802103
 //
 
-[.lead]
 This solution applies to the following use cases:
 
 * Organizations that want to monitor various resources and utilization in their ONTAP storage system deployed as part of a FlexPod solution.
 * Organizations that want to troubleshoot issues and shorten resolution time for incidents that occur in their FlexPod solution with their AFF or FAS systems.
 * Organizations interested in cost optimization projections, including customized dashboards to provide detailed information about wasted resources, and where cost savings can be realized in their FlexPod environment, including ONTAP.
 
-== Target Audience
+== Target audience
 
 The target audience for the solution includes the following groups:
 

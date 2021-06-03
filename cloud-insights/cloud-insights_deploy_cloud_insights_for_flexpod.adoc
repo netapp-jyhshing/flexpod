@@ -18,7 +18,6 @@ summary: The following tasks must be completed to deploy Cloud Insights for Flex
 // 2021-05-20 15:58:38.813641
 //
 
-[.lead]
 To deploy the solution, you must complete the following tasks:
 
 . Sign up for the Cloud Insights service
@@ -27,19 +26,19 @@ To deploy the solution, you must complete the following tasks:
 . Create an Acquisition Unit instance in the Cloud Insights Portal and install the software
 . Add the monitored storage system from the FlexPod Datacenter to Cloud Insights.
 
-== Sign Up for the NetApp Cloud Insights Service
+== Sign up for the NetApp Cloud Insights service
 
 To sign up for the NetApp Cloud Insights Service, complete the following steps:
 
 . Go to https://cloud.netapp.com/cloud-insights[https://cloud.netapp.com/cloud-insights^]
 . Click the button in the center of the screen to start the 14-day free trial, or the link in the upper right corner to sign up or log in with an existing NetApp Cloud Central account.
 
-== Create a VMware Virtual Machine to Configure as an Acquisition Unit
+== Create a VMware virtual machine to configure as an acquisition unit
 
 To create a VMware VM to configure as an acquisition unit, complete the following steps:
 
 . Launch a web browser and log in to VMware vSphere and select the cluster you want to host a VM.
-. Right- click on that cluster and select Create A Virtual Machine from the menu.
+. Right-click that cluster and select Create A Virtual Machine from the menu.
 +
 image:cloud-insights_image3.png[Error: Missing Graphic Image]
 
@@ -108,7 +107,7 @@ image:cloud-insights_image11.png[Error: Missing Graphic Image]
 +
 image:cloud-insights_image12.png[Error: Missing Graphic Image]
 
-== Create an Acquisition Unit Instance in the Cloud Insights Portal and Install the Software
+== Create an acquisition unit instance in the Cloud Insights portal and install the software
 
 To create an acquisition unit instance in the Cloud Insights portal and install the software, complete the following steps:
 
@@ -138,7 +137,7 @@ The installation program downloads a compressed package and begins the installat
 +
 image:cloud-insights_image18.png[Error: Missing Graphic Image]
 
-== Add the Monitored Storage System from the FlexPod Datacenter to Cloud Insights
+== Add the monitored storage system from the FlexPod Datacenter to Cloud Insights
 
 To add the ONTAP storage system from a FlexPod deployment, complete the following steps:
 

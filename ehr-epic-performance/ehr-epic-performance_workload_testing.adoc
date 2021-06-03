@@ -5,7 +5,7 @@ keywords: data, generation, aff, a300, genio, aqos, adaptive, quality, test, ser
 summary: The AFF A300 HA pair can comfortably run the largest Epic instance in existence. If you have two or more very large Epic instances, you might need to use an AFF A700, based on the outcome of the NetApp SPM tool.
 ---
 
-= Workload Testing
+= Workload testing
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -18,11 +18,11 @@ summary: The AFF A300 HA pair can comfortably run the largest Epic instance in e
 // 2021-05-20 13:41:30.101063
 //
 
-== AFF A300 Procedure
+== AFF A300 procedure
 
 The AFF A300 HA pair can comfortably run the largest Epic instance in existence. If you have two or more very large Epic instances, you might need to use an AFF A700, based on the outcome of the NetApp SPM tool.
 
-=== Data Generation
+=== Data generation
 
 Data inside the LUNs were generated with Epic’s Dgen.pl script. The script is designed to create data similar to what would be found inside an Epic database.
 
@@ -46,12 +46,12 @@ Run the following GenIO command from the server epic-rhel1:
 ./RampRun.pl –miniops 75000 --maxiops 110000 --background --disable-warmup --runtime 30 --wijfile /epic/epicjrn/GENIO.WIJ --numruns 10 --system epic-rhel1 --comment Ramp 75-110k
 ....
 
-== GenIO Result on the AFF A300
+== GenIO result on the AFF A300
 
 The following table lists GenIO results on the AFF A300
 
 |===
-|Read IOPs |Write IOPs |Total IOPs |Longest Write Cycle (sec) |Effective Write Latency (ms) |Randread Average (ms)
+|Read IOPs |Write IOPs |Total IOPs |Longest write cycle (sec) |Effective write latency (ms) |Randread average (ms)
 
 |142505
 |46442
@@ -61,11 +61,11 @@ The following table lists GenIO results on the AFF A300
 |0.66
 |===
 
-== AFF A700 Procedure
+== AFF A700 procedure
 
 For larger Epic environments, typically greater than ten million global references, customers can choose the AFF A700.
 
-== Data Generation
+== Data generation
 
 Data inside the LUNs was generated with Epic’s Dgen.pl script. The script is designed to create data similar to what would be found inside an Epic database.
 
@@ -89,12 +89,12 @@ Run the following GenIO command from the server epic-rhel1:
 ./RampRun.pl –miniops 75000 --maxiops 100000 --background --disable-warmup --runtime 30 --wijfile /epic/epicjrn/GENIO.WIJ --numruns 10 --system epic-rhel1 --comment Ramp 75-100k
 ....
 
-== GenIO Results on the AFF A700
+== GenIO results on the AFF A700
 
-The table below presents the GenIO results a test of the AFF A700.
+The following table presents the GenIO results a test of the AFF A700.
 
 |===
-|Read IOPs |Write IOPs |Total IOPs |Longest Write Cycle (sec) |Effective Write Latency (ms) |Randread Average (ms)
+|Read IOPs |Write IOPs |Total IOPs |Longest write cycle (sec) |Effective write latency (ms) |Randread average (ms)
 
 |241,180
 |78,654
@@ -110,7 +110,7 @@ NetApp can set floor and ceiling performance values for workloads using AQOS pol
 
 In this test, server 1 and server 2 were protected with AQOS, and the third server acted as a bully workload to cause performance degradation within the cluster. AQOS allowed servers 1 and 2 to perform at the specified SLA, while the bully workload showed signs of degradation with longer write cycles.
 
-=== Adaptive Quality of Service Defaults
+=== Adaptive quality of service defaults
 
 ONTAP comes configured with three default AQOS policies: value, performance, and extreme. The values for each policy can be view with the `qos` command. Use `-instant` at the end of the command to view all AQOS settings.
 
@@ -142,7 +142,7 @@ For this testing the lab did not reflect a production size database with a small
 * Expected IOPS/TB = Total IOPS/used space
 * 15,000 IOPS/TB = 75,000 IOPS/5TB
 
-The table below presents the settings that were used for the EpicProd AQOS policy.
+The following table presents the settings that were used for the EpicProd AQOS policy.
 
 |===
 |Setting |Value
@@ -165,7 +165,7 @@ The following figure shows how floor IOPS and ceiling IOPS are calculated as the
 
 image:ehr-epic-performance_image2.png[Error: Missing Graphic Image]
 
-For a production- sized database, you can either create a custom AQOS profile like the one used in the last example, or you can use the default performance AQOS policy. The settings for the performance AQOS policy are show in the table below.
+For a production-sized database, you can either create a custom AQOS profile like the one used in the last example, or you can use the default performance AQOS policy. The settings for the performance AQOS policy are show in the table below.
 
 |===
 |Setting |Value
@@ -238,7 +238,7 @@ qos adaptive-policy-group modify -policy-group aqos- epic-prod2 -expected-iops 6
 qos adaptive-policy-group modify -policy-group aqos- epic-bully -expected-iops 3000 -peak-iops 2000 -absolute-min-iops 2000 -peak-iops-allocation used-space
 ....
 
-=== Data Generation
+=== Data generation
 
 Data inside the LUNs was generated with the Epic `Dgen.pl` script. The script is designed to create data similar to what would be found inside an Epic database.
 
@@ -252,7 +252,7 @@ The following Dgen command was run on all three RHEL VMs:
 
 Three servers were tested. Two ran at a constant 75,000 IOPS, which represents a very large Epic environment. The third server was setup as a bully to ramp run from 75,000 IOPS to 150,000 IOPS. All three tests were run at the same time.
 
-=== Server epic_rhel1 GenIO Test
+=== Server epic_rhel1 GenIO test
 
 The following command was run to assign EpicProd AQOS settings to each volume:
 
@@ -266,7 +266,7 @@ The following GenIO command was run from the server epic-rhel1:
 ./RampRun.pl –miniops 75000 --maxiops 75000 --background --disable-warmup --runtime 30 --wijfile /epic/GENIO.WIJ --numruns 10 --system epic-rhel1 --comment Ramp constant 75k
 ....
 
-=== Server epic_rhel2 GenIO Test
+=== Server epic_rhel2 GenIO test
 
 The following command was run to assign EpicProd AQOS settings to each volume:
 
@@ -280,7 +280,7 @@ The following GenIO command was run from the server epic-rhel2:
 ./RampRun.pl --miniops 75000 --maxiops 75000 --background --disable-warmup --runtime 30 --wijfile /epic/GENIO.WIJ --numruns 10 --system epic-rhel2 --comment Ramp constant 75k
 ....
 
-=== Server epic_rhel3 GenIO Test (Bully)
+=== Server epic_rhel3 GenIO test (bully)
 
 The following command assigns no AQOS policy to each volume:
 
@@ -294,7 +294,7 @@ The following GenIO command was run from the server epic-rhel3:
 ./RampRun.pl --miniops 75000 --maxiops 150000 --background --disable-warmup --runtime 30 --wijfile /epic/GENIO.WIJ --numruns 10 --system epic-rhel3 --comment Ramp 75-150k
 ....
 
-=== AQOS Test results
+=== AQOS test results
 
 The tables in the following sections contain the output from the summary.csv files from each concurrent GenIO test. To pass the test, the longest write cycle must have been below 45 seconds. The effective write latency must have been below 1 millisecond.
 
@@ -303,7 +303,7 @@ The tables in the following sections contain the output from the summary.csv fil
 The following table illustrates GenIO results for AQOS server epic_rhel1.
 
 |===
-|Run |Read IOPS |Write IOPS |Total IOPS |Longest Write Cycle (sec) |Effective Write Latency (ms)
+|Run |Read IOPS |Write IOPS |Total IOPS |Longest write cycle (sec) |Effective write latency (ms)
 
 |10
 |55655
@@ -372,7 +372,7 @@ The following table illustrates GenIO results for AQOS server epic_rhel1.
 The following table illustrates GenIO results for AQOS server epic_rhel2.
 
 |===
-|Run |Read IOPS |Write IOPS |Total IOPS |Longest Write Cycle (sec) |Effective Write Latency (ms)
+|Run |Read IOPS |Write IOPS |Total IOPS |Longest write cycle (sec) |Effective write latency (ms)
 
 |10
 |55629
@@ -505,7 +505,7 @@ The following table illustrates GenIO results for AQOS server epic_rhel3.
 |0.13
 |===
 
-== AQOS Test results Analysis
+== AQOS test results analysis
 
 The results from the previous section demonstrate that the performance of the servers epic_rhel1 and epic_rhel2 are not affected by the bully workload on epic_rhel3. epic_rhel3 ramps up to 150,000 IOPS and starts to fail the GenIO test as it hits the limits of the controllers. The write cycle and latency on epic_rhel1 and epic_rhel2 stay constant while the bully server spirals out of control.
 
