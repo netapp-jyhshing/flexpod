@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: security-ransomware/security-ransomware_flexpod_overview.html
+permalink: security/security-ransomware_flexpod_overview.html
 keywords: flexpod, predesigned, integrated, validated, architecture, cisco, ucs, ransomware
 summary: FlexPod is a predesigned, integrated, and validated architecture that combines Cisco Unified Computing System (Cisco UCS) servers, the Cisco Nexus family of switches, Cisco MDS fabric switches, and NetApp storage arrays into a single, flexible architecture.
 ---

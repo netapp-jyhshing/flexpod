@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: security-ransomware/security-ransomware_protect_and_recover_data_on_flexpod.html
+permalink: security/security-ransomware_protect_and_recover_data_on_flexpod.html
 keywords: testbed, ransomeware, attack, vm, snapshot, copy, wannacry, detection, remediation, cifs
 summary: This section describes how an end user’s data can be recovered in the event of an attack and how attacks can be prevented by using a FlexPod system.
 ---

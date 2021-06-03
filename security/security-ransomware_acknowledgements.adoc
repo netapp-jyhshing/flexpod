@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: security-ransomware/security-ransomware_acknowledgements.html
+permalink: security/security-ransomware_acknowledgements.html
 keywords: acknowledgements, author, contributors, flexpod, ransomware
 summary: The author would like to thank the following people for their contributions to the creation of this guide.
 ---

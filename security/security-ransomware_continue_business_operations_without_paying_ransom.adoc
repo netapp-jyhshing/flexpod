@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: security-ransomware/security-ransomware_continue_business_operations_without_paying_ransom.html
+permalink: security/security-ransomware_continue_business_operations_without_paying_ransom.html
 keywords: ransom, pay, business, operations, restore, data, attack, prevent, recover
 summary: The NetApp capabilities described in this document help you restore data within minutes after an attack and prevent attacks in the first place so that you can continue business operations unhindered.
 ---
