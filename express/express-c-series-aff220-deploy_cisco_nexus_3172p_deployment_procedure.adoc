@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: express-c-series-aff220-deploy/express-c-series-aff220-deploy_cisco_nexus_3172p_deployment_procedure.html
+permalink: express/express-c-series-aff220-deploy_cisco_nexus_3172p_deployment_procedure.html
 keywords: cisco, nexus, deployment, vlans, switches, server, configuration
 summary: The following section details the Cisco Nexus 3172P switch configuration used in a FlexPod Express environment.
 ---

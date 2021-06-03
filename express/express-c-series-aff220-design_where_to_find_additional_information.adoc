@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: express-c-series-aff220-design/express-c-series-aff220-design_where_to_find_additional_information.html
+permalink: express/express-c-series-aff220-design_where_to_find_additional_information.html
 keywords:
 summary:
 ---

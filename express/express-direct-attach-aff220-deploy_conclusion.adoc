@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: express-direct-attach-aff220-deploy/express-direct-attach-aff220-deploy_conclusion.html
+permalink: express/express-direct-attach-aff220-deploy_conclusion.html
 keywords: flexpod, express, vmware, direct, attached, storage
 summary: FlexPod Express provides a simple and effective solution by providing a validated design that uses industry-leading components.
 ---

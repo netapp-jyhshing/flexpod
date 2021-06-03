@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: express-c-series-aff220-deploy/express-c-series-aff220-deploy_where_to_find_additional_information.html
+permalink: express/express-c-series-aff220-deploy_where_to_find_additional_information.html
 keywords:
 summary: You can refer to the NetApp's website and the FlexPod Express with VMware vSphere 6.7 and NetApp AFF A220 Design Guide to learn more about the information in this document.
 ---

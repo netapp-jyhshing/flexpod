@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: express-c-series-aff220-deploy/express-c-series-aff220-deploy_flexpod_express_cabling_information.html
+permalink: express/express-c-series-aff220-deploy_flexpod_express_cabling_information.html
 keywords: cabling, information, validation, cisco, nexus, switches
 summary: This section details a reference for validation cabling and cabling information for the Cisco Nexus switches 3172P A and B and the NetApp AFF A220 storage controllers A and B.
 ---

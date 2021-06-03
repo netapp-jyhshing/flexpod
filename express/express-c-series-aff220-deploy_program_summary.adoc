@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: express-c-series-aff220-deploy/express-c-series-aff220-deploy_program_summary.html
+permalink: express/express-c-series-aff220-deploy_program_summary.html
 keywords: summary, infrastructure, cisco, ucs, flexpod, datacenter
 summary: Industry trends indicate a vast data center transformation toward shared infrastructure and cloud computing. In addition, organizations seek a simple and effective solution for remote and branch offices, leveraging the technology with which they are familiar in their data center.
 ---

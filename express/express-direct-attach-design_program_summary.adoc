@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: express-direct-attach-design/express-direct-attach-design_program_summary.html
+permalink: express/express-direct-attach-design_program_summary.html
 keywords: express, datacenter, select, converged infrastructure, CVD, NVA, AFF A220, FAS 2750/2720, UCS Mini, UCS B200 M5, UCS VIC 1440/1480, Nexus 3000 Series Switches
 summary: FlexPod reference architectures are delivered as Cisco Validated Designs or NetApp Verified Architectures. Deviations based on customer requirements from a given CVD or NVA are permitted if these variations do not create an unsupported configuration.
 ---

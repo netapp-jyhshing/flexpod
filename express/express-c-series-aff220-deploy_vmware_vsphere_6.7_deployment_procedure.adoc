@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: express-c-series-aff220-deploy/express-c-series-aff220-deploy_vmware_vsphere_6.7_deployment_procedure.html
+permalink: express/express-c-series-aff220-deploy_vmware_vsphere_6.7_deployment_procedure.html
 keywords: vmware, vsphere, hosts, esxi, iscsi, cimc, cisco
 summary: This section provides detailed procedures for installing VMware ESXi 6.7 in a FlexPod Express configuration.
 ---

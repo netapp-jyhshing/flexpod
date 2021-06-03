@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: express-c-series-aff220-design/express-c-series-aff220-design_solution_overview.html
+permalink: express/express-c-series-aff220-design_solution_overview.html
 keywords: NetApp ONTAP 9.4, NetApp AFF A220, VMware vSphere 6.7, Target audience,
 summary: FlexPod Express is designed to run mixed virtualization workloads. It is targeted for remote and branch offices and for small to midsize businesses. It is also optimal for larger businesses that want to implement a dedicated solution for a purpose. This new solution for FlexPod Express adds new technologies such as NetApp ONTAP 9.4, NetApp AFF A220, and VMware vSphere 6.7.
 ---

@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: express-c-series-aff220-design/express-c-series-aff220-design_executive_summary.html
+permalink: express/express-c-series-aff220-design_executive_summary.html
 keywords: NVA-1125, nva1125, 1125
 summary:
 ---

@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: express-c-series-aff220-deploy/express-c-series-aff220-deploy_solution_overview.html
+permalink: express/express-c-series-aff220-deploy_solution_overview.html
 keywords: flexpod, converged, infrastructure, verified, architecture, solution, technology
 summary: This FlexPod Express solution is part of the FlexPod Converged Infrastructure Program.
 ---

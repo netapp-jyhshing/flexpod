@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: express-c-series-aff220-design/express-c-series-aff220-design_conclusion.html
+permalink: express/express-c-series-aff220-design_conclusion.html
 keywords: conclusion, scaling, hypervisor
 summary: FlexPod Express offers a simple and effective solution by providing a validated design that uses industry-leading components.
 ---

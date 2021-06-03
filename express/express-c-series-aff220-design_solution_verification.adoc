@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: express-c-series-aff220-design/express-c-series-aff220-design_solution_verification.html
+permalink: express/express-c-series-aff220-design_solution_verification.html
 keywords: verification, express
 summary:  From redundancy and availability to each individual feature, the entire FlexPod Express architecture is validated to instill confidence in our customers and to build trust in the design process.
 ---

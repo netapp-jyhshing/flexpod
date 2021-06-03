@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: express-direct-attach-aff220-deploy/express-direct-attach-aff220-deploy_flexpod_express_cabling_information.html
+permalink: express/express-direct-attach-aff220-deploy_flexpod_express_cabling_information.html
 keywords: cabling, express, information, cisco, nexus, switch, aff, storage, controller, ucs, fabric
 summary: The reference validation cabling is documented in the following tables.
 ---

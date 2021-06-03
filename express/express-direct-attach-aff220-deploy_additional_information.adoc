@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: express-direct-attach-aff220-deploy/express-direct-attach-aff220-deploy_additional_information.html
+permalink: express/express-direct-attach-aff220-deploy_additional_information.html
 keywords: additional, information, websites, documents, express, direct, attach
 summary: To learn more about the information that is described in this document, review the following documents and/or websites.
 ---

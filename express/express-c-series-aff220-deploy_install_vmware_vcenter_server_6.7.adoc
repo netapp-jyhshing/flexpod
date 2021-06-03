@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: express-c-series-aff220-deploy/express-c-series-aff220-deploy_install_vmware_vcenter_server_6.7.html
+permalink: express/express-c-series-aff220-deploy_install_vmware_vcenter_server_6.7.html
 keywords: install, vmware, vcenter, server, appliance
 summary: This section provides detailed procedures for installing VMware vCenter Server 6.7 in a FlexPod Express configuration.
 ---

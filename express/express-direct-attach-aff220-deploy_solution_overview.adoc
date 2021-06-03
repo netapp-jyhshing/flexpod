@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: express-direct-attach-aff220-deploy/express-direct-attach-aff220-deploy_solution_overview.html
+permalink: express/express-direct-attach-aff220-deploy_solution_overview.html
 keywords: solution, overview, flexpod, express, converged, infrastructure, program, verified, architecture, case, summary
 summary: This FlexPod Express solution is part of the FlexPod converged infrastructure program.
 ---

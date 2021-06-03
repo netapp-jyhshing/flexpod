@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: express-c-series-aff220-deploy/express-c-series-aff220-deploy_netapp_aff_storage_deployment_procedure_@part_2@.html
+permalink: express/express-c-series-aff220-deploy_netapp_aff_storage_deployment_procedure_@part_2@.html
 keywords: san, map, boot, storage, setup, aff, deployment, procedure, igroups
 summary: To create igroups, you need the iSCSI initiator IQNs and must complete the following steps.
 ---

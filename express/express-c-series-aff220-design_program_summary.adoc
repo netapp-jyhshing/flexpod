@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: express-c-series-aff220-design/express-c-series-aff220-design_program_summary.html
+permalink: express/express-c-series-aff220-design_program_summary.html
 keywords: summary, converged infrastructure, CVD, NVA, Express, Datacenter, select, Nexus 3172P, UCS C220 M5
 summary: FlexPod reference architectures are delivered as Cisco Validated Designs or as NetApp Verified Architectures. Deviations that are based on customer requirements from a given CVD or NVA are permitted if variations do not result in the deployment of unsupported configurations.
 ---

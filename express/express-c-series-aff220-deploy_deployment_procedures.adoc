@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: express-c-series-aff220-deploy/express-c-series-aff220-deploy_deployment_procedures.html
+permalink: express/express-c-series-aff220-deploy_deployment_procedures.html
 keywords:
 summary:
 ---

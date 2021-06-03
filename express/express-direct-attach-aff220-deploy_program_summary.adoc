@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: express-direct-attach-aff220-deploy/express-direct-attach-aff220-deploy_program_summary.html
+permalink: express/express-direct-attach-aff220-deploy_program_summary.html
 keywords: flexpod, express, vmware, vsphere, aff, direct, attached, ip, based, storage
 summary: FlexPod Express is a predesigned, best practice architecture that is built on the Cisco Unified Computing System (Cisco UCS), the Cisco Nexus family of switches, and NetApp storage technologies. FlexPod Datacenter and FlexPod Express are optimal platforms for virtualization and for bare-metal OSs and enterprise workloads.
 ---

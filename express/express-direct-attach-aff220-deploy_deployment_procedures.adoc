@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: express-direct-attach-aff220-deploy/express-direct-attach-aff220-deploy_deployment_procedures.html
+permalink: express/express-direct-attach-aff220-deploy_deployment_procedures.html
 keywords: deployment, procedures, configure, flexpod, express, ip, based, storage, vmware, vsphere, setup, cisco, ucs, vcenter
 summary: This document provides details for configuring a fully redundant, highly available FlexPod Express system.
 ---

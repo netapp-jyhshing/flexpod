@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: express-c-series-aff220-deploy/express-c-series-aff220-deploy_netapp_storage_deployment_procedure_@part_1@.html
+permalink: express/express-c-series-aff220-deploy_netapp_storage_deployment_procedure_@part_1@.html
 keywords: lif, vlans, snmp, nfsv3, lun, iscsi, configure, node, deployment, procedure
 summary: You can follow the steps below to complete the NetApp AFF storage deployment procedure.
 ---

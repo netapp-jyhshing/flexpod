@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: express-c-series-aff220-deploy/express-c-series-aff220-deploy_configure_vmware_vcenter_server_6.7_and_vsphere_clustering.html
+permalink: express/express-c-series-aff220-deploy_configure_vmware_vcenter_server_6.7_and_vsphere_clustering.html
 keywords: configure, vmware, vcenter, server, clustering, coredump, esxi, hosts
 summary: You can configure the VMware vCenter Server 6.7 and vSphere clustering by completing the following steps.
 ---
