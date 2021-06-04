@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: fp-express-tech-spec/fp-express-tech-spec_flexpod_rules.html
+permalink: fp-def/fp-express-tech-spec_flexpod_rules.html
 keywords: flexpod, rules, design, infrastructure, software, versions, components
 summary: The FlexPod design allows a flexible infrastructure that encompasses many different components and software versions.
 ---

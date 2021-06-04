@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: fp-express-tech-spec_flexpod_platforms.html
+permalink: fp-def/fp-express-tech-spec_flexpod_platforms.html
 keywords: flexpod, platforms, datacenter, express, select, technical, specifications
 summary: This document provides the technical specifications for the FlexPod Express platform.
 ---

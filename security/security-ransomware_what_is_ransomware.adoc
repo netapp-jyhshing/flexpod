@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: security/security-ransomware_what_is_ransomware.html
-keywords: data, loss, ransomeware, financial, risk, center, spread, solution
+keywords: data, loss, ransomware, financial, risk, center, spread, solution
 summary: Ransomware is a type of malware that is based on cryptovirology, which is the use of cryptography to build malicious software. This malware can make use of both symmetric and asymmetric key encryption to lock a victim’s data and demand a ransom to provide the key to decrypt the victim’s data.
 ---
 

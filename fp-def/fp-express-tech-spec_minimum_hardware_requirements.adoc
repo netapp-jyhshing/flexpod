@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: fp-express-tech-spec/fp-express-tech-spec_minimum_hardware_requirements.html
+permalink: fp-def/fp-express-tech-spec_minimum_hardware_requirements.html
 keywords: minimum, hardware, requirements, fas, cimc, configuration, rack, servers, ucs
 summary: This section describes the minimum hardware requirements for the different versions of FlexPod Express.
 ---

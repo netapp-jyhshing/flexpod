@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: cloud-insights/cloud-insights_videos_and_demos.html
+permalink: hybrid-cloud/cloud-insights_videos_and_demos.html
 keywords: videos, demos, cloud, insights, flexpod, express, video, demonstration
 summary: You can see a video demonstration of using NetApp Cloud Insights.
 ---

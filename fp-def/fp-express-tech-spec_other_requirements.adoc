@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: fp-express-tech-spec/fp-express-tech-spec_other_requirements.html
+permalink: fp-def/fp-express-tech-spec_other_requirements.html
 keywords: requirements, flexpod, express, software, hardware, cisco, imt, hcl
 summary: Additional requirements for Flexpod Express are listed below.
 ---

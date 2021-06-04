@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: cloud-insights/cloud-insights_architecture.html
+permalink: hybrid-cloud/cloud-insights_architecture.html
 keywords: architecture, solution, technology, diagram, hardware, requirements, case, details, software, cloud, insights
 summary: In this section, we review the architecture of a FlexPod Datacenter converged infrastructure, including a NetApp AFF A800 system that is monitored by Cloud Insights.
 ---

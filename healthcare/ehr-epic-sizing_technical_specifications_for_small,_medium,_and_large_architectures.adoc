@@ -5,7 +5,7 @@ keywords: technical, specifications, architecture, components, software, epic
 summary: The FlexPod design enables a flexible infrastructure that encompasses many different components and software versions.
 ---
 
-= Technical specifications for small, medium, and large Architectures
+= Technical specifications for small, medium, and large architectures
 :hardbreaks:
 :nofooter:
 :icons: font

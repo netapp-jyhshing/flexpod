@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: fp-express-tech-spec/fp-express-tech-spec_additional_information.html
+permalink: fp-def/fp-express-tech-spec_additional_information.html
 keywords: additional, information, websites, documents, express, technical, specifications
 summary: To learn more about the information that is described in this document, see the following documents and websites
 ---
