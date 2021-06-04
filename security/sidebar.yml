@@ -1,0 +1,21 @@
+section: security
+title: FlexPod and Security
+entries:
+  - title: FlexPod, The Solution to Ransomware
+    url: /security/security-ransomware_what_is_ransomware.html
+    type: solutions
+    entries:
+      - title: FlexPod Overview
+        url: /security/security-ransomware_flexpod_overview.html
+      - title: Ransomware Protection Measures
+        url: /security/security-ransomware_ransomware_protection_measures.html
+      - title: Protect and Recover Data on FlexPod
+        url: /security/security-ransomware_protect_and_recover_data_on_flexpod.html
+      - title: Continue Business Operations Without Paying Ransom
+        url: /security/security-ransomware_continue_business_operations_without_paying_ransom.html
+      - title: Conclusion
+        url: /security/security-ransomware_conclusion.html
+      - title: Acknowledgements
+        url: /security/security-ransomware_acknowledgements.html
+      - title: Additional Information
+        url: /security/security-ransomware_additional_information.html

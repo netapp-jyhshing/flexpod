@@ -1,0 +1,39 @@
+section: fp-def
+title: FlexPod Definition
+entries:
+  - title: FlexPod Express Technical Specifications
+    url: /fp-def/fp-def_overview.html
+    type: solutions
+    entries:
+      - title: FlexPod Platforms
+        url: /fp-def/fp-def_flexpod_platforms.html
+      - title: FlexPod Rules
+        url: /fp-def/fp-def_flexpod_rules.html
+      - title: Supported Versus Validated FlexPod Configurations
+        url: /fp-def/fp-def_supported_versus_validated_flexpod_configurations.html
+      - title: Storage Software
+        url: /fp-def/fp-def_storage_software.html
+      - title: Minimum Hardware Requirements
+        url: /fp-def/fp-def_minimum_hardware_requirements.html
+      - title: Minimum Software Requirements
+        url: /fp-def/fp-def_minimum_software_requirements.html
+      - title: Connectivity Requirements
+        url: /fp-def/fp-def_connectivity_requirements.html
+      - title: Other Requirements
+        url: /fp-def/fp-def_other_requirements.html
+      - title: Optional Features
+        url: /fp-def/fp-def__optional_features.html
+      - title: Cisco Components
+        url: /fp-def/fp-def__cisco_components.html
+      - title: NetApp Components
+        url: /fp-def/fp-def__netapp_components.html
+      - title: Power and Cabling Requirements
+        url: /fp-def/fp-def__power_and_cabling_requirements.html
+      - title: Technical Specifications and References
+        url: /fp-def/fp-def__technical_specifications_and_references.html
+      - title: Previous Architectures and Equipment
+        url: /fp-def/fp-def__previous_architectures_and_equipment.html
+      - title: Legacy Equipment
+        url: /fp-def/fp-def_legacy_equipment.html
+      - title: Additional Information
+        url: /fp-def/fp-def_additional_information.html

@@ -1,0 +1,145 @@
+section: healthcare
+title: Healthcare
+entries:
+  - title: FlexPod Datacenter for Epic Directional Sizing Guide
+    url: /healthcare/ehr-epic-sizing_introduction.html
+    type: solutions
+    entries:
+      - title: Reference architecture
+        url: /healthcare/ehr-epic-sizing_netapp_storage_reference_architectures_for_epic.html
+        entries:
+          - title: Cisco UCS reference architecture for Epic
+            url: /healthcare/ehr-epic-sizing_cisco_ucs_reference_architecture_for_epic.html
+      - title: Technical specifications for small, medium, and large Architectures
+        url: /healthcare/ehr-epic-sizing_technical_specifications_for_small,_medium,_and_large_architectures.html
+      - title: Additional information
+        url: /healthcare/ehr-epic-sizing_additional_information.html
+      - title: Acknowledgements
+        url: /healthcare/ehr-epic-sizing_acknowledgements.html
+  - title: FlexPod Datacenter for Epic EHR Deployment Guide
+    url: /healthcare/ehr-epic-deploy_overview.html
+    type: solutions
+    entries:
+      - title: Design
+        url: /healthcare/ehr-epic-deploy_design.html
+      - title: Deployment and configuration
+        url: /healthcare/ehr-epic-deploy_deployment_and_configuration_overview.html
+        entries:
+          - title: Infrastructure hardware and software components
+            url: /healthcare/ehr-epic-deploy_infrastructure_hardware_and_software_components.html
+          - title: Base infrastructure configuration
+            url: /healthcare/ehr-epic-deploy_base_infrastructure_configuration.html
+          - title: Cisco UCS blade server and switch configuration
+            url: /healthcare/ehr-epic-deploy_cisco_ucs_blade_server_and_switch_configuration.html
+          - title: Cisco MDS 9148S configuration
+            url: /healthcare/ehr-epic-deploy_cisco_mds_9148s_configuration.html
+          - title: ESXi configuration best practices
+            url: /healthcare/ehr-epic-deploy_esxi_configuration_best_practices.html
+          - title: NetApp configuration
+            url: /healthcare/ehr-epic-deploy_netapp_configuration.html
+          - title: GenIO tool
+            url: /healthcare/ehr-epic-deploy_genio_tool.html
+      - title: Where to find additional information
+        url: /healthcare/ehr-epic-deploy_where_to_find_additional_information_overview.html
+      - title: Acknowledgements
+        url: /healthcare/ehr-epic-deploy_acknowledgements.html
+  - title: FlexPod for Epic Performance Testing
+    url: /healthcare/ehr-epic-performance_introduction.html
+    type: solutions
+    entries:
+      - title: Executive summary
+        url: /healthcare/ehr-epic-performance_executive_summary.html
+      - title: Test methodology
+        url: /healthcare/ehr-epic-performance_test_methodology.html
+      - title: Workload testing
+        url: /healthcare/ehr-epic-performance_workload_testing.html
+      - title: Conclusion
+        url: /healthcare/ehr-epic-performance_conclusion.html
+      - title: Additional information
+        url: /healthcare/ehr-epic-performance_additional_information.html
+      - title: Acknowledgements
+        url: /healthcare/ehr-epic-performance_acknowledgements.html
+  - title: FlexPod for MEDITECH Directional Sizing Guide
+    url: /healthcare/ehr-meditech-sizing_introduction.html
+    type: solutions
+    entries:
+      - title: MEDITECH Workload Overview
+        url: /healthcare/ehr-meditech-sizing_meditech_workload_overview.html
+      - title: Technical Specifications for Small, Medium and Large Architectures
+        url: /healthcare/ehr-meditech-sizing_technical_specifications_for_small,_medium_and_large_architectures.html
+      - title: Additional Information
+        url: /healthcare/ehr-meditech-sizing_additional_information.html
+      - title: Acknowledgments
+        url: /healthcare/ehr-meditech-sizing_acknowledgments.html
+  - title: FlexPod Datacenter for MEDITECH Deployment Guide
+    url: /healthcare/ehr-meditech-deploy_overview.html
+    type: solutions
+    entries:
+      - title: Design
+        url: /healthcare/ehr-meditech-deploy_design.html
+      - title: Deployment and configuration
+        url: /healthcare/ehr-meditech-deploy_deployment_and_configuration_overview.html
+        entries:
+          - title: Base infrastructure configuration
+            url: /healthcare/ehr-meditech-deploy_base_infrastructure_configuration.html
+          - title: Cisco UCS blade server and switch configuration
+            url: /healthcare/ehr-meditech-deploy_cisco_ucs_blade_server_and_switch_configuration.html
+          - title: ESXi configuration best practices
+            url: /healthcare/ehr-meditech-deploy_esxi_configuration_best_practices.html
+          - title: NetApp configuration
+            url: /healthcare/ehr-meditech-deploy_netapp_configuration.html
+          - title: Aggregate configuration
+            url: /healthcare/ehr-meditech-deploy_aggregate_configuration.html
+          - title: Storage virtual machine configuration
+            url: /healthcare/ehr-meditech-deploy_storage_virtual_machine_configuration.html
+          - title: Volume configuration
+            url: /healthcare/ehr-meditech-deploy_volume_configuration.html
+          - title: LUN configuration
+            url: /healthcare/ehr-meditech-deploy_lun_configuration.html
+          - title: Initiator group configuration
+            url: /healthcare/ehr-meditech-deploy_initiator_group_configuration.html
+          - title: LUN mappings
+            url: /healthcare/ehr-meditech-deploy_lun_mappings.html
+      - title: MEDITECH modules and components
+        url: /healthcare/ehr-meditech-deploy_meditech_modules_and_components.html
+      - title: Acknowledgments
+        url: /healthcare/ehr-meditech-deploy_acknowledgments.html
+      - title: Where to find additional information
+        url: /healthcare/ehr-meditech-deploy_where_to_find_additional_information.html
+  - title: FlexPod Datacenter for MEDITECH Deployment Guide
+    url: /healthcare/ehr-meditech-deploy_overview.html
+    type: solutions
+    entries:
+      - title: Design
+        url: /healthcare/ehr-meditech-deploy_design.html
+      - title: Deployment and configuration
+        url: /healthcare/ehr-meditech-deploy_deployment_and_configuration_overview.html
+        entries:
+          - title: Base infrastructure configuration
+            url: /healthcare/ehr-meditech-deploy_base_infrastructure_configuration.html
+          - title: Cisco UCS blade server and switch configuration
+            url: /healthcare/ehr-meditech-deploy_cisco_ucs_blade_server_and_switch_configuration.html
+          - title: ESXi configuration best practices
+            url: /healthcare/ehr-meditech-deploy_esxi_configuration_best_practices.html
+          - title: NetApp configuration
+            url: /healthcare/ehr-meditech-deploy_netapp_configuration.html
+          - title: Aggregate configuration
+            url: /healthcare/ehr-meditech-deploy_aggregate_configuration.html
+          - title: Storage virtual machine configuration
+            url: /healthcare/ehr-meditech-deploy_storage_virtual_machine_configuration.html
+          - title: Volume configuration
+            url: /healthcare/ehr-meditech-deploy_volume_configuration.html
+          - title: LUN configuration
+            url: /healthcare/ehr-meditech-deploy_lun_configuration.html
+          - title: Initiator group configuration
+            url: /healthcare/ehr-meditech-deploy_initiator_group_configuration.html
+          - title: LUN mappings
+            url: /healthcare/ehr-meditech-deploy_lun_mappings.html
+      - title: MEDITECH modules and components
+        url: /healthcare/ehr-meditech-deploy_meditech_modules_and_components.html
+      - title: Acknowledgments
+        url: /healthcare/ehr-meditech-deploy_acknowledgments.html
+      - title: Where to find additional information
+        url: /healthcare/ehr-meditech-deploy_where_to_find_additional_information.html
+  - title: FlexPod for Medical Imaging
+    url: https://www.netapp.com/media/19793-tr-4865.pdf
