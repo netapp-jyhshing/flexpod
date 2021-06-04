@@ -1,0 +1,35 @@
+---
+sidebar: sidebar
+permalink: cloud-insights/cloud-insights_use_cases.html
+keywords: target, cases, audience, cloud, insights, flexpod, ontap
+summary: The target audience and cases to which this solution applies are listed in this section.
+---
+
+= Use cases
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./../media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2021-05-20 15:58:38.802103
+//
+
+This solution applies to the following use cases:
+
+* Organizations that want to monitor various resources and utilization in their ONTAP storage system deployed as part of a FlexPod solution.
+* Organizations that want to troubleshoot issues and shorten resolution time for incidents that occur in their FlexPod solution with their AFF or FAS systems.
+* Organizations interested in cost optimization projections, including customized dashboards to provide detailed information about wasted resources, and where cost savings can be realized in their FlexPod environment, including ONTAP.
+
+== Target audience
+
+The target audience for the solution includes the following groups:
+
+* IT executives and those concerned with cost optimization and business continuity.
+* Solutions architects with an interest in data center or hybrid cloud design and management.
+* Technical support engineers responsible for troubleshooting and incident resolution.
+
+You can configure Cloud Insights to provide several useful types of data that you can use to assist with planning, troubleshooting, maintenance, and ensuring business continuity. By monitoring the FlexPod Datacenter solution with Cloud Insights and presenting the aggregated data in easily digestible customized dashboards; it is not only possible to predict when resources in a deployment might need to be scaled to meet demands, but also to identify specific applications or storage volumes that are causing problems within the system. This helps to ensure that the infrastructure being monitored is predictable and performs according to expectations, allowing an organization to deliver on defined SLA’s and to scale infrastructure as needed, eliminating waste and additional costs.

@@ -1,0 +1,74 @@
+---
+sidebar: sidebar
+permalink: express/express-c-series-aff220-deploy_configure_vmware_vcenter_server_6.7_and_vsphere_clustering.html
+keywords: configure, vmware, vcenter, server, clustering, coredump, esxi, hosts
+summary: You can configure the VMware vCenter Server 6.7 and vSphere clustering by completing the following steps.
+---
+
+= Configure VMware vCenter Server 6.7 and vSphere clustering
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./../media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2021-04-19 12:01:34.386119
+//
+
+To configure VMware vCenter Server 6.7 and vSphere clustering, complete the following steps:
+
+. Navigate to \https://\<<FQDN or IP of vCenter>>/vsphere-client/.
+. Click Launch vSphere Client.
+. Log in with the user name mailto:administrator@vspehre.local[administrator@vsphere.local^] and the SSO password you entered during the VCSA setup process.
+. Right-click the vCenter name and select New Datacenter.
+. Enter a name for the data center and click OK.
+
+== Create vSphere cluster
+
+Complete the following steps to create a vSphere cluster:
+
+. Right-click the newly created data center and select New Cluster.
+. Enter a name for the cluster.
+. Enable DR and vSphere HA by selecting the checkboxes.
+. Click OK.
++
+image:express-c-series-aff220-deploy_image49.png[Error: Missing Graphic Image]
+
+== Add ESXi hosts to cluster
+
+. Right-click the cluster and select Add Host.
++
+image:express-c-series-aff220-deploy_image50.png[Error: Missing Graphic Image]
+
+. To add an ESXi host to the cluster, complete the following steps:
+.. Enter the IP or FQDN of the host. Click Next.
+.. Enter the root user name and password. Click Next.
+.. Click Yes to replace the host’s certificate with a certificate signed by the VMware certificate server.
+.. Click Next on the Host Summary page.
+.. Click the green + icon to add a license to the vSphere host.
++
+[NOTE]
+This step can be completed later if desired.
+
+.. Click Next to leave lockdown mode disabled.
+.. Click Next at the VM location page.
+.. Review the Ready to Complete page. Use the back button to make any changes or select Finish.
+. Repeat steps 1 and 2 for Cisco UCS host B. This process must be completed for any additional hosts added to the FlexPod Express configuration.
+
+== Configure coredump on ESXi hosts
+
+. Using SSH, connect to the management IP ESXi host, enter root for the user name, and enter the root password.
+. Run the following commands:
++
+....
+esxcli system coredump network set -i ip_address_of_core_dump_collector -v vmk0 -o 6500
+esxcli system coredump network set --enable=true
+esxcli system coredump network check
+....
+
+. The message `Verified the configured netdump server is running` appears after you enter the final command.
+
+This process must be completed for any additional hosts added to FlexPod Express.
