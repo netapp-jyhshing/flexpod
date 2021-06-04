@@ -38,4 +38,4 @@ image:ehr-epic-deploy_image11.png[Error: Missing Graphic Image]
 
 . Click OK.
 
-link:ehr-epic-deploy_netapp_configuration.html[Next: NetApp Configuration]
+link:ehr-epic-deploy_netapp_configuration.html[Next: NetApp Configuration.]

@@ -28,10 +28,10 @@ feature npiv
 feature fport-channel-trunk
 ....
 
-. Configure individual ports, port channels, and descriptions as per the FlexPod Cisco MDS switch configuration section in https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_esxi65u1_n9fc.html[FlexPod Datacenter with FC Cisco Validated Design^].
+. Configure individual ports, port channels, and descriptions according to the FlexPod Cisco MDS switch configuration section in https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_esxi65u1_n9fc.html[FlexPod Datacenter with FC Cisco Validated Design^].
 . To create the necessary VSANs for the Epic solution, complete the following steps while in global configuration mode:
 
-.. For fabric A MDS switch:
+.. For the fabric A MDS switch:
 +
 ....
 vsan database
@@ -48,7 +48,7 @@ vsan <vsan-a-id> interface port-channel112
 +
 The port channel numbers in the last two lines of the command were created when the individual ports, port channels, and descriptions were provisioned using the reference document.
 
-.. For fabric B MDS switch:
+.. For the fabric B MDS switch:
 +
 ....
 vsan database
@@ -69,7 +69,7 @@ The port channel numbers in the last two lines of the command were created when 
 
 . Finally, create the FC zones using the device alias names created in the previous step for each MDS switch as follows:
 
-.. For fabric A MDS switch:
+.. For the fabric A MDS switch:
 +
 ....
 configure terminal
@@ -92,7 +92,7 @@ exit
 show zoneset active vsan <vsan-a-id>
 ....
 
-.. For fabric B MDS switch:
+.. For the fabric B MDS switch:
 +
 ....
 configure terminal
@@ -119,7 +119,7 @@ show zoneset active vsan <vsan-b-id>
 
 Cisco UCS allows Epic customers to use their subject matter experts in network, storage, and compute to create policies and templates that tailor the environment to their specific needs. After being created, these policies and templates can be combined into service profiles that deliver consistent, repeatable, reliable, and fast deployments of Cisco blade and rack servers.
 
-Cisco UCS provides three methods for managing a Cisco UCS system, called a domain:
+Cisco UCS provides three methods for managing a Cisco UCS system (called a domain):
 
 * Cisco UCS Manager HTML 5 GUI
 * Cisco UCS CLI

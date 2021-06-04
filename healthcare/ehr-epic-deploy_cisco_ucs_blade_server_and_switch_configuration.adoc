@@ -39,7 +39,7 @@ ip route 0.0.0.0/0 <ib-mgmt-vlan-gateway>
 copy run start
 ....
 
-. Create the VLANs for the solution on each switch, using global configuration mode:
+. Create the VLANs for the solution on each switch using global configuration mode:
 +
 ....
 vlan <ib-mgmt-vlan-id>
@@ -56,7 +56,7 @@ exit
 copy run start
 ....
 
-. Create the NTP distribution interface, port channels, port channel parameters, and port descriptions for troubleshooting per https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_esxi65u1_n9fc.html[FlexPod Datacenter with FC Cisco Validated Design^].
+. Create the NTP distribution interface, port channels, port channel parameters, and port descriptions for troubleshooting according to the https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_esxi65u1_n9fc.html[FlexPod Datacenter with FC Cisco Validated Design^].
 
 
 link:ehr-epic-deploy_esxi_configuration_best_practices.html[Next: ESXi Configuration Best Practices]

@@ -18,6 +18,8 @@ summary: The following people contributed to the writing of this guide.
 // 2021-05-07 11:34:58.430021
 //
 
+The following people contributed to the writing of this guide.
+
 * Ganesh Kamath, Technical Marketing Engineer, NetApp
 * Atul Bhalodia, Technical Marketing Engineer, NetApp
 * Ketan Mota, Product Manager, NetApp
