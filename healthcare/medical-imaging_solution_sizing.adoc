@@ -1,0 +1,176 @@
+---
+sidebar: sidebar
+permalink: healthcare/medical-imaging_solution_sizing.html
+keywords: solution, sizing, storage, comput, network, cisco, ucs, infrastructure
+summary: This section describes the number of studies and the corresponding infrastructure requirements.
+---
+
+= Solution sizing
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./../media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2021-06-03 12:18:30.234008
+//
+
+== Storage sizing
+
+This section describes the number of studies and the corresponding infrastructure requirements.
+
+The storage requirements that are listed in the following table assume that existing data is 1 year’s worth plus projected growth for 1 year of study in the primary system (tier 1, 2). Additional storage needs for projected growth for 3 years beyond the first 2 years are listed separately.
+
+|===
+| |Small |Medium |Large
+
+|Annual studies
+|<250K studies
+|250K–500K studies
+|500K–1 million studies
+4+|Tier 1 Storage
+|IOPS (average)
+|1.5K–5K
+|5K–15K
+|15K–40K
+|IOPS (peak)
+|5K
+|20K
+|65K
+|Throughput
+|50–100MBps
+|50–150MBps
+|100–300MBps
+|Capacity data center 1
+(1 year of old data and 1 year of new study)
+|70TB
+| 140TB
+|260TB
+|Capacity data center 1
+(additional need for 4 years for new study)
+|25TB
+| 45TB
+|80TB
+|Capacity data center 2
+(1 year of old data and 1 year of new study)
+|45TB
+|110TB
+|165TB
+|Capacity data center 2
+(additional need for 4 years for new study)
+|25TB
+| 45TB
+|80TB
+4+|Tier 2 Storage
+|IOPS (average)
+|1K
+|2K
+|3K
+|Capacity data center 1
+|320TB
+|800TB
+|2000TB
+|===
+
+== Compute sizing
+
+The table below lists the compute requirements for small, medium, and large medical imaging systems.
+
+|===
+| |Small |Medium |Large
+
+|Annual studies
+|<250K studies
+|250K–500K studies
+|500K–1 million studies
+4+|Data Center 1
+|Number of VMs
+|21
+|27
+|35
+|Total virtual CPU (vCPU) count
+|56
+|124
+|220
+|Total memory requirement
+|225GB
+|450GB
+|900GB
+|Physical server (blades) specs
+(assume 1 vCPU -=1 core)
+|4 x servers with 20 cores and 192GB RAM each
+|8 x servers with 20 cores and 128GB RAM each
+|14 x servers with 20 cores and 128GB RAM each
+4+|Data Center 2
+|Number of VMs
+|15
+|17
+|22
+|Total vCPU count
+|42
+|72
+|140
+|Total memory requirement
+|179GB
+|243GB
+|513GB
+|Physical server (blades) specs
+(assume 1 vCPU = 1 core)
+|3 x servers with 20 cores and 168GB RAM each
+|6 x servers with 20 cores and 128GB RAM each
+|8 x servers with 24 cores and 128GB RAM each
+|===
+
+== Networking and Cisco UCS infrastructure sizing
+
+The table below lists the networking and Cisco UCS infrastructure requirements for small, medium, and large medical imaging systems.
+
+|===
+| |Small |Medium |Large
+
+4+|Data Center 1
+|Number of storage node ports
+|2 converged network adapters (CNAs); 2 FCs
+|2 CNAs; 2 FCs
+|2 CNAs; 2 FCs
+|IP network switch ports (Cisco Nexus 9000)
+|48-port switch
+|48-port switch
+|48-port switch
+|FC switch (Cisco MDS)
+|32-port switch
+|32-port switch
+|48-port switch
+|Cisco UCS chassis count
+|1 x 5108
+|1 x 5108
+|2 x 5108
+|Cisco UCS Fabric Interconnect
+|2 x 6332
+|2 x 6332
+|2 x 6332
+4+|Data Center 2
+|Cisco UCS chassis count
+|1 x 5108
+|1 x 5108
+|1 x 5108
+|Cisco UCS Fabric Interconnect
+|2 x 6332
+|2 x 6332
+|2 x 6332
+|Number of storage node ports
+|2 CNAs; 2 FCs
+|2 CNAs; 2 FCs
+|2 CNAs; 2 FCs
+|IP network switch ports (Cisco Nexus 9000)
+|48-port switch
+|48-port switch
+|48-port switch
+|FC switch (Cisco MDS)
+|32-port switch
+|32-port switch
+|48-port switch
+|===

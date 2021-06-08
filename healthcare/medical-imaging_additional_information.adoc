@@ -1,0 +1,65 @@
+---
+sidebar: sidebar
+permalink: healthcare/medical-imaging_additional_information.html
+keywords: additional, information, flexpod, medical, imaging
+summary: To learn more about the information that is described in this document, review the following documents and websites.
+---
+
+= Additional information
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./../media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2021-06-03 12:18:30.266640
+//
+
+To learn more about the information that is described in this document, review the following documents and websites:
+
+* FlexPod Datacenter for AI/ML with Cisco UCS 480 ML for Deep Learning Design Guide
++
+https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_c480m5l_aiml_design.html[https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_c480m5l_aiml_design.html^]
+
+* FlexPod Datacenter Infrastructure with VMware vSphere 6.7 U1, Cisco UCS 4th Generation, and NetApp AFF A-Series
++
+https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_datacenter_vmware_netappaffa.html[https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_datacenter_vmware_netappaffa.html^]
+
+* FlexPod Datacenter Oracle Database Backup with SnapCenter Solution Brief
++
+https://www.netapp.com/us/media/sb-3999.pdf[https://www.netapp.com/us/media/sb-3999.pdf^]
+
+* FlexPod Datacenter with Oracle RAC Databases on Cisco UCS and NetApp AFF A-Series
++
+https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_orc12cr2_affaseries.html[https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_orc12cr2_affaseries.html^]
+
+* FlexPod Datacenter with Oracle RAC on Oracle Linux
++
+https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_orcrac_12c_bm.html[https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_orcrac_12c_bm.html^]
+
+* FlexPod for Microsoft SQL Server
++
+https://flexpod.com/solutions/use-cases/microsoft-sql-server/[https://flexpod.com/solutions/use-cases/microsoft-sql-server/^]
+
+* FlexPod from Cisco and NetApp
++
+https://flexpod.com/[https://flexpod.com/^]
+
+* https://fieldportal.netapp.com/content/734702[NetApp Solutions for MongoDB^] Solution Brief (NetApp login required)
++
+https://fieldportal.netapp.com/content/734702[https://fieldportal.netapp.com/content/734702^]
+
+* TR-4700: SnapCenter Plug-In for Oracle Database
++
+https://www.netapp.com/us/media/tr-4700.pdf[https://www.netapp.com/us/media/tr-4700.pdf^]
+
+* NetApp Product Documentation
++
+https://www.netapp.com/us/documentation/index.aspx[https://www.netapp.com/us/documentation/index.aspx^]
+
+* FlexPod for Virtual Desktop Infrastructure (VDI) Solutions
++
+https://flexpod.com/solutions/use-cases/virtual-desktop-infrastructure/[https://flexpod.com/solutions/use-cases/virtual-desktop-infrastructure/^]

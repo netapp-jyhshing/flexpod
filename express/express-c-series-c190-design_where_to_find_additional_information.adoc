@@ -1,12 +1,11 @@
 ---
 sidebar: sidebar
-permalink: express/express-c-series-c190-design_where_to_find_additional_information.html
-keywords: references
-summary: To learn more about the information described in this document, see the documents and websites listed on this page.
+permalink: express-c-series-c190-deploy/express-c-series-c190-design_where_to_find_additional_information.html
+keywords: additional, information, websites, documents, express, c, series, deployment, c190
+summary: To learn more about the information described in this document, refer to the following documents and/or websites.
 ---
 
 = Where to find additional information
-
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -16,21 +15,18 @@ summary: To learn more about the information described in this document, see the
 //
 // This file was created with NDAC Version 2.0 (August 17, 2020)
 //
-// 2021-04-22 15:31:58.053591
+// 2021-06-03 12:10:22.048464
 //
 
-To learn more about the information described in this document, see the following documents and websites:
+[.lead]
+To learn more about the information described in this document, refer to the following documents and/or websites:
 
-* AFF and FAS System Documentation Center
-+
-https://docs.netapp.com/platstor/index.jsp[https://docs.netapp.com/platstor/index.jsp^]
+NetApp Product Documentation
 
-* AFF Documentation Resources page
-+
-https://www.netapp.com/us/documentation/all-flash-fas.aspx[https://www.netapp.com/us/documentation/all-flash-fas.aspx^]
+http://docs. http://docs.netapp.com/[netapp^].com
 
-* FlexPod Express with VMware vSphere 6.7 and NetApp AFF C190 Deployment Guide (in progress)
+FlexPod Express with Guide
 
-* NetApp documentation
-+
-https://docs.netapp.com[https://docs.netapp.com^]
+NVA-1139-DESIGN: FlexPod Express with Cisco UCS C-Series and NetApp AFF C190 Series
+
+https://www.netapp.com/us/media/nva-1139-design.pdf[https://www.netapp.com/us/media/nva-1139-design.pdf^]

@@ -1,0 +1,41 @@
+---
+sidebar: sidebar
+permalink: hybrid-cloud/cloud-fabricpool_performance_considerations.html
+keywords: performance, considerations, size, tier, cloud, fabricpool
+summary: When considering sizing, the following things should be evaluated.
+---
+
+= Performance considerations
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./../media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2021-06-03 12:42:35.307969
+//
+
+== Size the performance tier
+
+When considering sizing, keep in mind that the performance tier should be capable of the following tasks:
+
+* Supporting hot data
+* Supporting cold data until the tiering scan moves the data to the cloud tier
+* Supporting cloud tier data that becomes hot and is written back to the performance tier
+* Supporting WAFL metadata associated with the attached cloud tier
+
+For most environments, a 1:10 performance-to-capacity ratio on FabricPool aggregates is extremely conservative, while providing significant storage savings. For example, if the intent is to tier 200TB to the cloud tier, then the performance tier aggregate should be 20TB at a minimum.
+
+[NOTE]
+Writes from the cloud tier to the performance tier are disabled if performance tier capacity is greater than 70%. If this occurs, blocks are read directly from the cloud tier.
+
+== Size the cloud tier
+
+When considering sizing, the object store acting as the cloud tier should be capable of the following tasks:
+
+* Supporting reads of existing cold data
+* Supporting writes of new cold data
+* Supporting object deletion and defragmentation

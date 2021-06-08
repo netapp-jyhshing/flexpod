@@ -1,0 +1,42 @@
+---
+sidebar: sidebar
+permalink: dc-tech-spec/dc-tech-spec_where_to_find_additional_information.html
+keywords: additional, information, technical, specifications
+summary: To learn more about the information that is described in this document, review the following documents and websites
+---
+
+= Where to find additional Information
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./../media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2021-06-03 13:02:39.888045
+//
+
+[.lead]
+To learn more about the information that is described in this document, review the following documents and websites:
+
+* NetApp Product Documentation
++
+https://docs.netapp.com/[https://docs.netapp.com/^]
+
+* NetApp Support Communications
++
+https://mysupport.netapp.com/info/communications/index.html[https://mysupport.netapp.com/info/communications/index.html^]
+
+* NetApp Interoperability Matrix Tool (IMT)
++
+https://mysupport.netapp.com/matrix/[https://mysupport.netapp.com/matrix/#welcome^]
+
+* NetApp Hardware Universe
++
+https://hwu.netapp.com/[https://hwu.netapp.com/^]
+
+* NetApp Support
++
+https://mysupport.netapp.com/[https://mysupport.netapp.com/^]

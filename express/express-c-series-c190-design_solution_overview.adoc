@@ -1,0 +1,70 @@
+---
+sidebar: sidebar
+permalink: express-c-series-c190-deploy/express-c-series-c190-design_solution_overview.html
+keywords: solution, overview, flexpod, express,c, series, deployment, infrastructure, verified, architecture, converged, case
+summary: This FlexPod Express solution is part of the FlexPod Converged Infrastructure Program.
+---
+
+= Solution overview
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./../media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2021-06-03 12:10:21.874880
+//
+
+[.lead]
+This FlexPod Express solution is part of the FlexPod Converged Infrastructure Program.
+
+== FlexPod converged infrastructure program
+
+FlexPod reference architectures are delivered as Cisco Validated Designs (CVDs) or NetApp Verified Architectures (NVAs). Deviations based on customer requirements from a given CVD or NVA are permitted if these variations do not create an unsupported configuration.
+
+The FlexPod program includes two solutions: FlexPod Express and FlexPod Datacenter.
+
+* *FlexPod Express.* Offers customers an entry-level solution with technologies from Cisco and NetApp.
+* *FlexPod Datacenter.* Delivers an optimal multipurpose foundation for various workloads and applications.
+
+image:express-c-series-c190-deploy_image1.png[Error: Missing Graphic Image]
+
+== NetApp Verified Architecture program
+
+The NetApp Verified Architecture program offers customers a verified architecture for NetApp solutions. A NetApp Verified Architecture provides a NetApp solution architecture with the following qualities:
+
+* Thoroughly tested
+* Prescriptive in nature
+* Minimized deployment risks
+* Accelerated time to market
+
+This guide details the design of FlexPod Express with VMware vSphere. In addition, this design uses the all-new AFF C190 system (running NetApp ONTAP® 9.6), the Cisco Nexus 31108, and Cisco UCS C-Series C220 M5 servers as hypervisor nodes.
+
+== Solution technology
+
+This solution leverages the latest technologies from NetApp, Cisco, and VMware. This solution features the new NetApp AFF C190 running ONTAP 9.6, dual Cisco Nexus 31108 switches, and Cisco UCS C220 M5 rack servers running VMware vSphere 6.7U2. This validated solution uses 10GbE technology. Guidance is also provided on how to scale compute capacity by adding two hypervisor nodes at a time so that the FlexPod Express architecture can adapt to an organization’s evolving business needs.
+
+image:express-c-series-c190-deploy_image2.png[Error: Missing Graphic Image]
+
+[NOTE]
+To use the four physical 10GbE ports on the VIC 1457 efficiently, create two extra links from each server to the top rack switches.
+
+== Use case summary
+
+The FlexPod Express solution can be applied to several use cases, including the following:
+
+* Remote or branch offices
+* Small and midsize businesses
+* Environments that require a dedicated and cost-effective solution
+
+FlexPod Express is best suited for virtualized and mixed workloads. Although this solution was validated with vSphere 6.7U2, it supports any vSphere version qualified with the other components by the NetApp Interoperability Matrix Tool. NetApp recommends deploying vSphere 6.7U2 because of its fixes and enhanced features, such as the following:
+
+* New protocol support for backing up and restoring a vCenter server appliance, including HTTP, HTTPS, FTP, FTPS, SCP, NFS and SMB.
+* New functionally when utilizing the content library. Syncing of native VM templates between content libraries is now available when vCenter Server is configured for enhanced linked mode.
+* An updated Client Plug-In page.
+* Added enhancements in the vSphere Update Manager (VUM) and the vSphere client. You can now perform the attach, check- compliance, and remediate actions, all from one screen.
+
+For more information on this subject, see the https://blogs.vmware.com/vsphere/2019/04/vcenter-server-6-7-update-2-whats-new.html[vSphere 6.7U2 page^] and the https://docs.vmware.com/en/VMware-vSphere/6.7/rn/vsphere-vcenter-server-67u2-release-notes.html[vCenter Server 6.7U2 Release Notes^].
