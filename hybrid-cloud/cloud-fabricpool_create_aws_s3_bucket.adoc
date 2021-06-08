@@ -1,0 +1,46 @@
+---
+sidebar: sidebar
+permalink: hybrid-cloud/cloud-fabricpool_create_aws_s3_bucket.html
+keywords: create, aws, s3, bucket, cloud, fabricpool, flexpod, tiers, create
+summary: Buckets are object store containers that hold data. You must provide the name and location of the bucket in which data is stored before it can be added to an aggregate as a cloud tier.
+---
+
+= Create AWS S3 bucket
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./../media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2021-06-03 12:42:35.278083
+//
+
+Buckets are object store containers that hold data. You must provide the name and location of the bucket in which data is stored before it can be added to an aggregate as a cloud tier.
+
+[NOTE]
+Buckets cannot be created using OnCommand System Manager, OnCommand Unified Manager, or ONTAP.
+
+FabricPool supports the attachment of one bucket per aggregate, as illustrated in the following figure. A single bucket can be attached to a single aggregate, and a single bucket can be attached to multiple aggregates. However, a single aggregate cannot be attached to multiple buckets. Although a single bucket can be attached to multiple aggregates in a cluster, NetApp does not recommend attaching a single bucket to aggregates in multiple clusters.
+
+When planning a storage architecture, consider how the bucket-to-aggregate relationship might affect performance. Many object store providers set a maximum number of supported IOPS at the bucket or container level. Environments that require maximum performance should use multiple buckets to reduce the possibility that object-store IOPS limitations might affect performance across multiple FabricPool aggregates. Attaching a single bucket or container to all FabricPool aggregates in a cluster might be more beneficial to environments that value manageability over cloud-tier performance.
+
+image:cloud-fabricpool_image10.png[Error: Missing Graphic Image]
+
+== Create an S3 bucket
+
+. In the AWS management console from the home page, enter S3 in the search bar.
+. Select S3 Scalable Storage in the Cloud.
++
+image:cloud-fabricpool_image11.png[Error: Missing Graphic Image]
+
+. On the S3 home page, select Create Bucket.
+. Enter a DNS-compliant name and choose the region to create the bucket.
++
+image:cloud-fabricpool_image12.png[Error: Missing Graphic Image]
+
+. Click Create to create the object store bucket.
+
+link:cloud-fabricpool_add_a_cloud_tier_to_ontap.html[Next: Add a cloud tier to ONTAP]

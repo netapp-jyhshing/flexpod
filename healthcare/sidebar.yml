@@ -142,4 +142,18 @@ entries:
       - title: Where to find additional information
         url: /healthcare/ehr-meditech-deploy_where_to_find_additional_information.html
   - title: FlexPod for Medical Imaging
-    url: https://www.netapp.com/media/19793-tr-4865.pdf
+    url: /healthcare/medical-imaging_introduction.html
+    type: solutions
+    entries:
+      - title: Architecture
+        url: /healthcare/medical-imaging_architecture.html
+      - title: Solution infrastructure hardware and software components
+        url: /healthcare/medical-imaging_solution_infrastructure_hardware_and_software_components.html
+      - title: Solution sizing
+        url: /healthcare/medical-imaging_solution_sizing.html
+      - title: Best practices
+        url: /healthcare/medical-imaging_best_practices.html
+      - title: Conclusion
+        url: /healthcare/medical-imaging_conclusion.html
+      - title: Additional information
+        url: /healthcare/medical-imaging_additional_information.html

@@ -1,0 +1,49 @@
+---
+sidebar: sidebar
+permalink: hybrid-cloud/cloud-fabricpool_set_volume_tiering_minimum_cooling_days.html
+keywords: volume, tiering, minimum, cooling, days, set, auto, ontap, cli, snapshot
+summary: The tiering-minimum-cooling-days setting determines how many days must pass before inactive data in a volume using the Auto or Snapshot-Only policy is considered cold and eligible for tiering.
+---
+
+= Set volume tiering minimum cooling days
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./../media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2021-06-03 12:42:35.302090
+//
+
+The `tiering-minimum-cooling-days` setting determines how many days must pass before inactive data in a volume using the Auto or Snapshot-Only policy is considered cold and eligible for tiering.
+
+== Auto
+
+The default `tiering-minimum-cooling-days` setting for the Auto tiering policy is 31 days.
+
+Because reads keep block temperatures hot, increasing this value might reduce the amount of data that is eligible to be tiered and increase the amount of data kept on the performance tier.
+
+If you would like to reduce this value from the default 31 days, be aware that data should no longer be active before being marked as cold. For example, if a multiday workload is expected to perform a significant number of writes on day 7, the volume’s `tiering-minimum-cooling-days` setting should be set no lower than 8 days.
+
+[NOTE]
+Object storage is not transactional like file or block storage. Making changes to files that are stored as objects in volumes with overly aggressive minimum cooling days can result in the creation of new objects, the fragmentation of existing objects, and the addition of storage inefficiencies.
+
+== Snapshot-Only
+
+The default `tiering-minimum-cooling-days` setting for the Snapshot-Only tiering policy is 2 days. A 2-day minimum gives additional time for background processes to provide maximum storage efficiency and prevents daily data-protection processes from having to read data from the cloud tier.
+
+== ONTAP CLI
+
+To change a volume’s `tiering-minimum-cooling-days` setting by using the ONTAP CLI, run the following command:
+
+....
+volume modify -vserver <svm_name> -volume <volume_name> -tiering-minimum-cooling-days <2-63>
+....
+
+The advanced privilege level is required.
+
+[NOTE]
+Changing the tiering policy between Auto and Snapshot-Only (or vice versa) resets the inactivity period of blocks on the performance tier. For example, a volume using the Auto volume tiering policy with data on the performance tier that has been inactive for 20 days will have the performance tier data inactivity reset to 0 days if the tiering policy is set to Snapshot-Only.
