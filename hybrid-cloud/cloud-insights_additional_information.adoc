@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: cloud-insights/cloud-insights_additional_information.html
+permalink: hybrid-cloud/cloud-insights_additional_information.html
 keywords: additional, information, product, documentation, cloud, insights
 summary: To learn more about the information that is described in this document, review the following websites
 ---

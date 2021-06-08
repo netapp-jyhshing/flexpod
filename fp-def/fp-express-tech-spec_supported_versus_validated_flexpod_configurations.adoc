@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: fp-express-tech-spec/fp-express-tech-spec_supported_versus_validated_flexpod_configurations.html
+permalink: fp-def/fp-express-tech-spec_supported_versus_validated_flexpod_configurations.html
 keywords: supported, cersus, validated, flexpod, express, configurations, imt
 summary: The FlexPod architecture is defined by the set of rules described in this document. The hardware components and software configurations must be supported by the Cisco Hardware Compatibility List (HCL) and the NetApp IMT.
 ---

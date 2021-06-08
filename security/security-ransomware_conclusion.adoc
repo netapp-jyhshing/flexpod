@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: security/security-ransomware_conclusion.html
-keywords: ransomeware, attack, data, backup, recovery, business, planning
+keywords: ransomware, attack, data, backup, recovery, business, planning
 summary: The authors recommend not paying a ransom in the event of an attack because doing so reinforces the attacker’s faith in their business model. Data backup and restore operations play an important part of ransomware recovery. Therefore, they must be included as an integral part of business planning.
 ---
 

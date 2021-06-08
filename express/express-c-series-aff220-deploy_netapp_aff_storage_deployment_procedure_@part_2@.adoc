@@ -48,5 +48,4 @@ lun map –vserver Infra-SVM –volume esxi_boot –lun VM-Host-Infra- B –igro
 [NOTE]
 This step must be completed when adding additional Cisco UCS C-Series servers.
 
-
-link:express-c-series-aff220-deploy_vmware_vsphere_6.7_deployment_procedure.html[Next: VMware vSphere 6.7 Deployment Procedure]
+link:express-c-series-aff220-deploy_vmware_vsphere_6.7_deployment_procedure.html[Next: VMware vSphere 6.7 Deployment Procedure.]

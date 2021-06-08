@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: cloud-insights/cloud-insights_deploy_cloud_insights_for_flexpod.html
+permalink: hybrid-cloud/cloud-insights_deploy_cloud_insights_for_flexpod.html
 keywords: cloud, insights, service, vmware, vm, rhel, red, hat, enterprise, acquisition, unit, flexpod, datacenter
 summary: The following tasks must be completed to deploy Cloud Insights for FlexPod.
 ---

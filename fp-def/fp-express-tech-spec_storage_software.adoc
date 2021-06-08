@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: fp-express-tech-spec/fp-express-tech-spec_storage_software.html
+permalink: fp-def/fp-express-tech-spec_storage_software.html
 keywords: storage, software, flexpod, express, ontap, e, series, santricity
 summary: The storage software listed in this section are supported in the FlexPod Express platform.
 ---

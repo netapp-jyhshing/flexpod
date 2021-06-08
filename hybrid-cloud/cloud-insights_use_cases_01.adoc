@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: cloud-insights/cloud-insights_use_cases_01.html
+permalink: hybrid-cloud/cloud-insights_use_cases_01.html
 keywords: use, cases, active, iq, integration, dashboards, troubleshooting, storage, optimization, custom, real, time
 summary: With Cloud Insights set up and configured to monitor your FlexPod Datacenter solution, we can explore some of the tasks that you can perform on the dashboard to assess and monitor your environment. In this section, we highlight five primary use cases for Cloud Insights.
 ---

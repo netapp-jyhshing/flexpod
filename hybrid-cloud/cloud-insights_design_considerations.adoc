@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: cloud-insights/cloud-insights_design_considerations.html
+permalink: hybrid-cloud/cloud-insights_design_considerations.html
 keywords: design, considerations, flexpod, datacenter, infrastructure, cisco, cloud, insights
 summary: The FlexPod Datacenter solution is a converged infrastructure designed by Cisco and NetApp to provide a dynamic, highly available, and scalable data center environment for the running of enterprise workloads.
 ---

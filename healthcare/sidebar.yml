@@ -17,10 +17,9 @@ entries:
       - title: Acknowledgements
         url: /healthcare/ehr-epic-sizing_acknowledgements.html
   - title: FlexPod Datacenter for Epic EHR Deployment Guide
+    url: /healthcare/ehr-epic-deploy_overview.html
+    type: solutions
     entries:
-      - title: Overview
-        url: /healthcare/ehr-epic-deploy_overview.html
-        type: solutions
       - title: Design
         url: /healthcare/ehr-epic-deploy_design.html
       - title: Deployment and configuration

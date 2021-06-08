@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: fp-express-tech-spec/fp-express-tech-spec_overview.html
+permalink: fp-def/fp-express-tech-spec_overview.html
 keywords: flexpod, express, technical, specifications, architecture, cisco, ucs
 summary: FlexPod Express is a predesigned, best practice architecture that is built on the Cisco Unified Computing System (Cisco UCS) and the Cisco Nexus family of switches, and the storage layer is built by using the NetApp FAS or the NetApp E-Series storage.
 ---

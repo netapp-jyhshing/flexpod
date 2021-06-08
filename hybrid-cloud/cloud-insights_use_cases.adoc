@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: cloud-insights/cloud-insights_use_cases.html
+permalink: hybrid-cloud/cloud-insights_use_cases.html
 keywords: target, cases, audience, cloud, insights, flexpod, ontap
 summary: The target audience and cases to which this solution applies are listed in this section.
 ---

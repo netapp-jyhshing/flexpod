@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: security/security-ransomware_additional_information.html
-keywords: additional, information, flexpod, ransomeware
+keywords: additional, information, flexpod, ransomware
 summary: To learn more about the information that is described in this document, review the following documents and/or websites.
 ---
 

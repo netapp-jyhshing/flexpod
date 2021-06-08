@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: fp-express-tech-spec/fp-express-tech-spec_legacy_equipment.html
+permalink: fp-def/fp-express-tech-spec_legacy_equipment.html
 keywords: legacy, equipment, legacy, storage, controller, fas, disk, shelf
 summary: This section lists the NetApp legacy disk shelf, FAS controller, and storage controller options.
 ---

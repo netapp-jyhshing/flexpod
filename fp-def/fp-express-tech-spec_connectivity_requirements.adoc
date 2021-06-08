@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: fp-express-tech-spec/fp-express-tech-spec_connectivity_requirements.html
+permalink: fp-def/fp-express-tech-spec_connectivity_requirements.html
 keywords: connectivity, requirements, flexpod, express, aff, fas, e, series
 summary: This section describes the connectivity requirements for the different versions of FlexPod Express.
 ---

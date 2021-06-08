@@ -100,5 +100,4 @@ A message appears indicating that the setup was successful.
 +
 The links that the installer provides to access vCenter Server are clickable.
 
-
-link:express-c-series-aff220-deploy_configure_vmware_vcenter_server_6.7_and_vsphere_clustering.html[Next: Configure VMware vCenter Server 6.7 and vSphere clustering]
+link:express-c-series-aff220-deploy_configure_vmware_vcenter_server_6.7_and_vsphere_clustering.html[Next: Configure VMware vCenter Server 6.7 and vSphere clustering.]

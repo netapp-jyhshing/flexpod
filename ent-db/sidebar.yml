@@ -21,7 +21,7 @@ entries:
         url: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_datacenter_sap_netappaffa_design.html
       - title: SAP Application Servers on FlexPod with Oracle Database and Cisco UCS and NetApp AFF (White Paper)
         url: https://www.cisco.com/c/en/us/solutions/collateral/data-center-virtualization/unified-computing/flexpod-oracle-database-sap-app-servers.html
-      - title: Virtualized SAP HANA on FlexPod Datacenter: Design Considerations and Best Practices (White Paper)
+      - title: Virtualized SAP HANA on FlexPod Datacenter - Design Considerations and Best Practices (White Paper)
         url: https://www.cisco.com/c/dam/en/us/solutions/collateral/data-center-virtualization/unified-computing/whitepaper-c11-741878.pdf
       - title: FlexPod Datacenter for SAP Solution with Cisco UCS Manager 3.2 and Cisco Application Centric Infrastructure (ACI) [Design]
         url: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_saphana_aci_UCSM32.html
