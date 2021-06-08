@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: dc-tech-spec/dc-tech-spec_connectivity_requirements.html
+permalink: fp-def/dc-tech-spec_connectivity_requirements.html
 keywords: connectivity, requirements, cisco, ucs, fabric, interconnect, uplink, direct, san
 summary: Listed below are the connectivity requirements for FlexPod configuration.
 ---
@@ -18,7 +18,6 @@ summary: Listed below are the connectivity requirements for FlexPod configuratio
 // 2021-06-03 13:02:39.826839
 //
 
-[.lead]
 A FlexPod configuration has the following connectivity requirements:
 
 * A separate 100Mbps Ethernet/1Gb Ethernet out-of-band management network is required for all components.
@@ -40,5 +39,5 @@ Direct connections:
 
 SAN boot:
 
-* FlexPod solutions are designed around a SAN- boot architecture using iSCSI, FC, or FCoE protocols. Using boot-from-SAN technologies provides the most flexible configuration for the data center infrastructure and enables the rich features available within each infrastructure component. Although booting from SAN is the most efficient configuration, booting from local server storage is a valid and supported configuration.
+* FlexPod solutions are designed around a SAN-boot architecture using iSCSI, FC, or FCoE protocols. Using boot-from-SAN technologies provides the most flexible configuration for the data center infrastructure and enables the rich features available within each infrastructure component. Although booting from SAN is the most efficient configuration, booting from local server storage is a valid and supported configuration.
 * SAN boot over FC-NVME is not supported.

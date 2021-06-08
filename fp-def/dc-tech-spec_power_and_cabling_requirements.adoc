@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: dc-tech-spec/dc-tech-spec_power_and_cabling_requirements.html
+permalink: fp-def/dc-tech-spec_power_and_cabling_requirements.html
 keywords: power, cabling, requirements, minimum, techincal, datacenter, specifications
 summary: A FlexPod design has minimum requirements for power and cabling.
 ---
@@ -18,7 +18,6 @@ summary: A FlexPod design has minimum requirements for power and cabling.
 // 2021-06-03 13:02:39.868050
 //
 
-[.lead]
 A FlexPod design has minimum requirements for power and cabling.
 
 == Power requirements

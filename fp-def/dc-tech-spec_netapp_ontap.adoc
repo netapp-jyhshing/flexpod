@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: dc-tech-spec/dc-tech-spec_netapp_ontap.html
+permalink: fp-def/dc-tech-spec_netapp_ontap.html
 keywords: ontap, fas, aff, system, datacenter, techincal, specifications, flexpod, software
 summary: NetApp ONTAP software is installed on every NetApp FAS or AFF system. FlexPod is validated with ONTAP software, providing a highly scalable storage architecture that enables nondisruptive operations, nondisruptive upgrades, and an agile data infrastructure.
 ---
@@ -18,7 +18,6 @@ summary: NetApp ONTAP software is installed on every NetApp FAS or AFF system. F
 // 2021-06-03 13:02:39.807176
 //
 
-[.lead]
 NetApp ONTAP software is installed on every NetApp FAS or AFF system. FlexPod is validated with ONTAP software, providing a highly scalable storage architecture that enables nondisruptive operations, nondisruptive upgrades, and an agile data infrastructure.
 
 For more information about ONTAP, see the http://www.netapp.com/us/products/data-management-software/ontap.aspx[ONTAP Data Management Software^] product page.

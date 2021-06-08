@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
-permalink: dc-tech-spec/dc-tech-spec_where_to_find_additional_information.html
+permalink: fp-def/dc-tech-spec_where_to_find_additional_information.html
 keywords: additional, information, technical, specifications
-summary: To learn more about the information that is described in this document, review the following documents and websites
+summary: To learn more about the information that is described in this document, review the following documents and websites.
 ---
 
 = Where to find additional Information
@@ -18,7 +18,6 @@ summary: To learn more about the information that is described in this document,
 // 2021-06-03 13:02:39.888045
 //
 
-[.lead]
 To learn more about the information that is described in this document, review the following documents and websites:
 
 * NetApp Product Documentation

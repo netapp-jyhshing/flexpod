@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: dc-tech-spec/dc-tech-spec_technical_specifications_and_references.html
+permalink: fp-def/dc-tech-spec_technical_specifications_and_references.html
 keywords: cisco, ucs, b, series, vic, switches, nexus, fas, aff, series
 summary: Technical specifications provide details about the hardware components in a FlexPod solution, such as chassis, FEXs, servers, switches, and storage controllers.
 ---
@@ -18,7 +18,6 @@ summary: Technical specifications provide details about the hardware components 
 // 2021-06-03 13:02:39.871990
 //
 
-[.lead]
 Technical specifications provide details about the hardware components in a FlexPod solution, such as chassis, FEXs, servers, switches, and storage controllers.
 
 == Cisco UCS B-Series blade server chassis

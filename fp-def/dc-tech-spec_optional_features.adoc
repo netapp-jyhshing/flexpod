@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: dc-tech-spec/dc-tech-spec_optional_features.html
+permalink: fp-def/dc-tech-spec_optional_features.html
 keywords: metrocluster, fc, nvme, fc, san, boot, cisco, mds, fcoe, iscsi
 summary: NetApp supports several optional components to further enhance FlexPod Datacenter architectures. Optional components are outlined in the following subsections.
 ---
@@ -18,7 +18,6 @@ summary: NetApp supports several optional components to further enhance FlexPod 
 // 2021-06-03 13:02:39.840183
 //
 
-[.lead]
 NetApp supports several optional components to further enhance FlexPod Datacenter architectures. Optional components are outlined in the following subsections.
 
 == MetroCluster
@@ -36,7 +35,7 @@ image:dc-tech-spec_image2.png[Error: Missing Graphic Image]
 
 == End-to-end FC-NVMe
 
-An end-to- end FC-NVMe seamlessly extends a customer’s existing SAN infrastructure for real-time applications while simultaneously delivering improved IOPS and throughput with reduced latency.
+An end-to-end FC-NVMe seamlessly extends a customer’s existing SAN infrastructure for real-time applications while simultaneously delivering improved IOPS and throughput with reduced latency.
 
 An existing 32G FC SAN transport can be used to simultaneously transport both NVMe and SCSI workloads.
 

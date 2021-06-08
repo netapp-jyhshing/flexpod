@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: dc-tech-spec/dc-tech-spec_minimum_hardware_requirements.html
+permalink: fp-def/dc-tech-spec_minimum_hardware_requirements.html
 keywords: minimum, hardware, requirements, switches, fabric, interconnects, servers, storage, controllers
 summary: A FlexPod Datacenter configuration has minimum hardware requirements, including, but not limited to, switches, fabric interconnects, servers, and NetApp storage controllers.
 ---
@@ -18,7 +18,6 @@ summary: A FlexPod Datacenter configuration has minimum hardware requirements, i
 // 2021-06-03 13:02:39.816175
 //
 
-[.lead]
 A FlexPod Datacenter configuration has minimum hardware requirements, including, but not limited to, switches, fabric interconnects, servers, and NetApp storage controllers.
 
 You must use Cisco UCS Servers. Both C-Series and B-Series Servers have been used in the validated designs. Cisco Nexus Fabric Extenders (FEXs) are optional with C-Series Servers.
@@ -33,7 +32,7 @@ If you are deploying an ACI architecture, you must observe the following additio
 ** Use three Cisco Application Policy Infrastructure Controllers (APICs).
 * Two Cisco UCS 6200, 6300, or 6400 Series Fabric Interconnects in a redundant configuration.
 * Cisco UCS Servers:
-** If the solution uses B- Series Servers, one Cisco UCS 5108 B-Series Blade Server Chassis plus two Cisco UCS B-Series Blade Servers plus two 2104, 2204/8, 2408, or 2304 I/O modules (IOMs).
+** If the solution uses B-Series Servers, one Cisco UCS 5108 B-Series Blade Server Chassis plus two Cisco UCS B-Series Blade Servers plus two 2104, 2204/8, 2408, or 2304 I/O modules (IOMs).
 ** If the solution uses C-Series Servers, two Cisco UCS C-Series Rack Servers.
 +
 For larger deployments of Cisco UCS C-Series Rack Servers, you can choose a pair of 2232PP FEX modules. However, the 2232PP is not a hardware requirement.
