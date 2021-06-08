@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: express-c-series-c190-deploy/express-c-series-c190-deploy_conclusion.html
+permalink: express/express-c-series-c190-deploy_conclusion.html
 keywords: flexpod, express, c, series, c190, deployment, conclusion
 summary: FlexPod Express provides a simple and effective solution by providing a validated design that uses industry-leading components.
 ---
