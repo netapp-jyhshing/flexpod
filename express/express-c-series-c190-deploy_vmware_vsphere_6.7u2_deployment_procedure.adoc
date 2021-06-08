@@ -1,0 +1,346 @@
+---
+sidebar: sidebar
+permalink: express/express-c-series-c190-deploy_vmware_vsphere_6.7u2_deployment_procedure.html
+keywords: vmware, vsphere, deployment, procedure, configure, install, esxi, cisco ucs, c, series, host, multipathing
+summary: This section provides detailed procedures for installing VMware ESXi 6.7U2 in a FlexPod Express configuration. The deployment procedures that follow are customized to include the environment variables described in previous sections.
+---
+
+= VMware vSphere 6.7U2 deployment procedure
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./../media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2021-06-03 12:10:21.996412
+//
+
+[.lead]
+This section provides detailed procedures for installing VMware ESXi 6.7U2 in a FlexPod Express configuration. The deployment procedures that follow are customized to include the environment variables described in previous sections.
+
+Multiple methods exist for installing VMware ESXi in such an environment. This procedure uses the virtual KVM console and virtual media features of the CIMC interface for Cisco UCS C-Series servers to map remote installation media to each individual server.
+
+[NOTE]
+This procedure must be completed for Cisco UCS server A and Cisco UCS server B.
+
+[NOTE]
+This procedure must be completed for any additional nodes added to the cluster.
+
+== Log in to CIMC interface for Cisco UCS C-Series standalone servers
+
+The following steps detail the method for logging in to the CIMC interface for Cisco UCS C-Series standalone servers. You must log in to the CIMC interface to run the virtual KVM, which enables the administrator to begin installation of the operating system through remote media.
+
+=== All hosts
+
+. Navigate to a web browser and enter the IP address for the CIMC interface for the Cisco UCS C-Series. This step launches the CIMC GUI application.
+. Log in to the CIMC UI using the admin user name and credentials.
+. In the main menu, select the Server tab.
+. Click Launch KVM Console.
++
+image:express-c-series-c190-deploy_image17.png[Error: Missing Graphic Image]
+
+. From the virtual KVM console, select the Virtual Media tab.
+. Select Map CD/DVD.
++
+[NOTE]
+You might first need to click Activate Virtual Devices. Select Accept This Session if prompted.
+
+. Browse to the VMware ESXi 6.7U2 installer ISO image file and click Open. Click Map Device.
+. Select the Power menu and choose Power Cycle System (Cold Boot). Click Yes.
+
+== Install VMware ESXi
+
+The following steps describe how to install VMware ESXi on each host.
+
+=== Download ESXI 6.7U2 Cisco custom image
+
+. Navigate to the https://my.vmware.com/web/vmware/info/slug/datacenter_cloud_infrastructure/vmware_vsphere/6_7[VMware vSphere download page^] for custom ISOs.
+. Click Go to Downloads next to the Cisco Custom Image for the ESXi 6.7U2 Install CD.
+. Download the Cisco Custom Image for the ESXi 6.7U2 Install CD (ISO).
+. When the system boots, the machine detects the presence of the VMware ESXi installation media.
+. Select the VMware ESXi installer from the menu that appears. The installer loads, which can take several minutes.
+. After the installer has finished loading, press Enter to continue with the installation.
+. After reading the end-user license agreement, accept it and continue with the installation by pressing F11.
+. Select the NetApp LUN that was previously set up as the installation disk for ESXi, and press Enter to continue with the installation.
++
+image:express-c-series-c190-deploy_image18.png[Error: Missing Graphic Image]
+
+. Select the appropriate keyboard layout and press Enter.
+. Enter and confirm the root password and press Enter.
+. The installer warns you that existing partitions are removed on the volume. Continue with the installation by pressing F11. The server reboots after the installation of ESXi.
+
+== Set up VMware ESXi host management networking
+
+The following steps describe how to add the management network for each VMware ESXi host.
+
+=== All hosts
+
+. After the server has finished rebooting, enter the option to customize the system by pressing F2.
+. Log in with root as the login name and the root password previously entered during the installation process.
+. Select the Configure Management Network option.
+. Select Network Adapters and press Enter.
+. Select the desired ports for vSwitch0. Press Enter.
+. Select the ports that correspond to eth0 and eth1 in CIMC.
++
+image:express-c-series-c190-deploy_image19.png[Error: Missing Graphic Image]
+
+. Select VLAN (optional) and press Enter.
+. Enter the VLAN ID `\<<mgmt_vlan_id>>`. Press Enter.
+. From the Configure Management Network menu, select IPv4 Configuration to configure the IP address of the management interface. Press Enter.
+. Use the arrow keys to highlight Set Static IPv4 Address and use the space bar to select this option.
+. Enter the IP address for managing the VMware ESXi host `\<<esxi_host_mgmt_ip>>`.
+. Enter the subnet mask for the VMware ESXi host `\<<esxi_host_mgmt_netmask>>`.
+. Enter the default gateway for the VMware ESXi host `\<<esxi_host_mgmt_gateway>>`.
+. Press Enter to accept the changes to the IP configuration.
+. Enter the IPv6 configuration menu.
+. Use the space bar to disable IPv6 by unselecting the Enable IPv6 (restart required) option. Press Enter.
+. Enter the menu to configure the DNS settings.
+. Because the IP address is assigned manually, the DNS information must also be entered manually.
+. Enter the primary DNS server’s IP address `\<<nameserver_ip>>`.
+. (Optional) Enter the secondary DNS server’s IP address.
+. Enter the FQDN for the VMware ESXi host name: `\<<esxi_host_fqdn>>`.
+. Press Enter to accept the changes to the DNS configuration.
+. Exit the Configure Management Network submenu by pressing Esc.
+. Press Y to confirm the changes and reboot the server.
+. Select Troubleshooting Options, and then Enable ESXi Shell and SSH.
++
+[NOTE]
+These troubleshooting options can be disabled after the validation pursuant to the customer’s security policy.
+
+. Press Esc twice to return to the main console screen.
+. Click Alt-F1 from the CIMC Macros > Static Macros > Alt-F drop-down menu at the top of the screen.
+. Log in with the proper credentials for the ESXi host.
+. At the prompt, enter the following list of esxcli commands sequentially to enable network connectivity.
++
+....
+esxcli network vswitch standard policy failover set -v vSwitch0 -a vmnic2,vmnic4 -l iphash
+....
+
+== Configure ESXi host
+
+Use the information in the following table to configure each ESXi host.
+
+|===
+|Detail |Detail value
+
+|ESXi host name
+|\<<esxi_host_fqdn>>
+|ESXi host management IP
+|\<<esxi_host_mgmt_ip>>
+|ESXi host management mask
+|\<<esxi_host_mgmt_netmask>>
+|ESXi host management gateway
+|\<<esxi_host_mgmt_gateway>>
+|ESXi host NFS IP
+|\<<esxi_host_NFS_ip>>
+|ESXi host NFS mask
+|\<<esxi_host_NFS_netmask>>
+|ESXi host NFS gateway
+|\<<esxi_host_NFS_gateway>>
+|ESXi host vMotion IP
+|\<<esxi_host_vMotion_ip>>
+|ESXi host vMotion mask
+|\<<esxi_host_vMotion_netmask>>
+|ESXi host vMotion gateway
+|\<<esxi_host_vMotion_gateway>>
+|ESXi host iSCSI-A IP
+|\<<esxi_host_iSCSI-A_ip>>
+|ESXi host iSCSI-A mask
+|\<<esxi_host_iSCSI-A_netmask>>
+|ESXi host iSCSI-A gateway
+|\<<esxi_host_iSCSI-A_gateway>>
+|ESXi host iSCSI-B IP
+|\<<esxi_host_iSCSI-B_ip>>
+|ESXi host iSCSI-B mask
+|\<<esxi_host_iSCSI-B_netmask>>
+|ESXi host iSCSI-B gateway
+|\<<esxi_host_SCSI-B_gateway>>
+|===
+
+=== Log in to the ESXi host
+
+To log in to the ESXi host, complete the following steps:
+
+. Open the host’s management IP address in a web browser.
+. Log in to the ESXi host using the root account and the password you specified during the install process.
+. Read the statement about the VMware Customer Experience Improvement Program. After selecting the proper response, click OK.
+
+=== Configure iSCSI boot
+
+To configure iSCSI boot, complete the following steps:
+
+. Select Networking on the left.
+. On the right, select the Virtual Switches tab.
++
+image:express-c-series-c190-deploy_image20.png[Error: Missing Graphic Image]
+
+. Click iScsiBootvSwitch.
+. Select Edit settings.
+. Change the MTU to 9000 and click Save.
+. Rename the iSCSIBootPG port to iSCSIBootPG-A.
++
+[NOTE]
+Vmnic3 and vmnic5 are used for iSCSI boot in this configuration. If you have additional NICs in your ESXi host, you might have different vmnic numbers. To confirm which NICs are used for iSCSI boot, match the MAC addresses on the iSCSI vNICs in CIMC to the vmnics in ESXi.
+
+. In the center pane, select the VMkernel NICs tab.
+. Select Add VMkernel NIC.
+.. Specify a new port group name of iScsiBootPG-B.
+.. Select iScsiBootvSwitch for the virtual switch.
+.. Enter `\<<iscsib_vlan_id>>` for the VLAN ID.
+.. Change the MTU to 9000.
+.. Expand IPv4 Settings.
+.. Select Static Configuration.
+.. Enter `\<<var_hosta_iscsib_ip>>` for Address.
+.. Enter `\<<var_hosta_iscsib_mask>>` for Subnet Mask.
+.. Click Create.
++
+[NOTE]
+Set the MTU to 9000 on iScsiBootPG-A.
+
+. To set the failover, complete the following steps:
+.. Click Edit Settings on iSCSIBootPG-A > Tiering and Failover > Failover Order > Vmnic3. Vmnic3 should be active and vmnic5 should be unused.
+.. Click Edit Settings on iSCSIBootPG-B > Teaming and Failover > Failover order > Vmnic5. Vmnic5 should be active and vmnic3 should be unused.
++
+image:express-c-series-c190-deploy_image21.png[Error: Missing Graphic Image]
+
+=== Configure iSCSI multipathing
+
+To set up iSCSI multipathing on the ESXi hosts, complete the following steps:
+
+. Select Storage in the left navigation pane. Click Adapters.
+. Select the iSCSI software adapter and click Configure iSCSI.
++
+image:express-c-series-c190-deploy_image22.png[Error: Missing Graphic Image]
+
+. Under Dynamic Targets, click Add Dynamic Target.
++
+image:express-c-series-c190-deploy_image23.png[Error: Missing Graphic Image]
+
+. Enter the IP address `iscsi_lif01a`.
+.. Repeat with the IP addresses `iscsi_lif01b`, `iscsi_lif02a`, and `iscsi_lif02b`.
+.. Click Save Configuration.
++
+image:express-c-series-c190-deploy_image24.png[Error: Missing Graphic Image]
++
+[NOTE]
+You can find the iSCSI LIF IP addresses by running the network interface show command on the NetApp cluster or by looking at the Network Interfaces tab in System Manager.
+
+=== Configure the ESXi host
+
+To configure ESXi boot, complete the following steps:
+
+. In the left navigation pane, select Networking.
+. Select vSwitch0.
++
+image:express-c-series-c190-deploy_image25.png[Error: Missing Graphic Image]
+
+. Select Edit Settings.
+. Change the MTU to 9000.
+. Expand NIC Teaming and verify that both vmnic2 and vmnic4 are set to active and NIC Teaming and Failover is set to Route Based on IP Hash.
++
+[NOTE]
+The IP hash method of load balancing requires the underlying physical switch to be properly configured using SRC-DST-IP EtherChannel with a static (mode- on) port channel. You might experience intermittent connectivity due to possible switch misconfiguration. If so, then temporarily shut down one of the two associated uplink ports on the Cisco switch to restore communication to the ESXi management vmkernel port while troubleshooting the port-channel settings.
+
+=== Configure the port groups and VMkernel NICs
+
+To configure the port groups and VMkernel NICs, complete the following steps:
+
+. In the left navigation pane, select Networking.
+. Right-click the Port Groups tab.
++
+image:express-c-series-c190-deploy_image26.png[Error: Missing Graphic Image]
+
+. Right-click VM Network and select Edit. Change the VLAN ID to `\<<var_vm_traffic_vlan>>`.
+. Click Add Port Group.
+.. Name the port group MGMT-Network.
+.. Enter `\<<mgmt_vlan>>` for the VLAN ID.
+.. Make sure that vSwitch0 is selected.
+.. Click save.
+. Click the VMkernel NICs tab.
++
+image:express-c-series-c190-deploy_image27.png[Error: Missing Graphic Image]
+
+. Select Add VMkernel NIC.
+.. Select New Port Group.
+.. Name the port group NFS-Network.
+.. Enter `\<<nfs_vlan_id>>` for the VLAN ID.
+.. Change the MTU to 9000.
+.. Expand IPv4 Settings.
+.. Select Static Configuration.
+.. Enter `\<<var_hosta_nfs_ip>>` for Address.
+.. Enter `\<<var_hosta_nfs_mask>>` for Subnet Mask.
+.. Click Create.
+. Repeat this process to create the vMotion VMkernel port.
+. Select Add VMkernel NIC.
+.. Select New Port Group.
+.. Name the port group vMotion.
+.. Enter `\<<vmotion_vlan_id>>` for the VLAN ID.
+.. Change the MTU to 9000.
+.. Expand IPv4 Settings.
+.. Select Static Configuration.
+.. Enter `\<<var_hosta_vmotion_ip>>` for Address.
+.. Enter `\<<var_hosta_vmotion_mask>>` for Subnet Mask.
+.. Make sure that the vMotion checkbox is selected after IPv4 Settings.
++
+image:express-c-series-c190-deploy_image28.png[Error: Missing Graphic Image]
++
+[NOTE]
+There are many ways to configure ESXi networking, including by using the VMware vSphere distributed switch if your licensing allows it. Alternative network configurations are supported in FlexPod Express if they are required to meet business requirements.
+
+=== Mount the first datastores
+
+The first datastores to be mounted are the `infra_datastore` datastore for VMs and the `infra_swap` datastore for VM swap files.
+
+. Click Storage in the left navigation pane, and then click New Datastore.
++
+image:express-c-series-c190-deploy_image29.png[Error: Missing Graphic Image]
+
+. Select Mount NFS Datastore.
++
+image:express-c-series-c190-deploy_image30.png[Error: Missing Graphic Image]
+
+. Enter the following information in the Provide NFS Mount Details page:
+
+** Name: `infra_datastore`
+** NFS server: `\<<var_nodea_nfs_lif>>`
+** Share: `/infra_datastore`
+** Make sure that NFS 3 is selected.
+
+. Click Finish. You can see the task completing in the Recent Tasks pane.
+. Repeat this process to mount the `infra_swap` datastore:
+
+** Name: `infra_swap`
+** NFS server: `\<<var_nodea_nfs_lif>>`
+** Share: `/infra_swap`
+** Make sure that NFS 3 is selected.
+
+=== Configure NTP
+
+To configure NTP for an ESXi host, complete the following steps:
+
+. Click Manage in the left navigation pane. Select System in the right pane and then click Time & Date.
+. Select Use Network Time Protocol (Enable NTP Client).
+. Select Start and Stop with Host as the NTP service startup policy.
+. Enter `\<<var_ntp>>` as the NTP server. You can set multiple NTP servers.
+. Click Save.
++
+image:express-c-series-c190-deploy_image31.png[Error: Missing Graphic Image]
+
+=== Move the VM swap file location
+
+These steps provide details for moving the VM swap file location.
+
+. Click Manage in the left navigation pane. Select system in the right pane, then click Swap.
++
+image:express-c-series-c190-deploy_image32.png[Error: Missing Graphic Image]
+
+. Click Edit Settings. Select `infra_swap` from the Datastore options.
++
+image:express-c-series-c190-deploy_image33.png[Error: Missing Graphic Image]
+
+. Click Save.
+
+link:express-c-series-c190-design_vmware_vcenter_server_6.7u2_installation_procedure.html[Next: VMware vCenter Server 6.7U2 installation procedure]
