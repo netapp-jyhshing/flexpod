@@ -1,0 +1,102 @@
+---
+sidebar: sidebar
+permalink: express/express-c-series-c190-deploy_deployment_procedures_overview.html
+keywords: configure,  express, flexpod, cisco, series, c190, deployment, overview
+summary: This document provides details for configuring a fully redundant, highly available FlexPod Express system. To reflect this redundancy, the components being configured in each step are referred to as either component A or component B.
+---
+
+= Overview
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./../media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2021-06-03 12:10:21.897325
+//
+
+This document provides details for configuring a fully redundant, highly available FlexPod Express system. To reflect this redundancy, the components being configured in each step are referred to as either component A or component B. For example, controller A and controller B identify the two NetApp storage controllers that are provisioned in this document. Switch A and switch B identify a pair of Cisco Nexus switches.
+
+In addition, this document describes steps for provisioning multiple Cisco UCS hosts, which are identified sequentially as server A, server B, and so on.
+
+To indicate that you should include information pertinent to your environment in a step, `\<<text>>` appears as part of the command structure. See the following example for the `vlan create` command:
+
+....
+Controller01> network port vlan create –node <<var_nodeA>> -vlan-name <<var_vlan-name>>
+....
+
+This document enables you to fully configure the FlexPod Express environment. In this process, various steps require you to insert customer-specific naming conventions, IP addresses, and virtual local area network (VLAN) schemes. The following table describes the VLANs required for deployment, as outlined in this guide. This table can be completed based on the specific site variables and used to implement the document configuration steps.
+
+[NOTE]
+If you use separate in-band and out-of-band management VLANs, you must create a layer- 3 route between them. For this validation, a common management VLAN was used.
+
+|===
+|VLAN name |VLAN purpose |VLAN ID |
+
+|Management VLAN
+|VLAN for management interfaces
+|3437
+|vSwitch0
+|NFS VLAN
+|VLAN for NFS traffic
+|3438
+|vSwitch0
+|VMware vMotion VLAN
+|VLAN designated for the movement of virtual machines (VMs) from one physical host to another
+|3441
+|vSwitch0
+|VM traffic VLAN
+|VLAN for VM application traffic
+|3442
+|vSwitch0
+|iSCSI-A-VLAN
+|VLAN for iSCSI traffic on fabric A
+|3439
+|iScsiBootvSwitch
+|iSCSI-B-VLAN
+|VLAN for iSCSI traffic on fabric B
+|3440
+|iScsiBootvSwitch
+|Native VLAN
+|VLAN to which untagged frames are assigned
+|2
+|
+|===
+
+The VLAN numbers are needed throughout the configuration of FlexPod Express. The VLANs are referred to as `\<<var_xxxx_vlan>>`, where `xxxx` is the purpose of the VLAN (such as iSCSI-A).
+
+There are two vSwitches created in this validation.
+
+The following table lists the solution vSwitches.
+
+|===
+|vSwitch name |Active adapters |Ports |MTU |Load balancing
+
+|vSwitch0
+|Vmnic2, vmnic4
+|default (120)
+|9000
+|Route based on IP hash
+|iScsiBootvSwitch
+|Vmnic3, vmnic5
+|default (120)
+|9000
+|Route based on the originating virtual port ID.
+|===
+
+[NOTE]
+The IP hash method of load balancing requires proper configuration for the underlying physical switch using SRC-DST-IP EtherChannel with a static (mode on) port-channel. In the event of intermittent connectivity due to possible switch misconfiguration, temporarily shut down one of the two associated uplink ports on the Cisco switch to restore communication to the ESXi management vmkernel port while troubleshooting the port-channel settings.
+
+The following table lists the VMware VMs that are created.
+
+|===
+|VM description |Host name
+
+|VMware vCenter Server
+|FlexPod-VCSA
+|Virtual Storage Console
+|FlexPod-VSC
+|===

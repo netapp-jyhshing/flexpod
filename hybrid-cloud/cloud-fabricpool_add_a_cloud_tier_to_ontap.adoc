@@ -1,0 +1,67 @@
+---
+sidebar: sidebar
+permalink: hybrid-cloud/cloud-fabricpool_add_a_cloud_tier_to_ontap.html
+keywords: add, cloud, tier, ontap, aggregate, storage, fabricpool, flexpod, ontap, cli, oncommand, manager
+summary: Before an object store can be attached to an aggregate, it must be added to and identified by ONTAP. This task can be completed with either OnCommand System Manager or the ONTAP CLI.
+---
+
+= Add a cloud tier to ONTAP
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./../media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2021-06-03 12:42:35.281455
+//
+
+
+Before an object store can be attached to an aggregate, it must be added to and identified by ONTAP. This task can be completed with either OnCommand System Manager or the ONTAP CLI.
+
+FabricPool supports Amazon S3, IBM Object Cloud Storage, and Microsoft Azure Blob Storage object stores as cloud tiers.
+
+You need the following information:
+
+* Server name (FQDN); for example, `s3.amazonaws.com`
+* Access key ID
+* Secret key
+* Container name (bucket name)
+
+== OnCommand System Manager
+
+To add a cloud tier with OnCommand System Manager, complete the following steps:
+
+. Launch OnCommand System Manager.
+. Click Storage.
+. Click Aggregates & Disks.
+. Click Cloud Tiers.
+. Select an object store provider.
+. Complete the text fields as required for the object store provider.
++
+In the Container Name field, enter the object store's bucket or container name.
+
+. Click Save and Attach Aggregates.
+
+image:cloud-fabricpool_image13.png[Error: Missing Graphic Image]
+
+== ONTAP CLI
+
+To add a cloud tier with the ONTAP CLI, enter the following commands:
+
+....
+object-store config create
+-object-store-name <name>
+-provider-type <AWS>
+-port <443/8082> (AWS)
+-server <name>
+-container-name <bucket-name>
+-access-key <string>
+-secret-password <string>
+-ssl-enabled true
+-ipspace default
+....
+
+link:cloud-fabricpool_attach_a_cloud_tier_to_an_ontap_aggregate.html[Next: Attach a cloud tier to an ONTAP aggregate.]
