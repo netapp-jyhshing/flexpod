@@ -12,3 +12,77 @@ sidebar:
     - section: express
     - section: security
     - section: ontap-connector-for-intersight
+
+homepage:
+  tiles:
+    - title: FlexPod - Start Here
+      links:
+        - title: "What's New"
+          summary: Check out the latest FlexPod solutions
+          url: 
+        - title: "Videos and Demos"
+          summary: Short videos / demos for FlexPod features
+          url: https://tv.netapp.com/search?q=FlexPod
+        - title: "Blogs"
+          summary: Technical blogs highlighting FlexPod features
+          url: https://blog.netapp.com/tag/Flexpod/
+
+    - title: AI and Modern Data Analytics with FlexPod
+      links:
+        - title: "What's New"
+          summary: Check out the latest FlexPod solutions for AI/ML
+          url: https://www.flexpod.com/solutions/verticals/healthcare/
+        - title: "Videos and Demos"
+          summary: Short video demos of FlexPod solutions for AI/ML
+          url: https://tv.netapp.com/search?q=FlexPod%20AI
+        - title: "Blogs"
+          summary: Technical blogs highlighting FlexPod features for AI/ML
+          url: https://blog.netapp.com/tag/Flexpod/
+
+    - title: Business Applications and Enterprise Databases
+      links:
+        - title: "What's New"
+          summary: Check out the latest Business Applications & Enterprise Database solutions
+          url:
+        - title: "Videos and Demos"
+          summary: Short videos/demos for business applications & enterprise database features
+          url: https://tv.netapp.com/search?q=FlexPod%20SAP
+        - title: "Blogs"
+          summary: Technical blogs highlighting FlexPod features for business applications and enterprise databases
+          url: https://blog.netapp.com/tag/Flexpod/
+
+    - title: Hybrid Cloud
+      links:
+        - title: "What's New"
+          summary: Check out the latest FlexPod hybrid-cloud solutions
+          url: https://flexpod.com/solutions/use-cases/hybrid-cloud/
+        - title: "Videos and Demos"
+          summary: Short video demos of FlexPod solutions for hybrid cloud
+          url: https://tv.netapp.com/search?q=FlexPod%20Hybrid%20Cloud
+        - title: "Blogs"
+          summary: Technical blogs highlighting FlexPod features for hybrid cloud
+          url: https://blog.netapp.com/tag/Flexpod/
+
+    - title: FlexPod for VDI
+      links:
+        - title: "What's New"
+          summary: Check out the latest FlexPod solutions for VDI
+          url: https://www.flexpod.com/solutions/use-cases/virtual-desktop-infrastructure/
+        - title: "Videos and Demos"
+          summary: Short videos/demos about NetApp solutions for VDI
+          url: https://tv.netapp.com/search?q=FlexPod%20VDI
+        - title: "Blogs"
+          summary: Technical blogs highlighting FlexPod features for VDI
+          url: https://blog.netapp.com/tag/Flexpod/
+
+    - title: Healthcare with FlexPod
+      links:
+        - title: "What's New"
+          summary: Check out the latest FlexPod solutions for healthcare
+          url: https://flexpod.com/solutions/verticals/healthcare/
+        - title: "Videos and Demos"
+          summary: Short videos/demos about FlexPod solutions for healthcare
+          url: https://tv.netapp.com/search?q=FlexPod%20Healthcare
+        - title: "Blogs"
+          summary: Technical blogs highlighting FlexPod features for healthcare
+          url: https://blog.netapp.com/tag/Healthcare/

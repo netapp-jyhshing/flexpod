@@ -24,6 +24,9 @@ Ganesh Kamath
 Atul Bhalodia
 Brandon Agee
 
+In partnership with:
+image:cisco logo.png[Error: Missing Graphic Image]
+
 == Objective
 
 The objective of this report is to highlight the performance of FlexPod with NetApp All Flash A300 and A700 storage systems with Epic Healthcare workloads.

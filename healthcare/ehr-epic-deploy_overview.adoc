@@ -22,6 +22,9 @@ Brian O’Mahony, NetApp
 Ganesh Kamath, NetApp
 Mike Brennan, Cisco
 
+In partnership with:
+image:cisco logo.png[Error: Missing Graphic Image]
+
 This technical report is for customers who plan to deploy Epic on FlexPod systems. It provides a brief overview of the FlexPod architecture for Epic and covers the setup and installation of FlexPod to deploy Epic for healthcare.
 
 FlexPod systems deployed to host Epic HyperSpace, InterSystems Caché database, Cogito Clarity analytics and reporting suite, and services servers hosting the Epic application layer provide an integrated platform for a dependable, high-performance infrastructure that can be deployed rapidly. The FlexPod integrated platform is deployed by skilled FlexPod channel partners and is supported by Cisco and NetApp technical assistance centers.
