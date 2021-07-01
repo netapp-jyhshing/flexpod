@@ -1,0 +1,58 @@
+---
+sidebar: sidebar
+permalink: hybrid-cloud/cloud-fabricpool_set_volume_tiering_policy.html
+keywords: volume, tiering, policy, ontap, cli, oncommand, system, manager, cloud, fabricpool
+summary:
+---
+
+= Set volume tiering policy
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./../media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2021-06-03 12:42:35.296631
+//
+
+By default, volumes use the None volume tiering policy. After volume creation, the volume tiering policy can be changed by using OnCommand System Manager or the ONTAP CLI.
+
+When used with FlexPod, FabricPool provides three volume tiering policies, Auto, Snapshot-Only, and None.
+
+* *Auto*
+** All cold blocks in the volume are moved to the cloud tier. Assuming that the aggregate is more than 50% utilized, it takes approximately 31 days for inactive blocks to become cold. The Auto cooling period is adjustable between 2 days and 63 days by using the `tiering-minimum-cooling-days` setting.
+** When cold blocks in a volume with a tiering policy set to Auto are read randomly, they are made hot and written to the performance tier.
+** When cold blocks in a volume with a tiering policy set to Auto are read sequentially, they stay cold and remain on the cloud tier. They are not written to the performance tier.
+* *Snapshot-Only*
+** Cold snapshot blocks in the volume that are not shared with the active file system are moved to the cloud tier. Assuming that the aggregate is more than 50% utilized, it takes approximately 2 days for inactive snapshot blocks to become cold. The Snapshot-Only cooling period is adjustable from 2 to 63 days by using the `tiering-minimum-cooling-days` setting.
+** When cold blocks in a volume with a tiering policy set to Snapshot-Only are read, they are made hot and written to the performance tier.
+* *None (Default)*
+** Volumes set to use None as their tiering policy do not tier cold data to the cloud tier.
+** Setting the tiering policy to None prevents new tiering.
+** Volume data that has previously been moved to the cloud tier remains in the cloud tier until it becomes hot and is automatically moved back to the performance tier.
+
+== OnCommand System Manager
+
+To change a volume’s tiering policy by using OnCommand System Manager, complete the following steps:
+
+. Launch OnCommand System Manager.
+. Select a volume.
+. Click More Actions and select Change Tiering Policy.
+. Select the tiering policy to apply to the volume.
+. Click Save.
++
+image:cloud-fabricpool_image16.png[Error: Missing Graphic Image]
+
+== ONTAP CLI
+
+To change a volume’s tiering policy by using the ONTAP CLI, run the following command:
+
+....
+volume modify -vserver <svm_name> -volume <volume_name>
+-tiering-policy <auto|snapshot-only|all|none>
+....
+
+link:cloud-fabricpool_set_volume_tiering_minimum_cooling_days.html[Next: Set volume tiering minimum cooling days.]
