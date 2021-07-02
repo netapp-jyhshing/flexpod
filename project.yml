@@ -17,9 +17,6 @@ homepage:
   tiles:
     - title: FlexPod - Start Here
       links:
-        - title: "What's New"
-          summary: Check out the latest FlexPod solutions
-          url: 
         - title: "Videos and Demos"
           summary: Short videos / demos for FlexPod features
           url: https://tv.netapp.com/search?q=FlexPod
@@ -41,9 +38,6 @@ homepage:
 
     - title: Business Applications and Enterprise Databases
       links:
-        - title: "What's New"
-          summary: Check out the latest Business Applications & Enterprise Database solutions
-          url:
         - title: "Videos and Demos"
           summary: Short videos/demos for business applications & enterprise database features
           url: https://tv.netapp.com/search?q=FlexPod%20SAP
