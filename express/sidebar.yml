@@ -56,7 +56,7 @@ entries:
           url: /express/express-c-series-c190-deploy_version_history.html
 
   - title: FlexPod Express with Cisco UCS C-Series and AFF A220 Series Design Guide
-    url: /express-c-series-aff220-design_executive_summary.html
+    url: /express/express-c-series-aff220-design_executive_summary.html
     type: solutions
     entries:
       - title: Program summary
