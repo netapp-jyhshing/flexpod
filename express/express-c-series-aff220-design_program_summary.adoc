@@ -1,0 +1,46 @@
+---
+sidebar: sidebar
+permalink: express/express-c-series-aff220-design_program_summary.html
+keywords: summary, converged infrastructure, CVD, NVA, Express, Datacenter, select, Nexus 3172P, UCS C220 M5
+summary: FlexPod reference architectures are delivered as Cisco Validated Designs or as NetApp Verified Architectures. Deviations that are based on customer requirements from a given CVD or NVA are permitted if variations do not result in the deployment of unsupported configurations.
+---
+
+= Program summary
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./../media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2021-04-22 14:35:14.867435
+//
+
+== FlexPod converged infrastructure portfolio
+
+FlexPod reference architectures are delivered as Cisco Validated Designs (CVDs) or as NetApp Verified Architectures (NVAs). Deviations that are based on customer requirements from a given CVD or NVA are permitted if variations do not result in the deployment of unsupported configurations.
+
+As depicted in the following figure, the FlexPod portfolio includes three solutions: FlexPod Express, FlexPod Datacenter, and FlexPod Select:
+
+* *FlexPod Express.* Offers an entry-level solution that consists of technologies from Cisco and NetApp.
+* *FlexPod Datacenter.* Delivers an optimal multipurpose foundation for various workloads and applications.
+* *FlexPod Select.* Incorporates the best aspects of FlexPod Datacenter and tailors the infrastructure to a given application.
+
+image:express-c-series-aff220-design_image2.png[Error: Missing Graphic Image]
+
+== NetApp Verified Architecture program
+
+The NVA program offers customers a verified architecture for NetApp solutions. An NVA means that the NetApp solution has the following qualities:
+
+* Is thoroughly tested
+* Is prescriptive in nature
+* Minimizes deployment risks
+* Accelerates time to market
+
+This guide details the design of FlexPod Express with VMware vSphere. In addition, this design leverages the all-new AFF A220 system, which runs NetApp ONTAP 9.4 software, Cisco Nexus 3172P switches, and Cisco UCS C220 M5 servers as hypervisor nodes.
+
+Although this document is validated for AFF A220, this solution also supports FAS2700.
+
+link:express-c-series-aff220-design_solution_overview.html[Next: Solution overview.]

@@ -1,0 +1,21 @@
+---
+sidebar: sidebar
+permalink: express/express-c-series-c190-deploy_conclusion.html
+keywords: flexpod, express, c, series, c190, deployment, conclusion
+summary: FlexPod Express provides a simple and effective solution by providing a validated design that uses industry-leading components.
+---
+
+= Conclusion
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./../media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2021-06-03 12:10:22.043485
+//
+
+FlexPod Express provides a simple and effective solution by providing a validated design that uses industry-leading components. By scaling through the addition of components, FlexPod Express can be tailored for specific business needs. FlexPod Express was designed for small to midsize businesses, ROBOs, and other businesses that require dedicated solutions.

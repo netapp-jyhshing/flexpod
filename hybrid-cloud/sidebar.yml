@@ -1,0 +1,63 @@
+section: hybrid-cloud
+title: Hybrid Cloud
+entries:
+  - title: NetApp Cloud Insights for FlexPod
+    url: /hybrid-cloud/cloud-insights_netapp_cloud_insights_for_flexpod.html
+    type: solutions
+    entries:
+      - title: Use cases
+        url: /hybrid-cloud/cloud-insights_use_cases.html
+      - title: Architecture
+        url: /hybrid-cloud/cloud-insights_architecture.html
+      - title: Design considerations
+        url: /hybrid-cloud/cloud-insights_design_considerations.html
+      - title: Deploy Cloud Insights for FlexPod
+        url: /hybrid-cloud/cloud-insights_deploy_cloud_insights_for_flexpod.html
+      - title: Use cases
+        url: /hybrid-cloud/cloud-insights_use_cases_01.html
+      - title: Videos and demos
+        url: /hybrid-cloud/cloud-insights_videos_and_demos.html
+      - title: Additional information
+        url: /hybrid-cloud/cloud-insights_additional_information.html
+  - title: FlexPod with FabricPool - Inactive Data Tiering to Amazon AWS S3
+    url: /hybrid-cloud/cloud-fabricpool_introduction.html
+    type: solutions
+    entries:
+      - title: FlexPod overview and architecture
+        url: /hybrid-cloud/cloud-fabricpool_flexpod_overview_and_architecture.html
+      - title: FabricPool
+        url: /hybrid-cloud/cloud-fabricpool_fabricpool.html
+      - title: FabricPool requirements
+        url: /hybrid-cloud/cloud-fabricpool_fabricpool_requirements.html
+      - title: Configuration
+        url: /hybrid-cloud/cloud-fabricpool_software_revisions.html
+        entries:
+          - title: Install FabricPool license
+            url: /hybrid-cloud/cloud-fabricpool_install_fabricpool_license.html
+          - title: Create AWS S3 bucket
+            url: /hybrid-cloud/cloud-fabricpool_create_aws_s3_bucket.html
+          - title: Add a cloud tier to ONTAP
+            url: /hybrid-cloud/cloud-fabricpool_add_a_cloud_tier_to_ontap.html
+          - title: Attach a cloud tier to an ONTAP aggregate
+            url: /hybrid-cloud/cloud-fabricpool_attach_a_cloud_tier_to_an_ontap_aggregate.html
+          - title: Set volume tiering policy
+            url: /hybrid-cloud/cloud-fabricpool_set_volume_tiering_policy.html
+          - title: Set volume tiering minimum cooling days
+            url: /hybrid-cloud/cloud-fabricpool_set_volume_tiering_minimum_cooling_days.html
+      - title: Performance considerations
+        url: /hybrid-cloud/cloud-fabricpool_performance_considerations.html
+      - title: Cost of ownership
+        url: /hybrid-cloud/cloud-fabricpool_cost_of_ownership.html
+      - title: Conclusion
+        url: /hybrid-cloud/cloud-fabricpool_conclusion.html
+      - title: Where to find additional information
+        url: /hybrid-cloud/cloud-fabricpool_where_to_find_additional_information.html
+
+  - title: FlexPod Datacenter with IBM Cloud Private with Cisco UCS Manager, NetApp ONTAP 9.3 AFF, and VMware vSphere 6.5U1 [Design]
+    url: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_icp_ucsm32.html
+  - title: FlexPod Datacenter for Platform as a Service with Apprenda 8.2, Cisco ACI 3.1, and Kubernetes 1.9.4 [Design]
+    url: https://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-computing/ucs-b-series-blade-servers/whitepaper-c11-740803.pdf
+  - title: FlexPod Datacenter for Hybrid Cloud with Cisco CloudCenter and NetApp Private Storage [Design}
+    url: http://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_hybridcloud_design.html
+  - title: FlexPod Datacenter for Hybrid Cloud with Cisco CloudCenter and NetApp Private Storage [Deploy]
+    url: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_hybridcloud.html

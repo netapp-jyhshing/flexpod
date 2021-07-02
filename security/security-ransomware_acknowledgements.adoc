@@ -1,0 +1,24 @@
+---
+sidebar: sidebar
+permalink: security/security-ransomware_acknowledgements.html
+keywords: acknowledgements, author, contributors, flexpod, ransomware
+summary: The author would like to thank the following people for their contributions to the creation of this guide.
+---
+
+= Acknowledgements
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./../media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2021-05-20 14:17:51.444625
+//
+
+The author would like to thank the following people for their support in the creation of this document:
+
+* Jorge Gomez Navarrete, NetApp
+* Ganesh Kamath, NetApp

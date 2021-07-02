@@ -1,0 +1,21 @@
+---
+sidebar: sidebar
+permalink: hybrid-cloud/cloud-fabricpool_conclusion.html
+keywords: cloud, fabricpool, flexpod, conclusion
+summary: The journey to the cloud varies between organizations, between business units, and even between business units within organizations.
+---
+
+= Conclusion
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./../media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2021-06-03 12:42:35.315347
+//
+
+The journey to the cloud varies between organizations, between business units, and even between business units within organizations. Some choose a fast adoption, while others take a more conservative approach. FabricPool fits into the cloud strategy of organizations no matter their size and regardless of their cloud adoption speed, further demonstrating the efficiency and scalability benefits of a FlexPod infrastructure.
