@@ -21,6 +21,9 @@ summary: This report provides guidance for sizing FlexPod for a MEDITECH EHR app
 Brandon Agee, John Duignan, NetApp
 Mike Brennan, Jon Ebmeir, Cisco
 
+In partnership with:
+image:cisco logo.png[Error: Missing Graphic Image]
+
 This report provides guidance for sizing FlexPod for a MEDITECH EHR application software environment.
 
 == Purpose

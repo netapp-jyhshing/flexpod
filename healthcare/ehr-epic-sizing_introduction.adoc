@@ -22,6 +22,9 @@ summary: This technical report provides guidance for sizing FlexPod (NetApp stor
 Brian O’Mahony, Ganesh Kamath, Atul Bhalodia, NetApp
 Mike Brennan, Jon Ebmeier, Cisco
 
+In partnership with: 
+image:cisco logo.png[Error: Missing Graphic Image]
+
 == Purpose
 
 This technical report provides guidance for sizing FlexPod (NetApp storage and Cisco Unified Computing System) for an Epic Electronic Health Record (EHR) application software environment.
