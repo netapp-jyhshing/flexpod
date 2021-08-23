@@ -2,12 +2,14 @@ section: healthcare
 title: Healthcare
 entries:
   - title: FlexPod Datacenter for Epic Directional Sizing Guide
-    url: /healthcare/ehr-epic-sizing_introduction.html
     type: solutions
     entries:
+      - title: Overview
+        url: /healthcare/ehr-epic-sizing_introduction.html
       - title: Reference architecture
-        url: /healthcare/ehr-epic-sizing_netapp_storage_reference_architectures_for_epic.html
         entries:
+          - title: NetApp storage reference architectures for Epic
+            url: /healthcare/ehr-epic-sizing_netapp_storage_reference_architectures_for_epic.html
           - title: Cisco UCS reference architecture for Epic
             url: /healthcare/ehr-epic-sizing_cisco_ucs_reference_architecture_for_epic.html
       - title: Technical specifications for small, medium, and large Architectures
@@ -17,14 +19,16 @@ entries:
       - title: Acknowledgements
         url: /healthcare/ehr-epic-sizing_acknowledgements.html
   - title: FlexPod Datacenter for Epic EHR Deployment Guide
-    url: /healthcare/ehr-epic-deploy_overview.html
     type: solutions
     entries:
+      - title: Overview
+        url: /healthcare/ehr-epic-deploy_overview.html
       - title: Design
         url: /healthcare/ehr-epic-deploy_design.html
       - title: Deployment and configuration
-        url: /healthcare/ehr-epic-deploy_deployment_and_configuration_overview.html
         entries:
+          - title: Overview
+            url: /healthcare/ehr-epic-deploy_deployment_and_configuration_overview.html
           - title: Infrastructure hardware and software components
             url: /healthcare/ehr-epic-deploy_infrastructure_hardware_and_software_components.html
           - title: Base infrastructure configuration
@@ -44,9 +48,10 @@ entries:
       - title: Acknowledgements
         url: /healthcare/ehr-epic-deploy_acknowledgements.html
   - title: FlexPod for Epic Performance Testing
-    url: /healthcare/ehr-epic-performance_introduction.html
     type: solutions
     entries:
+      - title: Overview
+        url: /healthcare/ehr-epic-performance_introduction.html
       - title: Executive summary
         url: /healthcare/ehr-epic-performance_executive_summary.html
       - title: Test methodology
@@ -60,9 +65,10 @@ entries:
       - title: Acknowledgements
         url: /healthcare/ehr-epic-performance_acknowledgements.html
   - title: FlexPod for MEDITECH Directional Sizing Guide
-    url: /healthcare/ehr-meditech-sizing_introduction.html
     type: solutions
     entries:
+      - title: Overview
+        url: /healthcare/ehr-meditech-sizing_introduction.html
       - title: MEDITECH Workload Overview
         url: /healthcare/ehr-meditech-sizing_meditech_workload_overview.html
       - title: Technical Specifications for Small, Medium and Large Architectures
@@ -72,14 +78,16 @@ entries:
       - title: Acknowledgments
         url: /healthcare/ehr-meditech-sizing_acknowledgments.html
   - title: FlexPod Datacenter for MEDITECH Deployment Guide
-    url: /healthcare/ehr-meditech-deploy_overview.html
     type: solutions
     entries:
+      - title: Overview
+        url: /healthcare/ehr-meditech-deploy_overview.html
       - title: Design
         url: /healthcare/ehr-meditech-deploy_design.html
       - title: Deployment and configuration
-        url: /healthcare/ehr-meditech-deploy_deployment_and_configuration_overview.html
         entries:
+          - title: Overview
+            url: /healthcare/ehr-meditech-deploy_deployment_and_configuration_overview.html
           - title: Base infrastructure configuration
             url: /healthcare/ehr-meditech-deploy_base_infrastructure_configuration.html
           - title: Cisco UCS blade server and switch configuration
@@ -107,9 +115,10 @@ entries:
       - title: Where to find additional information
         url: /healthcare/ehr-meditech-deploy_where_to_find_additional_information.html
   - title: FlexPod for Medical Imaging
-    url: /healthcare/medical-imaging_introduction.html
     type: solutions
     entries:
+      - title: Overview
+        url: /healthcare/medical-imaging_introduction.html
       - title: Architecture
         url: /healthcare/medical-imaging_architecture.html
       - title: Solution infrastructure hardware and software components

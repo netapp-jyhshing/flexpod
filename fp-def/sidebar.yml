@@ -2,9 +2,10 @@ section: fp-def
 title: FlexPod Definition
 entries:
   - title: FlexPod Express Technical Specifications
-    url: /fp-def/fp-express-tech-spec_overview.html
     type: solutions
     entries:
+      - title: Overview
+        url: /fp-def/fp-express-tech-spec_overview.html
       - title: FlexPod Platforms
         url: /fp-def/fp-express-tech-spec_flexpod_platforms.html
       - title: FlexPod Rules
@@ -38,9 +39,10 @@ entries:
       - title: Additional Information
         url: /fp-def/fp-express-tech-spec_additional_information.html
   - title: FlexPod Datacenter Technical Specifications
-    url: /fp-def/dc-tech-spec_solution_overview.html
     type: solutions
     entries:
+      - title:
+        url: /fp-def/dc-tech-spec_solution_overview.html
       - title: FlexPod platforms
         url: /fp-def/dc-tech-spec_flexpod_platforms.html
       - title: FlexPod rules
