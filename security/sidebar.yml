@@ -2,9 +2,10 @@ section: security
 title: FlexPod and Security
 entries:
   - title: FlexPod, The Solution to Ransomware
-    url: /security/security-ransomware_what_is_ransomware.html
     type: solutions
     entries:
+      - title: What is ransomware?
+        url: /security/security-ransomware_what_is_ransomware.html
       - title: FlexPod Overview
         url: /security/security-ransomware_flexpod_overview.html
       - title: Ransomware Protection Measures
