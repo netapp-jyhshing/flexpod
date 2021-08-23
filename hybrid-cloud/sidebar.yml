@@ -2,9 +2,10 @@ section: hybrid-cloud
 title: Hybrid Cloud
 entries:
   - title: NetApp Cloud Insights for FlexPod
-    url: /hybrid-cloud/cloud-insights_netapp_cloud_insights_for_flexpod.html
     type: solutions
     entries:
+      - title: Overview
+        url: /hybrid-cloud/cloud-insights_netapp_cloud_insights_for_flexpod.html
       - title: Use cases
         url: /hybrid-cloud/cloud-insights_use_cases.html
       - title: Architecture
@@ -20,9 +21,10 @@ entries:
       - title: Additional information
         url: /hybrid-cloud/cloud-insights_additional_information.html
   - title: FlexPod with FabricPool - Inactive Data Tiering to Amazon AWS S3
-    url: /hybrid-cloud/cloud-fabricpool_introduction.html
     type: solutions
     entries:
+      - title: Overview
+        url: /hybrid-cloud/cloud-fabricpool_introduction.html
       - title: FlexPod overview and architecture
         url: /hybrid-cloud/cloud-fabricpool_flexpod_overview_and_architecture.html
       - title: FabricPool
@@ -30,8 +32,9 @@ entries:
       - title: FabricPool requirements
         url: /hybrid-cloud/cloud-fabricpool_fabricpool_requirements.html
       - title: Configuration
-        url: /hybrid-cloud/cloud-fabricpool_software_revisions.html
         entries:
+          - title: FabricPool software revisions
+            url: /hybrid-cloud/cloud-fabricpool_software_revisions.html
           - title: Install FabricPool license
             url: /hybrid-cloud/cloud-fabricpool_install_fabricpool_license.html
           - title: Create AWS S3 bucket
