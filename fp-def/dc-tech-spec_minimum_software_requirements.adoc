@@ -26,6 +26,8 @@ A FlexPod configuration has the following minimum software requirements:
 ** Cisco UCS 6200 Series Fabric Interconnect—2.2(8a)
 ** Cisco UCS 6300 Series Fabric Interconnect—3.1(1e)
 ** Cisco UCS 6400 Series Fabric Interconnect—4.0(1)
+* Cisco Intersight Managed Mode:
+** Cisco UCS 6400 Series Fabric Interconnect – 4.1(2)
 * For Cisco Nexus 5000 Series Switches, Cisco NX-OS software release 5.0(3)N1(1c) or later, including NX-OS 5.1.x
 * For Cisco Nexus 7000 Series Switches:
 ** The 4-slot chassis requires Cisco NX-OS software release 6.1(2) or later
