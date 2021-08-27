@@ -39,11 +39,11 @@ For larger deployments of Cisco UCS C-Series Rack Servers, you can choose a pair
 
 * Two NetApp storage controllers in a high-availability (HA) pair configuration:
 +
-This configuration can consist of any supported NetApp FAS or AFF series storage controllers. See the https://hwu.netapp.com/[NetApp Hardware Universe^] application for a current list of supported FAS and AFF controller models.
+This configuration can consist of any supported NetApp FAS, AFF, or ASA-series storage controllers. See the https://hwu.netapp.com/[NetApp Hardware Universe^] application for a current list of supported FAS, AFF, and ASA controller models.
 
-** The HA configuration requires two redundant interfaces per controller for data access; the interfaces can be FCoE, FC, or 10Gb Ethernet (10GbE).
+** The HA configuration requires two redundant interfaces per controller for data access; the interfaces can be FCoE, FC, or 10/25/100Gb Ethernet (10GbE).
 ** If the solution uses NetApp ONTAP, a cluster interconnect topology that is approved by NetApp is required. For more information, see the https://hwu.netapp.com/Switch/Index[Switches^] tab of the NetApp Hardware Universe.
-** If the solution uses ONTAP, at least two additional 10GbE ports per controller are required for data access.
+** If the solution uses ONTAP, at least two additional 10/25/100GbE ports per controller are required for data access.
 ** For ONTAP clusters with two nodes, you can configure a two-node switchless cluster.
 ** For ONTAP clusters with more than two nodes, a pair of cluster interconnect switches are required.
-* One NetApp disk shelf with any supported disk type. See the Shelves tab of the NetApp Hardware Universe for a current list of supported disk shelf models.
+* One NetApp disk shelf with any supported disk type. See the Shelves tab of the link:https://hwu.netapp.com/Shelves/Index?osTypeId=2032[NetApp Hardware Universe^] for a current list of supported disk shelf models.

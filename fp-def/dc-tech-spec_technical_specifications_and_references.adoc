@@ -339,6 +339,21 @@ http://docs.netapp.com/platstor/topic/com.netapp.nav.a300/home.html[AFF A300 Pla
 http://docs.netapp.com/platstor/topic/com.netapp.nav.fas2700/home.html[AFF A220 Platform Documentation]
 |===
 
+=== AFF ASA A-Series
+
+All current models of NetApp AFF ASA A-Series storage controllers are supported for use in FlexPod. Additional information can be found in the All SAN Array documentation resources, ONTAP AFF All SAN Array System technical report, and in the NetApp Hardware Universe. See the platform-specific documentation listed in the following table for detailed information about a specific AFF Model.
+
+|===
+| Component | AFF A-Series controller platform documentation
+
+| NetApp AFF ASA A800 | http://docs.netapp.com/allsan/index.jsp[AFF ASA A800 Platform Documentation]
+|NetApp AFF ASA A700 | http://docs.netapp.com/allsan/index.jsp[AFF ASA A700 Platform Documentation]
+|NetApp AFF ASA A400 | http://docs.netapp.com/allsan/index.jsp[AFF ASA A400 Platform Documentation]
+| NetApp AFF ASA A250 | http://docs.netapp.com/allsan/index.jsp[AFF ASA A250 Platform Documentation]
+| NetApp AFF ASA A220 | http://docs.netapp.com/allsan/index.jsp[AFF ASA A220 Platform Documentation]
+|===
+
+
 === NetApp disk shelves
 
 The technical specifications for NetApp disk shelves include the form factor size, the number of drives per enclosure, and the shelf I/O modules; this documentation can be found in the following table. For more information, see the http://www.netapp.com/us/products/storage-systems/disk-shelves-and-storage-media/disk-shelves-tech-specs.aspx[NetApp Disk Shelves and Storage Media Technical Specifications^] and the https://hwu.netapp.com/[NetApp Hardware Universe^].

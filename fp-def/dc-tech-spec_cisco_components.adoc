@@ -60,7 +60,7 @@ To use Cisco UCS B-Series blades, you must have a Cisco UCS B-Series chassis. Th
 http://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-5100-series-blade-server-chassis/index.html[Cisco UCS 5100 Series Blade Server Chassis]
 |===
 
-Each Cisco UCS 5108 blade chassis must have two Cisco UCS 2200/2300 Series IOMs to provide redundant connectivity to the fabric interconnects. For more information about which combinations of fabric interconnects and Cisco UCS 5108 IOMs can be accommodated.
+Each Cisco UCS 5108 blade chassis must have two Cisco UCS 2200/2300/2400 Series IOMs to provide redundant connectivity to the fabric interconnects.
 
 == Cisco UCS B-Series blade server options
 
