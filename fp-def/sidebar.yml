@@ -41,7 +41,7 @@ entries:
   - title: FlexPod Datacenter Technical Specifications
     type: solutions
     entries:
-      - title:
+      - title: Overview 
         url: /fp-def/dc-tech-spec_solution_overview.html
       - title: FlexPod platforms
         url: /fp-def/dc-tech-spec_flexpod_platforms.html
