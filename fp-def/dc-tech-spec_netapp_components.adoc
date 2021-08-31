@@ -31,12 +31,9 @@ The controller families that are listed in the table below are appropriate for u
 |===
 |Storage controller family |Technical specifications
 
-|AFF A-Series
-|
-https://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62247[AFF A-Series Documentation]
-|FAS Series
-|
-https://mysupport.netapp.com/documentation/productsatoz/index.html#F[FAS Series Documentation]
+|AFF A-Series | https://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62247[AFF A-Series Documentation]
+| AFF ASA A-Series | https://www.netapp.com/data-storage/san-storage-area-network/documentation/[AFF ASA A-Series Documentation]
+|FAS Series | https://mysupport.netapp.com/documentation/productsatoz/index.html#F[FAS Series Documentation]
 |===
 
 == Cluster interconnect switch options
