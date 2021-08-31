@@ -24,8 +24,6 @@ NetApp supports several optional components to further enhance FlexPod Datacente
 
 FlexPod supports both variants of the NetApp MetroCluster software for continuous availability, in either two- or four-node cluster configurations. MetroCluster provides synchronous replication for critical workloads. It requires a dual-site configuration that is connected with Cisco switching. The maximum supported distance between the sites is approximately 186 miles (300km) for MetroCluster FC and increases to approximately 435 miles (700km) for MetroCluster IP. The following figures illustrate a FlexPod Datacenter with NetApp MetroCluster architecture and FlexPod Datacenter with NetApp MetroCluster IP architecture, respectively.
 
-Starting with ONTAP 9.8, ONTAP Mediator can be deployed at a third site to monitor the MetroCluster IP solution and to facilitate automated unplanned switchover when a site disaster occurs.
-
 The following figure depicts FlexPod Datacenter with NetApp MetroCluster architecture.
 
 image:dc-tech-spec_image1.png[Error: Missing Graphic Image]
@@ -33,6 +31,8 @@ image:dc-tech-spec_image1.png[Error: Missing Graphic Image]
 The following figure depicts the FlexPod Datacenter with NetApp MetroCluster IP architecture.
 
 image:dc-tech-spec_image2.png[Error: Missing Graphic Image]
+
+Starting with ONTAP 9.8, ONTAP Mediator can be deployed at a third site to monitor the MetroCluster IP solution and to facilitate automated unplanned switchover when a site disaster occurs.
 
 For a FlexPod MetroCluster IP solution deployment with extended layer-2 site-to-site connectivity, you can achieve cost savings by sharing ISL and using FlexPod switches as compliant MetroCluster IP switches if the network bandwidth and switches meet the requirements as illustrated in the following figure, which depicts the FlexPod MetroCluster IP solution with ISL sharing and compliant switches.
 
