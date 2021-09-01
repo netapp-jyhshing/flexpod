@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: ent-db/flexpod-sap-index.html
+permalink: ent-db/index.html
 keywords: index, introduction, sap, hana, storage
 summary: This page provides an introduction to the use of FlexPod with SAP HANA and other SAP applications.
 ---
