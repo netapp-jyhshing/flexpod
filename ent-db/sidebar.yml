@@ -4,7 +4,7 @@ entries:
   - title: SAP
     entries:
       - title: Introduction to SAP with FlexPod
-        url: flexpod-sap-index.html
+        url: /ent-db/flexpod-sap-index.html
       - title: SAP HANA FC SAN CVD [Deploy]
         url: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_sap_ucsm40_fcsan.html
       - title: SAP Non-HANA with SQL White Paper (WP) [Design]
