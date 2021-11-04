@@ -40,7 +40,7 @@ The Cisco UCS-managed confirmation includes the following hardware components:
 * One Cisco UCS 5108 alternating current (AC) blade server chassis
 * Two Cisco UCS 6324 fabric interconnects
 * Cisco UCS B-Series servers (at least four Cisco UCS B200 M5 blade servers)
-* Two AFF C190, AFF A220, FAS2750, or FAS2720 controllers in an HA pair configuration (requires two available unified target adapter 2 [UTA2] ports per controller)
+* Two AFF C190, AFF A220, AFF A250, FAS2750, or FAS2720 controllers in an HA pair configuration (requires two available unified target adapter 2 [UTA2] ports per controller)
 
 == FlexPod Express with E-Series
 
