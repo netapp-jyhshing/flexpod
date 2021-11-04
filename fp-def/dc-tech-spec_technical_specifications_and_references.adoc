@@ -321,22 +321,25 @@ All current models of NetApp AFF A-Series storage controllers are supported for 
 
 |NetApp AFF A800
 |
-http://docs.netapp.com/platstor/topic/com.netapp.nav.a800/home.html[AFF A800 Platform Documentation]
+https://docs.netapp.com/us-en/ontap-systems/a800/index.html[AFF A800 Platform Documentation]
 |NetApp AFF A700
 |
-http://docs.netapp.com/platstor/topic/com.netapp.nav.fas9000/home.html[AFF A700 Platform Documentation]
+https://docs.netapp.com/us-en/ontap-systems/fas9000/index.html[AFF A700 Platform Documentation]
 |NetApp AFF A700s
 |
-http://docs.netapp.com/platstor/topic/com.netapp.nav.a700s/home.html[AFF A700s Platform Documentation]
+https://docs.netapp.com/us-en/ontap-systems/a700s/index.html[AFF A700s Platform Documentation]
 |NetApp AFF A400
 |
-http://docs.netapp.com/platstor/index.jsp?topic=%2Fcom.netapp.nav.a400%2Fhome.html[AFF A400 Platform Documentation]
+https://docs.netapp.com/us-en/ontap-systems/a400/index.html[AFF A400 Platform Documentation]
 |NetApp AFF A300
 |
-http://docs.netapp.com/platstor/topic/com.netapp.nav.a300/home.html[AFF A300 Platform Documentation]
+https://docs.netapp.com/us-en/ontap-systems/a300/index.html[AFF A300 Platform Documentation]
+|NetApp AFF A250
+|
+https://docs.netapp.com/us-en/ontap-systems/a250/index.html[AFF A250 Platform Documentation]
 |NetApp AFF A220
 |
-http://docs.netapp.com/platstor/topic/com.netapp.nav.fas2700/home.html[AFF A220 Platform Documentation]
+https://docs.netapp.com/us-en/ontap-systems/fas2700/index.html[AFF A220 Platform Documentation]
 |===
 
 === AFF ASA A-Series
@@ -344,7 +347,7 @@ http://docs.netapp.com/platstor/topic/com.netapp.nav.fas2700/home.html[AFF A220 
 All current models of NetApp AFF ASA A-Series storage controllers are supported for use in FlexPod. Additional information can be found in the All SAN Array documentation resources, ONTAP AFF All SAN Array System technical report, and in the NetApp Hardware Universe. See the platform-specific documentation listed in the following table for detailed information about a specific AFF Model.
 
 |===
-| Component | AFF A-Series controller platform documentation
+| Component | AFF ASA A-Series controller platform documentation
 
 | NetApp AFF ASA A800 | http://docs.netapp.com/allsan/index.jsp[AFF ASA A800 Platform Documentation]
 |NetApp AFF ASA A700 | http://docs.netapp.com/allsan/index.jsp[AFF ASA A700 Platform Documentation]
